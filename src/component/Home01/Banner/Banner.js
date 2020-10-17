@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
+import ModalVideo from 'react-modal-video'
 import img_banner from '../../../assets/img/ss.svg'
 import { AiOutlinePlayCircle } from 'react-icons/ai';
+import '../../../../node_modules/react-modal-video/css/modal-video.min.css';
 
 const Banner =() => {
+    const [isOpen, setOpen] = useState(false)
  return (
   <>
     <section id="banner-one">
@@ -16,10 +19,10 @@ const Banner =() => {
                             Real-time data management technologies, global data market places, and award-winning service
                             make our solutions.
                         </p>
+                        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
                         <div className="banner-one-btn pt30">
                             <a href="#!" className="btn btn-theme">Get Started</a>
-                            <a href="https://www.youtube.com/embed/Kb8CW3axqRE" className="banner-video video-link"
-                                data-width="1200" data-height="1080"><AiOutlinePlayCircle/> Watch Video</a>
+                            <a href="#!" className="banner-video video-link" onClick={()=> setOpen(true)}><AiOutlinePlayCircle/> Watch Video</a>
                         </div>
                     </div>
                 </div>

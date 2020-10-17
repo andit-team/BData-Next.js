@@ -2,7 +2,7 @@ import img1 from '../../../assets/img/blog/1.png'
 import img2 from '../../../assets/img/blog/2.png'
 import img3 from '../../../assets/img/blog/3.png'
 import author1 from '../../../assets/img/blog/author.png'
-
+ 
 const BlogData = [
  {
   img:img1,

@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogCard from '../Blog/BlogCard'
 import BlogData from '../Blog/BlogData'
-import SectionHeading from '../SectionHeading/SectionHeading'
+import SectionHeading from '../SectionHeading/SectionHeading' 
 
 const Blog=()=> {
  const BlogDatas= (val)=>{
