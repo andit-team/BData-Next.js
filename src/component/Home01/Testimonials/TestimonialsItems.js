@@ -1,11 +1,12 @@
 import React from 'react'
+import { FaQuoteLeft } from "react-icons/fa";
 
 const TestimonialsItems=(props)=> {
  return (
   <>
     <div className="testimonial-box box-shadow border-radius">
                             <div className="testimonial-comment ">
-                                <i className="fas fa-quote-left"></i>
+                                <i><FaQuoteLeft/></i>
                                 <p>{props.para}</p>
                             </div>
                             <div className="testimonial-author">

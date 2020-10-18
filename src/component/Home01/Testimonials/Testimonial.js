@@ -1,8 +1,28 @@
 import React from 'react'
 import TestimonialsData from '../Testimonials/TestimonialsData'
 import TestimonialsItems from '../Testimonials/TestimonialsItems'
+import SectionHeading from '../SectionHeading/SectionHeading' 
+
+// Slider
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Testimonial=()=> {
+    let resposive = {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        960: {
+          items: 3,
+        },
+        1200: {
+          items: 2,
+        },
+      }
 const mapsData =(val)=>{
  return <TestimonialsItems para={val.para} img={val.img} name={val.name} des={val.des}/>
 }
@@ -10,18 +30,14 @@ const mapsData =(val)=>{
   <>
     <section id="one-testimonial" className="py100 bg-color">
         <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-lg-8">
-                    <div className="section-title-center text-center pb30">
-                        <h3 className="pb10">Testimonials</h3>
-                        <h2>What Our Client Say</h2>
-                    </div>
-                </div>
-            </div>
+            <SectionHeading title="Testimonials" heading="What Our Client Say"/>
             <div className="row">
                 <div className="col-lg-12">
                     <div className="testimonials-slider-area">
-                       {TestimonialsData.map(mapsData)}
+                    <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} loop={true} margin={10} nav={true} dots={false}>
+                    {TestimonialsData.map(mapsData)}
+                        </OwlCarousel>
+                      
                     </div>
                 </div>
             </div>
