@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import IsoTopeGrid from "react-isotope";
 import img1 from '../../../assets/img/recent-work/1.png'
 import img2 from '../../../assets/img/recent-work/2.png'
 import img3 from '../../../assets/img/recent-work/3.png'
@@ -6,7 +7,95 @@ import img4 from '../../../assets/img/recent-work/4.png'
 import img5 from '../../../assets/img/recent-work/5.png'
 import Masonry from 'react-masonry-css'
 
-const Project=()=> {
+const Project=(props)=> {
+
+
+    let filterList = [
+        {
+            label: "digital-agency",
+            title: "Digital Agency",
+            isChecked: true
+        },
+        {
+            label: "business",
+            title: "Business",
+            isChecked: false
+        },
+        {
+            label: "e-commerce",
+            title: "E-commerce",
+            isChecked: false
+        },
+    ];
+
+    const [filters, setFilters] = useState(filterList);
+
+    let cards= [
+        {
+            id: "a",
+            img: img1,
+            href: "#",
+            row: 4,
+            col: 4,
+            w: 2,
+            h: 1,
+            filter: ["digital-agency", "business"]
+        },{
+            id: "b",
+            img: img2,
+            href: "#",
+            row: 4,
+            col: 4,
+            w: 2,
+            h: 1,
+            filter: ["digital-agency", "business"]
+        },{
+            id: "c",
+            img: img3,
+            href: "#",
+            row: 8,
+            col: 0,
+            w: 1,
+            h: 2,
+            filter: ["digital-agency", "business"]
+        },{
+            id: "d",
+            img: img4,
+            href: "#",
+            row: 0,
+            col: 3,
+            w: 2,
+            h: 2,
+            filter: ["digital-agency", "e-commerce"]
+        },{
+            id: "e",
+            img: img5,
+            href: "#",
+            row: 2,
+            col: 3,
+            w: 2,
+            h: 2,
+            filter: ["digital-agency", "e-commerce"]
+        },
+
+    ]
+
+
+
+    function handleFilter(key) {
+        let newFilterList = filterList.map(filter => {
+            return {
+                ...filter,
+                isChecked: filter.label === key
+            }
+        })
+        setFilters(newFilterList);
+    }
+
+
+
+
+
  const breakpointColumnsObj = {
   default:2,
   1100: 3,
@@ -28,61 +117,41 @@ const Project=()=> {
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div className="button-group works-button">
-                        <button className="box-shadow active" data-filter="*">
-                            Digital Agency
-                        </button>
-                        <button className="box-shadow" data-filter=".business">
-                            Business
-                        </button>
-                        <button className="box-shadow" data-filter=".e-commerce">
-                            E-commerce
-                        </button>
+                        {filters.map(filter => (
+                            <button className={ filter.isChecked ? "box-shadow active" :"box-shadow" } onClick={() => handleFilter(filter.label)} style={{cursor: "pointer"}} >
+                                {filter.title}
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>
             <div className="row">
-            <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
-                    <div className="">
-                        <div className="work-item">
-                            <img src={img1} alt="img" />
-                            <div className="overlay-arae">
-                                <a href="project-details.html"> <i className="flaticon-right"></i></a>
+
+                <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+                    <IsoTopeGrid
+                        gridLayout={cards} // gridlayout of cards
+                        noOfCols={3} // number of columns show in one row
+                        unitWidth={200} // card width of 1 unit
+                        unitHeight={100} // card height of 1 unit
+                        filters={filters} // list of selected filters
+                    >
+
+                        {cards.map((card) => (
+                            <div key={card.id} className={card.filter[0]}>
+                                <div className="work-item">
+                                    <img src={card.img} alt="img" />
+                                    <div className="overlay-arae">
+                                        <a href="project-details.html"> <i className="flaticon-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className="work-item">
-                            <img src={img2} alt="img" />
-                            <div className="overlay-arae">
-                                <a href="project-details.html"> <i className="flaticon-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="">
-                        <div className="work-item">
-                            <img src={img3} alt="img" />
-                            <div className="overlay-arae">
-                                <a href="project-details.html"> <i className="flaticon-right"></i></a>
-                            </div>
-                        </div>
-                    </div> */}
-                    <div className="">
-                        <div className="work-item">
-                            <img src={img4} alt="img" />
-                            <div className="overlay-arae">
-                                <a href="project-details.html"> <i className="flaticon-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className="work-item">
-                            <img src={img5} alt="img" />
-                            <div className="overlay-arae">
-                                <a href="project-details.html"> <i className="flaticon-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    </Masonry>
+                        ))}
+
+
+                    </IsoTopeGrid>
+                </Masonry>
+
+
                 </div>
             
              

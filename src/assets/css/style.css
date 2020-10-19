@@ -1202,7 +1202,7 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
-    /* .navbar-area {
+    .navbar-area {
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -1282,7 +1282,7 @@ section {
 
     .plamb-nav {
         display: none;
-    } */
+    }
 }
 .my-masonry-grid {
     display: -webkit-box; /* Not needed if autoprefixing */
