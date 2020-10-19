@@ -721,7 +721,12 @@ section {
     padding-right: 5px;
     color: #fff;
 }
-
+.banner-details ul li a{
+    color: #fff;
+}
+.banner-details ul li a:hover{
+    color: var(--main-theme-color);
+}
 .banner-details h2 {
     color: #fff;
 }
@@ -1963,7 +1968,9 @@ section {
     position: relative;
     z-index: 999;
 }
-
+.bg-colo-white{
+    background-color: #fff !important;
+}
 #one-testimonial .testimonial-comment p {
     color: #000;
     font-style: italic;

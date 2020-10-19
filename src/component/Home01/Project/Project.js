@@ -82,10 +82,9 @@ const Project=()=> {
                             </div>
                         </div>
                     </div>
-                    </Masonry>
+                        
+                     </Masonry>
                 </div>
-            
-             
         </div>
     </section>
   </>

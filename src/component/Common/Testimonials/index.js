@@ -1,14 +1,14 @@
 import React from 'react'
 import TestimonialsData from '../Testimonials/TestimonialsData'
 import TestimonialsItems from '../Testimonials/TestimonialsItems'
-import SectionHeading from '../SectionHeading/SectionHeading' 
+import SectionHeading from '../../Home01/SectionHeading/SectionHeading' 
 
 // Slider
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-const Testimonial=()=> {
+const index=()=> {
     let resposive = {
         0: {
           items: 1,
@@ -47,4 +47,4 @@ const mapsData =(val)=>{
  )
 }
 
-export default Testimonial
+export default index
