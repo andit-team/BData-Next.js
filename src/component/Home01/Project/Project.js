@@ -12,7 +12,7 @@ const Project=(props)=> {
 
     let filterList = [
         {
-            label: "digital-agency",
+            label: "all",
             title: "Digital Agency",
             isChecked: true
         },
@@ -35,38 +35,38 @@ const Project=(props)=> {
             id: "a",
             img: img1,
             href: "#",
-            row: 4,
-            col: 4,
+            row: 0,
+            col: 1,
             w: 2,
             h: 1,
-            filter: ["digital-agency", "business"]
+            filter: [ "e-commerce"]
         },{
             id: "b",
             img: img2,
             href: "#",
-            row: 4,
-            col: 4,
+            row: 0,
+            col: 2,
             w: 2,
             h: 1,
-            filter: ["digital-agency", "business"]
+            filter: [ "business"]
         },{
             id: "c",
             img: img3,
             href: "#",
-            row: 8,
-            col: 0,
+            row: 0,
+            col: 3,
             w: 1,
             h: 2,
-            filter: ["digital-agency", "business"]
+            filter: [ "business", "e-commerce"]
         },{
             id: "d",
             img: img4,
             href: "#",
             row: 0,
-            col: 3,
+            col: 4,
             w: 2,
             h: 2,
-            filter: ["digital-agency", "e-commerce"]
+            filter: [ "e-commerce"]
         },{
             id: "e",
             img: img5,
@@ -75,11 +75,10 @@ const Project=(props)=> {
             col: 3,
             w: 2,
             h: 2,
-            filter: ["digital-agency", "e-commerce"]
+            filter: [ "e-commerce"]
         },
 
     ]
-
 
 
     function handleFilter(key) {
@@ -91,9 +90,6 @@ const Project=(props)=> {
         })
         setFilters(newFilterList);
     }
-
-
-
 
 
  const breakpointColumnsObj = {
@@ -129,13 +125,12 @@ const Project=(props)=> {
 
                 <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
                     <IsoTopeGrid
-                        gridLayout={cards} // gridlayout of cards
-                        noOfCols={3} // number of columns show in one row
-                        unitWidth={200} // card width of 1 unit
-                        unitHeight={100} // card height of 1 unit
-                        filters={filters} // list of selected filters
-                    >
-
+                        gridLayout={cards}
+                        noOfCols={3}
+                        unitWidth={400}
+                        unitHeight={200}
+                        filters={filters} 
+                        >
                         {cards.map((card) => (
                             <div key={card.id} className={card.filter[0]}>
                                 <div className="work-item">
@@ -146,7 +141,6 @@ const Project=(props)=> {
                                 </div>
                             </div>
                         ))}
-
 
                     </IsoTopeGrid>
                 </Masonry>

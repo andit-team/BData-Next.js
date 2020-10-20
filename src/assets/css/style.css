@@ -795,9 +795,6 @@ section {
     background-color: #fff;
     position: inherit;
 }
-.plamb-responsive-nav {
-    display: none;
-}
 
 .plamb-nav {
     background-color: transparent;
@@ -860,10 +857,6 @@ section {
 
 .plamb-nav .navbar .navbar-nav .nav-item:last-child a {
     margin-right: 0;
-}
-
-.plamb-nav .navbar .navbar-nav .nav-item:first-child a {
-    margin-left: 0;
 }
 
 .plamb-nav .navbar .navbar-nav .nav-item:hover a,
@@ -1157,15 +1150,14 @@ section {
 
 .navbar-area {
     background-color: transparent;
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
     transition: 0.6s;
-    position: absolute;
+    position: relative;
     z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
+    box-shadow: 1px -13px 35px -18px #5b6fe6;
 }
 
 .navbar-area.is-sticky {
@@ -1207,7 +1199,7 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
-    .navbar-area {
+    /* .navbar-area {
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -1287,8 +1279,57 @@ section {
 
     .plamb-nav {
         display: none;
-    }
+    } */
 }
+/* Responsive Menu */
+.mean-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.plamb-responsive-nav {
+    display: none;
+}
+@media only screen and (max-width: 991px){
+    .plamb-responsive-nav {
+        display: block;
+    }  
+    .navbar-nav{
+        display: block;
+    }
+    .navbar-area {
+        position: inherit;
+    }
+    .plamb-nav .navbar .navbar-nav {
+      padding: 45px;
+    }
+    .plamb-nav .navbar .navbar-nav .nav-item a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mean-menu{
+        display: none;
+        position: absolute;
+        top: 63px;
+        z-index: 999;
+        background: #fff;
+    }
+    .navbar-area {
+        padding: 0px 40px;
+    }
+    .responsive-button{
+        position: absolute;
+        right: 40px;
+        top: 25px;
+    }
+    .responsive-button{
+        font-size: 36px;
+    }
+    
+}
+/* Responsive Menu */
 .my-masonry-grid {
     display: -webkit-box; /* Not needed if autoprefixing */
     display: -ms-flexbox; /* Not needed if autoprefixing */
@@ -1901,7 +1942,7 @@ section {
     border: none;
     background-size: 300% 100%;
     border-radius: 50px;
-    moz-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;

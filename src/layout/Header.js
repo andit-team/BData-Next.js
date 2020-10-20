@@ -1,191 +1,204 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import logos from '../assets/img/logo.png'
 import { AiOutlineDown } from "react-icons/ai";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+
 
 
 const Header=()=> {
+    const [click, setClick] = useState(false);
+
+    const handleClose = () => document.querySelector("#navbarSupportedContent").classList.remove("d-block")
+
+    const handleClick = () => {
+        if(click) {
+            document.querySelector("#navbarSupportedContent").classList.remove("d-block")
+        } else {
+            document.querySelector("#navbarSupportedContent").classList.add("d-block")
+        }
+        setClick(!click);
+        
+    } 
+
  return (
   <>
     <div className="navbar-area">
-        <div className="plamb-responsive-nav">
-            <div className="container">
-                <div className="plamb-responsive-menu">
-                    <div className="logo">
-                        <a href="index.html">
-                            <img src={logos} className="white-logo" alt="logo" />
-                            <img src={logos} className="black-logo" alt="logo" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div className="plamb-nav">
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand" href="index.html">
+                    <Link className="navbar-brand" to="/">
                         <img src={logos} className="white-logo" alt="logo" />
                         <img src={{logos}} className="black-logo" alt="logo" />
-                    </a>
-                    <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    </Link>
+                    <div className=" mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a href="#" className="nav-link active">
+                                <Link to="/" className="nav-link active">
                                     Home
                                     <i><AiOutlineDown/></i>
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="index.html" className="nav-link active">
+                                        <Link to="/" className="nav-link active" onClick={handleClose}>
                                             Home One
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="index-2.html" className="nav-link">
+                                        <Link to="/" className="nav-link" onClick={handleClose}>
                                             Home Two
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="index-3.html" className="nav-link">
+                                        <Link to="/" className="nav-link" onClick={handleClose}>
                                             Home Three
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="index-4.html" className="nav-link">
+                                        <Link to="/" className="nav-link" onClick={handleClose}>
                                             Home Four
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="index-5.html" className="nav-link">
+                                        <Link to="/" className="nav-link" onClick={handleClose}>
                                             Home Five
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="#!" className="nav-link">
+                                <Link to="#!" className="nav-link">
                                     Services
                                     <i><AiOutlineDown/></i>
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="service.html" className="nav-link">
+                                        <Link to="/service" className="nav-link">
                                             Servive
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="service-details.html" className="nav-link">
+                                        <Link to="/servicedetails" className="nav-link">
                                             Service-Details
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="about.html" className="nav-link">
+                                <Link to="#!" className="nav-link">
                                     About Us
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="#!" className="nav-link">
+                                <Link to="#!" className="nav-link">
                                     Project
                                     <i><AiOutlineDown/></i>
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="project-grid.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Project Grid
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="project-masonary.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Project Masonary
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="project-details.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Project Details
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="#!" className="nav-link">
+                                <Link to="#!" className="nav-link">
                                     Blog
                                     <i><AiOutlineDown/></i>
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="blog.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Blog Grid
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="blog-detail.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Blog Details
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="#!" className="nav-link">
+                                <Link to="#!" className="nav-link">
                                     Pages
                                     <i><AiOutlineDown/></i>
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="#!" className="nav-link">Shop</a>
+                                        <Link to="#!" className="nav-link">Shop</Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a href="shop.html" className="nav-link">
+                                                <Link to="#!" className="nav-link">
                                                     Shop
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a href="shop-details.html" className="nav-link">
+                                                <Link to="#!" className="nav-link">
                                                     Single Products
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a href="cart.html" className="nav-link">
+                                                <Link to="#!" className="nav-link">
                                                     Cart
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a href="checkout.html" className="nav-link">
+                                                <Link to="#!" className="nav-link">
                                                     Checkout
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="login.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Login
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="contact.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             Contact Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="error.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             404 Error
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="faqs.html" className="nav-link">
+                                        <Link to="#!" className="nav-link">
                                             FAQ
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                         <div className="other-option">
-                            <a className="btn btn-theme" href="contact.html">
+                            <Link className="btn btn-theme" to="#!">
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div className="plamb-responsive-nav">
+            <div className="container"> 
+                <div className="responsive-button"  onClick={handleClick}>
+                       {click ? <AiOutlineClose/>: <HiMenuAlt3/>}
+                </div>
             </div>
         </div>
     </div>

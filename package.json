@@ -16,6 +16,7 @@
     "react-masonry-css": "^1.0.14",
     "react-modal-video": "^1.2.6",
     "react-owl-carousel": "^2.3.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {

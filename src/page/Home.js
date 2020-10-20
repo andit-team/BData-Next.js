@@ -21,7 +21,7 @@ const Home=()=> {
    <AboutOne/>
    <AboutTwo/>
    <WorkingProcess/>
-   <Project/>
+  
    <Pricing/>
    <Testimonial/>
    <Blog/>
