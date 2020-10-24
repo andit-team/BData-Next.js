@@ -12,31 +12,31 @@ const TestData = [
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img2,
   name:"Alom Sha",
-  Des:"CEO, CDR Company"
+  des:"CEO, CDR Company"
  },
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img1,
   name:"Korn Sos",
-  Des:"Manager, HL Company"
+ des:"Manager, HL Company"
  },
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img2,
   name:"Hero Alome",
-  Des:"CEO, OPL Company"
+ des:"CEO, OPL Company"
  },
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img1,
   name:"Gas Der",
-  Des:"CEO, LP Company"
+  des:"CEO, LP Company"
  },
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img2,
   name:"Busondhara Mal",
-  Des:"CEO, MAL Company"
+  des:"CEO, MAL Company"
  },
 ]
 export default TestData;

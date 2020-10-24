@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '../../assets/img/project-details/2.png'
+import img1 from '../../../assets/img/project-details/2.png'
 
-const GetStarted=()=> {
+const Index=()=> {
  return (
   <>
     <section id="service-dec" className="py100">
@@ -37,4 +37,4 @@ const GetStarted=()=> {
  )
 }
 
-export default GetStarted
+export default Index

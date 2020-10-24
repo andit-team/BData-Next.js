@@ -86,7 +86,7 @@ const Header=()=> {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link to="#!" className="nav-link">
+                                <Link to="/about" className="nav-link">
                                     About Us
                                 </Link>
                             </li>
@@ -97,17 +97,12 @@ const Header=()=> {
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
-                                            Project Grid
+                                        <Link to="/project" className="nav-link">
+                                            Project
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
-                                            Project Masonary
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
+                                        <Link to="/projectDetails" className="nav-link">
                                             Project Details
                                         </Link>
                                     </li>

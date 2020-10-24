@@ -4,7 +4,7 @@ import { BiCodeAlt } from "react-icons/bi";
 import { FaAward } from "react-icons/fa";
 import CountUp from 'react-countup';
 
-const Counter=()=> {
+const Index=()=> {
  return (
   <>
     <section id="counter-arae" className="py100 bg-color">
@@ -53,4 +53,4 @@ const Counter=()=> {
  )
 }
 
-export default Counter
+export default Index

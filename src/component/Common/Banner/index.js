@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index(props) {
+const index=(props)=> {
  return (
   <>
     <section id="banner-inner-area">
