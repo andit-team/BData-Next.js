@@ -4629,7 +4629,9 @@ Blog Page
     color: var(--paragraph-color);
     font-size: 14px;
 }
-
+.blog-author-view ul li a i{
+    padding-right: 6px;
+}
 .blog-author-view ul li:nth-child(1) a {
     color: var(--main-theme-color);
 }

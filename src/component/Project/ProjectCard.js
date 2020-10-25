@@ -10,7 +10,7 @@ const ProjectCard=(props)=> {
 							<img src={props.img} alt="img" />
 						</div>
 						<div className="project-grid-content">
-        <h5><Link to="#!">{props.title}</Link></h5>
+        <h5><Link to="/projectdetails">{props.title}</Link></h5>
 						</div>
 					</div>
 				</div>

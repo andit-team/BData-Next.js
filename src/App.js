@@ -6,6 +6,8 @@ import About from '../src/page/About'
 import ServiceDetails from '../src/page/ServiceDetails'
 import Project from '../src/page/Project'
 import ProjectDetails from '../src/page/ProjectDetails'
+import Blog from '../src/page/Blog'
+import BlogDetails from '../src/page/BlogDetails'
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -25,7 +27,8 @@ const App=()=> {
         <Route path='/about' exact component={About} />
         <Route path='/project' exact component={Project} />
         <Route path='/projectDetails' exact component={ProjectDetails} />
-        
+        <Route path='/blog' exact component={Blog} />
+        <Route path='/blogdetails' exact component={BlogDetails} />
       </Switch>
       <Cta/>
       <Footer/>

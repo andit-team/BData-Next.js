@@ -115,12 +115,12 @@ const Header=()=> {
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
+                                        <Link to="/blog" className="nav-link">
                                             Blog Grid
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
+                                        <Link to="/blogdetails" className="nav-link">
                                             Blog Details
                                         </Link>
                                     </li>
