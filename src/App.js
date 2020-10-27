@@ -8,6 +8,8 @@ import Project from '../src/page/Project'
 import ProjectDetails from '../src/page/ProjectDetails'
 import Blog from '../src/page/Blog'
 import BlogDetails from '../src/page/BlogDetails'
+import Shop from '../src/page/Shop'
+import ShopDetails from '../src/page/ShopDetails'
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -29,6 +31,8 @@ const App=()=> {
         <Route path='/projectDetails' exact component={ProjectDetails} />
         <Route path='/blog' exact component={Blog} />
         <Route path='/blogdetails' exact component={BlogDetails} />
+        <Route path='/shop' exact component={Shop} />
+        <Route path='/shopdetails' exact component={ShopDetails} />
       </Switch>
       <Cta/>
       <Footer/>

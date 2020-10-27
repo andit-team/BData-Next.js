@@ -2,6 +2,8 @@ import React from 'react'
 import BLogData from '../Blog/BlogData'
 import BlogCard from '../Blog/BlogCard'
 import Sidebar from '../Blog/Sidebar'
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const index=()=> {
  const BlogDatas=(val)=>{
@@ -17,11 +19,13 @@ const index=()=> {
                       {BLogData.map(BlogDatas)}
                       <div className="pagantion-area">
                         <ul>
-                          <li>1</li>
+                          <li><i><MdKeyboardArrowLeft/></i></li>
+                          <li className="active">1</li>
                           <li>2</li>
-                          <li>3</li>
+                          <li>....</li>
                           <li>4</li>
                           <li>5</li>
+                          <li><i><MdKeyboardArrowRight/></i></li>
                         </ul>
                       </div>
                     </div>

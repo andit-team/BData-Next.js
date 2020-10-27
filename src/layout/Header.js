@@ -133,29 +133,24 @@ const Header=()=> {
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">Shop</Link>
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <Link to="#!" className="nav-link">
-                                                    Shop
-                                                </Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="#!" className="nav-link">
-                                                    Single Products
-                                                </Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="#!" className="nav-link">
-                                                    Cart
-                                                </Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="#!" className="nav-link">
-                                                    Checkout
-                                                </Link>
-                                            </li>
-                                        </ul>
+                                        <Link to="/shop" className="nav-link">
+                                            Shop
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="#!" className="nav-link">
+                                        Single Products
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="#!" className="nav-link">
+                                        Cart
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="#!" className="nav-link">
+                                        Checkout
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="#!" className="nav-link">
