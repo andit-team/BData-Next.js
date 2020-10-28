@@ -3159,9 +3159,7 @@ button:focus {
     margin-bottom: 15px;
 }
 
-.tab-content ul li img {
-    padding-right: 20px;
-}
+
 
 /* About Area CSS End */
 
@@ -4057,6 +4055,9 @@ color: #fff
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
+}
+.left-side-title{
+    padding-bottom: 40px;
 }
 /*--pagination--*/
 

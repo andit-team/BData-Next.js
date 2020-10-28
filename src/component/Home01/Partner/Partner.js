@@ -41,9 +41,7 @@ const Partner=()=> {
                         <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} items={5}  loop={true} margin={10} nav={false} dots={false}>
                         {PartnerData.map(DatasMap)}
                         </OwlCarousel>                
-           
                         </div>
-
                     </div>
                 </div>
             </div>

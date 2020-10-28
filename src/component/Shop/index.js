@@ -5,8 +5,8 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const index = () => {
- const ShopDatas=(val)=>{
-  return <ShopCard img={val.img} name={val.name} price={val.price} button={val.button} />
+ const ShopDatas=(val, index)=>{
+      return <ShopCard img={val.img} name={val.name} price={val.price} button={val.button} />
  }
  return (
   <>

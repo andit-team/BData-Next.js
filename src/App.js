@@ -10,6 +10,8 @@ import Blog from '../src/page/Blog'
 import BlogDetails from '../src/page/BlogDetails'
 import Shop from '../src/page/Shop'
 import ShopDetails from '../src/page/ShopDetails'
+import Cart from '../src/page/Cart'
+import CheckOut from '../src/page/CheckOut'
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -33,6 +35,8 @@ const App=()=> {
         <Route path='/blogdetails' exact component={BlogDetails} />
         <Route path='/shop' exact component={Shop} />
         <Route path='/shopdetails' exact component={ShopDetails} />
+        <Route path='/cart' exact component={Cart} />
+        <Route path='/checkout' exact component={CheckOut} />
       </Switch>
       <Cta/>
       <Footer/>
