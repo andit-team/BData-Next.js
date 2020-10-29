@@ -18,8 +18,7 @@ const Header=()=> {
         } else {
             document.querySelector("#navbarSupportedContent").classList.add("d-block")
         }
-        setClick(!click);
-        
+        setClick(!click);        
     } 
 
  return (
@@ -153,12 +152,12 @@ const Header=()=> {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
+                                        <Link to="/login" className="nav-link">
                                             Login
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
+                                        <Link to="/contact" className="nav-link">
                                             Contact Us
                                         </Link>
                                     </li>
@@ -176,7 +175,7 @@ const Header=()=> {
                             </li>
                         </ul>
                         <div className="other-option">
-                            <Link className="btn btn-theme" to="#!">
+                            <Link className="btn btn-theme" to="/contact">
                                 Contact Us
                             </Link>
                         </div>
@@ -187,7 +186,7 @@ const Header=()=> {
         <div className="plamb-responsive-nav">
             <div className="container"> 
                 <div className="responsive-button"  onClick={handleClick}>
-                       {click ? <AiOutlineClose/>: <HiMenuAlt3/>}
+                       {click ? <AiOutlineClose/> : <HiMenuAlt3/>}
                 </div>
             </div>
         </div>

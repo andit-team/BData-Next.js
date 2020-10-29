@@ -12,6 +12,10 @@ import Shop from '../src/page/Shop'
 import ShopDetails from '../src/page/ShopDetails'
 import Cart from '../src/page/Cart'
 import CheckOut from '../src/page/CheckOut'
+import Login from '../src/page/Login'
+import Register from '../src/page/Register'
+import ResetPassword from '../src/page/ResetPassword'
+import Contact from '../src/page/Contact'
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -37,6 +41,10 @@ const App=()=> {
         <Route path='/shopdetails' exact component={ShopDetails} />
         <Route path='/cart' exact component={Cart} />
         <Route path='/checkout' exact component={CheckOut} />
+        <Route path='/login' exact component={Login} />
+        <Route path='/register' exact component={Register} />
+        <Route path='/resetpassword' exact component={ResetPassword} />
+        <Route path='/contact' exact component={Contact} />
       </Switch>
       <Cta/>
       <Footer/>
