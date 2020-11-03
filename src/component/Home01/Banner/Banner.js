@@ -1,14 +1,24 @@
 import React,{useState} from 'react'
+
+// Modal 
 import ModalVideo from 'react-modal-video'
-import img_banner from '../../../assets/img/ss.svg'
-import { AiOutlinePlayCircle } from 'react-icons/ai';
 import '../../../../node_modules/react-modal-video/css/modal-video.min.css';
+
+// Import Baner Img
+import img_banner from '../../../assets/img/ss.svg'
+
+// Icon
+import { AiOutlinePlayCircle } from 'react-icons/ai';
+
+
 import { Link } from 'react-router-dom';
+
 
 const Banner =() => {
     const [isOpen, setOpen] = useState(false)
  return (
   <>
+  {/* Banner Start */}
     <section id="banner-one">
         <div className="container">
             <div className="row">
@@ -23,7 +33,7 @@ const Banner =() => {
                         <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
                         <div className="banner-one-btn pt30">
                             <Link to="/#" className="btn btn-theme">Get Started</Link>
-                            <Link to="/#" className="banner-video video-link" onClick={()=> setOpen(true)}><AiOutlinePlayCircle/> Watch Video</Link>
+                            <a href="/#" className="banner-video video-link" onClick={()=> setOpen(true)}><AiOutlinePlayCircle/> Watch Video</a>
                         </div>
                     </div>
                 </div>
@@ -36,6 +46,7 @@ const Banner =() => {
             </div>
         </div>
     </section>
+    {/* Banner End */}
   </>
  )
 }

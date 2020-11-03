@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../assets/img/shop/d-1.png'
 import ProductSliderData from '../ShopDetails/ProductSliderData'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';

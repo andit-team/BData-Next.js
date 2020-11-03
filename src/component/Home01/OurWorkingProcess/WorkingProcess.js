@@ -4,8 +4,8 @@ import WorkingProcessCard from '../OurWorkingProcess/WorkingProcessCard'
 import WorkingProcessData from '../OurWorkingProcess/WorkingProcessData'
 
 const WorkingProcess=()=> {
- const WorkinDatas=(val)=>{
-  return <WorkingProcessCard img={val.img} heading={val.heading} para={val.para} button={val.button} />
+ const WorkinDatas=(val, index)=>{
+  return <WorkingProcessCard img={val.img} heading={val.heading} para={val.para} button={val.button} key={index} />
  }
  return (
   <>
@@ -13,10 +13,7 @@ const WorkingProcess=()=> {
         <div className="container">
            <SectionHeading title="Our Working Process" heading="Data Science Solutions For Startup"/>
             <div className="row">
-
-           
-             {WorkingProcessData.map(WorkinDatas)}
-                
+             {WorkingProcessData.map(WorkinDatas)}   
             </div>
         </div>
     </section>

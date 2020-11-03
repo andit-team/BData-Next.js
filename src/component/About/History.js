@@ -1,10 +1,13 @@
 import React from 'react'
+// import About Img
 import img1 from '../../assets/img/about-page.png'
+// import Icon
 import { FiCheck } from 'react-icons/fi';
 
 const History=()=> {
  return (
   <>
+  {/* About Top Area Start */}
     <section id="about-top" className="py100 bg-color">
     <div className="container">
       <div className="row">
@@ -44,6 +47,7 @@ const History=()=> {
       </div>
     </div>
   </section>
+    {/* About Top Area Start */}
   </>
  )
 }

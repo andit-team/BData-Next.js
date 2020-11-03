@@ -23,8 +23,8 @@ const index=()=> {
           items: 2,
         },
       }
-const mapsData =(val)=>{
- return <TestimonialsItems para={val.para} img={val.img} name={val.name} des={val.des}/>
+const mapsData =(val, index)=>{
+ return <TestimonialsItems para={val.para} img={val.img} name={val.name} des={val.des} key={index}/>
 }
  return (
   <>

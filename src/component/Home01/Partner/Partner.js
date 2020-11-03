@@ -22,8 +22,8 @@ const Partner=()=> {
         },
       }
 
- const DatasMap=(val)=>{
-  return  <Link to="/#"><img src={val.img} alt="img" /></Link>
+ const DatasMap=(val, index)=>{
+  return  <Link to="/#" key={index}><img src={val.img} alt="img" /></Link>
  }
  
  return (

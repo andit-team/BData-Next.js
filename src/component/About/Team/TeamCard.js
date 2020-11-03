@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
+// Import Icon
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaPinterestP } from "react-icons/fa";
@@ -8,6 +9,7 @@ import { AiOutlineBehance } from "react-icons/ai";
 const TeamCard=(props)=> {
  return (
   <>
+  {/* Team Card Start */}
     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
           <div class="titem text-center responsive-mt-30">
             <div class="team-img">
@@ -30,11 +32,12 @@ const TeamCard=(props)=> {
               </div>
             </div>
             <div class="team-text">
- <h3>{props.name}</h3>
- <p>{props.des}</p>
+                 <h3>{props.name}</h3>
+                 <p>{props.des}</p>
             </div>
           </div>
         </div>
+          {/* Team Card End */}
   </>
  )
 }
