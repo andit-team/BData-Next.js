@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../../../assets/img/project-details/2.png'
+import { Link } from 'react-router-dom'
 
 const Index=()=> {
  return (
@@ -25,8 +26,8 @@ const Index=()=> {
                                 magnam ratione obcaecati. Voluptatum magni, veritatis minima autem omnis suscipit
                                 cumque, aperiam necessitatibus, aliquid qui nisi voluptatem
                                 est.
-                            </p> <a href="#!" className="btn btn-theme">Get Started Project</a>
-                            <a href="#!" className="btn btn-theme">Contact With Us</a>
+                            </p> <Link to="/servicedetails" className="btn btn-theme">Get Started Project</Link>
+                            <Link to="/contact" className="btn btn-theme">Contact With Us</Link>
                         </div>
                     </div>
                 </div>

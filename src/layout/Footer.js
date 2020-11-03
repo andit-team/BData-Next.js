@@ -1,5 +1,6 @@
 import React from 'react'
 import shap from '../assets/img/svg/footer.svg'
+import { Link } from 'react-router-dom'
 import logo from '../assets/img/logo.png'
 import { ImLocation } from 'react-icons/im';
 import { FiPhoneOutgoing } from 'react-icons/fi';
@@ -14,7 +15,7 @@ const Footer=()=> {
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="footer-about-area">
-                        <a href="index.html"><img src={logo} alt="img" /></a>
+                        <Link to="/"><img src={logo} alt="img" /></Link>
                         <p className="pt30">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut.
@@ -28,10 +29,10 @@ const Footer=()=> {
                        </div>
                        <div className="footer-list pt40">
                            <ul>
-                               <li><a href="index.html">Home </a></li>
-                               <li><a href="faqs.html"> Faqs</a></li>
-                               <li><a href="shop.html"> Shop</a></li>
-                               <li><a href="blog.html"> News</a></li>
+                               <li><Link to="/">Home </Link></li>
+                               <li><Link to="/faqs"> Faqs</Link></li>
+                               <li><Link to="/shop"> Shop</Link></li>
+                               <li><Link to="/blog"> News</Link></li>
                            </ul>
                           
                        </div>
@@ -44,11 +45,10 @@ const Footer=()=> {
                         </div>
                         <div className="footer-list pt40">
                            <ul>
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="service.html">Service</a></li>
-                               <li><a href="about.html"> Features</a></li>
-                               <li><a href="contact.html"> Contact Us</a></li>
-                               <li><a href="privacy-policy.html"> Praivcy Policy</a></li>
+                               <li><Link to="/about">About</Link></li>
+                               <li><Link to="/service">Service</Link></li>
+                               <li><Link to="/contact"> Contact Us</Link></li>
+                               <li><Link to="/blog"> News</Link></li>
                            </ul>
                         </div>
                     </div>
@@ -64,10 +64,10 @@ const Footer=()=> {
                                    <i><ImLocation/></i> 1101, Your street adress, New york, State, Country.
                                </li>
                                <li>
-                                   <i><FiPhoneOutgoing/></i><a href="tel:012-3-456-789">+012 -3 456 789</a>
+                                   <i><FiPhoneOutgoing/></i><Link to="/">+012 -3 456 789</Link>
                                </li>
                                <li>
-                                   <i><SiMinutemailer/></i><a href="malto:info@gmail.com">Info@gmail.com</a>
+                                   <i><SiMinutemailer/></i><Link to="/">Info@gmail.com</Link>
                                </li>
                            </ul>
                        </div>  

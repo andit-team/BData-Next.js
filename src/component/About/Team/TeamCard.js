@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaPinterestP } from "react-icons/fa";
@@ -18,13 +19,13 @@ const TeamCard=(props)=> {
                   </a>
                   <a href="#!" class="icon">
                     <i><AiOutlineTwitter/></i>
-                  </a>
-                  <a href="#!" class="icon">
+                    </a>
+                  <a  href="#!" class="icon">
                     <i><FaPinterestP/></i>
-                  </a>
-                  <a href="#!" class="icon">
+                    </a>
+                  <a  href="#!" class="icon">
                     <i><AiOutlineBehance/></i>
-                  </a>
+                    </a>
                 </div>
               </div>
             </div>

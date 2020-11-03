@@ -1,7 +1,6 @@
 import React from 'react'
 import PartnerData from '../Partner/PartnerData'
-
-// Slider
+import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -24,7 +23,7 @@ const Partner=()=> {
       }
 
  const DatasMap=(val)=>{
-  return  <a href="#!"><img src={val.img} alt="img" /></a>
+  return  <Link to="/#"><img src={val.img} alt="img" /></Link>
  }
  
  return (

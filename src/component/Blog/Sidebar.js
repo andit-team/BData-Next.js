@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import side1 from '../../assets/img/blog/recent-post/1.png'
 import side2 from '../../assets/img/blog/recent-post/2.png'
 import side3 from '../../assets/img/blog/recent-post/3.png'
@@ -21,19 +22,19 @@ const Sidebar = () => {
                             <div className="left-blog">
                                 <h4>categories</h4>
                                 <ul>
-                                    <li><a href="#">Business</a><span>12</span>
+                                    <li><Link to="/#">Business</Link><span>12</span>
                                     </li>
-                                    <li><a href="#">Agency </a><span>17</span>
+                                    <li><Link to="/#">Agency </Link><span>17</span>
                                     </li>
-                                    <li><a href="#">Media</a><span>07</span>
+                                    <li><Link to="/#">Media</Link><span>07</span>
                                     </li>
-                                    <li><a href="#">Social</a><span>21</span>
+                                    <li><Link to="/#">Social</Link><span>21</span>
                                     </li>
-                                    <li><a href="#">Photoshop</a><span>14</span>
+                                    <li><Link to="/#">Photoshop</Link><span>14</span>
                                     </li>
-                                    <li><a href="#">development</a><span>10</span>
+                                    <li><Link to="/#">development</Link><span>10</span>
                                     </li>
-                                    <li><a href="#">Design</a><span>15</span>
+                                    <li><Link to="/#">Design</Link><span>15</span>
                                     </li>
                                 </ul>
                             </div>
@@ -44,12 +45,12 @@ const Sidebar = () => {
                                 <div className="recent-post">
                                     <div className="recent-single-post">
                                         <div className="post-img">
-                                            <a href="#">
+                                        <Link to="/#">
                                                 <img src={side1} alt="img" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="pst-content">
-                                            <p><a href="#">We offer professional Consultant services.</a>
+                                            <p><Link to="/#">We offer professional Consultant services.</Link>
                                             </p> <span className="date-type">
                                                 26 Jan / 2018
                                             </span>
@@ -57,12 +58,12 @@ const Sidebar = () => {
                                     </div>
                                     <div className="recent-single-post">
                                         <div className="post-img">
-                                            <a href="#">
+                                        <Link to="/#">
                                                 <img src={side2} alt="img" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="pst-content">
-                                            <p><a href="#">Montril is an firm and general group.</a>
+                                            <p><Link to="/#">Montril is an firm and general group.</Link>
                                             </p> <span className="date-type">
                                                 20 June / 2018
                                             </span>
@@ -71,12 +72,12 @@ const Sidebar = () => {
 
                                     <div className="recent-single-post">
                                         <div className="post-img">
-                                            <a href="#">
+                                        <Link to="/#">
                                                 <img src={side3} alt="img" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="pst-content">
-                                            <p><a href="#">Business man always think positive.</a>
+                                            <p><Link to="/#">Business man always think positive.</Link>
                                             </p> <span className="date-type">
                                                 26 Feb / 2018
                                             </span>
@@ -85,12 +86,13 @@ const Sidebar = () => {
 
                                     <div className="recent-single-post">
                                         <div className="post-img">
-                                            <a href="#">
+                                        <Link to="/#">
                                                 <img src={side1} alt="img" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="pst-content">
-                                            <p><a href="#">Man can change business policy all time.</a>
+                                            <p>
+                                            <Link to="/#">Man can change business policy all time.</Link>
                                             </p> <span className="date-type">
                                                 13 Nov / 2018
                                             </span>
@@ -104,23 +106,23 @@ const Sidebar = () => {
                                 <div className="popular-tag left-side-tags left-blog">
                                     <h4>popular tags</h4>
                                     <ul>
-                                        <li><a href="#">Business</a>
+                                        <li> <Link to="/#"> Business </Link>
                                         </li>
-                                        <li><a href="#">Agency </a>
+                                        <li><Link to="/#">Agency </Link>
                                         </li>
-                                        <li><a href="#">Media</a>
+                                        <li><Link to="/#">Media</Link>
                                         </li>
-                                        <li><a href="#">Social</a>
+                                        <li><Link to="/#">Social</Link>
                                         </li>
-                                        <li><a href="#">Photoshop</a>
+                                        <li><Link to="/#">Photoshop</Link>
                                         </li>
-                                        <li><a href="#">Seo</a>
+                                        <li><Link to="/#">Seo</Link>
                                         </li>
-                                        <li><a href="#">development</a>
+                                        <li><Link to="/#">development</Link>
                                         </li>
-                                        <li><a href="#">Search</a>
+                                        <li><Link to="/#">Search</Link>
                                         </li>
-                                        <li><a href="#">Design</a>
+                                        <li><Link to="/#">Design</Link>
                                         </li>
                                     </ul>
                                 </div>

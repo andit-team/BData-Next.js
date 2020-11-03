@@ -3,6 +3,7 @@ import ModalVideo from 'react-modal-video'
 import img_banner from '../../../assets/img/ss.svg'
 import { AiOutlinePlayCircle } from 'react-icons/ai';
 import '../../../../node_modules/react-modal-video/css/modal-video.min.css';
+import { Link } from 'react-router-dom';
 
 const Banner =() => {
     const [isOpen, setOpen] = useState(false)
@@ -21,8 +22,8 @@ const Banner =() => {
                         </p>
                         <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
                         <div className="banner-one-btn pt30">
-                            <a href="#!" className="btn btn-theme">Get Started</a>
-                            <a href="#!" className="banner-video video-link" onClick={()=> setOpen(true)}><AiOutlinePlayCircle/> Watch Video</a>
+                            <Link to="/#" className="btn btn-theme">Get Started</Link>
+                            <Link to="/#" className="banner-video video-link" onClick={()=> setOpen(true)}><AiOutlinePlayCircle/> Watch Video</Link>
                         </div>
                     </div>
                 </div>

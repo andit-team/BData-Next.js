@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function OurServiceCard(props) {
  return (
@@ -7,9 +8,9 @@ function OurServiceCard(props) {
                     <div className="service-box animation-trnslate box-shadow border-radius">
                         <div className="service-box-inner text-center">
                             <img src={props.icon} alt="img" />
-                            <h3><a href="#!">{props.heading}</a></h3>
+                            <h3><Link to="/servicedetails">{props.heading}</Link></h3>
                             <p>{props.para}</p>
-                            <a href="#!">{props.button}</a>
+                            <Link to="/servicedetails">{props.button}</Link>
                         </div>
                     </div>
                 </div>

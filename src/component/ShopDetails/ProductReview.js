@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductReview = (props) => {
  return (
@@ -13,8 +14,8 @@ const ProductReview = (props) => {
 															<h4>{props.name}</h4>
 															<p>{props.time}</p>
 														</div>
-														<div className="post-share"> <a href="#!" className="replay">{props.replay}</a>
-															<a href="#!">{props.report}</a>
+														<div className="post-share"> <Link to="/#" className="replay">{props.replay}</Link>
+															<Link to="/#">{props.report}</Link>
 														</div>
 													</div>
 													<div className="media-pragraph">

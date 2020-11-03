@@ -70,9 +70,9 @@ const index = () => {
                                 <p className="cart-amount">£215.00</p>
                             </div>
                             <div className="checkout-btn">
-                                <a href="#!" className="btn btn-theme btn-shop">
+                                <Link to="checkout" className="btn btn-theme btn-shop">
                                     Proceed to Checkout
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const PaymentInfo = () => {
  return (
   <>
@@ -31,7 +31,7 @@ const PaymentInfo = () => {
                                         credit card if you don't have a PayPal account.</p>
                                 </div>
                             </div>
-                        </div> <a href="#" className="btn btn-theme">Place Order</a>
+                        </div> <Link to="/#" className="btn btn-theme">Place Order</Link>
                     </div>
   </>
  )

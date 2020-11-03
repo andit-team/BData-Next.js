@@ -2,6 +2,7 @@ import React from 'react'
 import Icon1 from '../../assets/img/service/1.png'
 import Icon2 from '../../assets/img/service/2.png'
 import Icon3 from '../../assets/img/service/3.png'
+import { Link } from 'react-router-dom';
 
 const DetailsCard=()=> {
  return (
@@ -13,9 +14,9 @@ const DetailsCard=()=> {
 					<div className="service-box box-shadow border-radius">
 						<div className="service-box-inner text-center">
 							<img src={Icon1} alt="img" />
-							<h3><a href="service-details.html">Data Science</a></h3>
+							<h3><Link to="/servicedetails">Data Science</Link></h3>
 							<p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt.</p> <a href="service-details.html">Read More ...</a>
+								incididunt.</p> <Link to="/servicedetails">Read More ...</Link>
 						</div>
 					</div>
 				</div>
@@ -23,9 +24,9 @@ const DetailsCard=()=> {
 					<div className="service-box box-shadow border-radius">
 						<div className="service-box-inner text-center">
 							<img src={Icon2} alt="img" />
-							<h3><a href="service-details.html">Machine Learning</a></h3>
+							<h3><Link to="/servicedetails">Machine Learning</Link></h3>
 							<p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt.</p> <a href="service-details.html">Read More ...</a>
+								incididunt.</p> <Link to="/servicedetails">Read More ...</Link>
 						</div>
 					</div>
 				</div>
@@ -33,9 +34,9 @@ const DetailsCard=()=> {
 					<div className="service-box box-shadow border-radius">
 						<div className="service-box-inner text-center">
 							<img src={Icon3} alt="img" />
-							<h3><a href="service-details.html">Artificial Intelligence</a></h3>
+							<h3><Link to="/servicedetails">Artificial Intelligence</Link></h3>
 							<p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt.</p> <a href="service-details.html">Read More ...</a>
+								incididunt.</p><Link to="/servicedetails">Read More ...</Link>
 						</div>
 					</div>
 				</div>

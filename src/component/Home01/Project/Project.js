@@ -5,6 +5,7 @@ import img4 from '../../../assets/img/recent-work/4.png'
 import img5 from '../../../assets/img/recent-work/5.png'
 import Masonry from 'react-masonry-css'
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const Project=(props)=> {
     const breakpointColumnsObj = {
@@ -34,37 +35,37 @@ const Project=(props)=> {
                         <div className="work-item">
                             <img src={img1} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                                <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
                             <img src={img2} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                            <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
                             <img src={img4} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                            <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
                             <img src={img2} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                            <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>   
                         <div className="work-item">
                             <img src={img1} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                            <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
                             <img src={img5} alt="img" />
                             <div className="overlay-arae">
-                                <a href="project-details.html"> <i><BsArrowRight/></i></a>
+                            <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>      
                           

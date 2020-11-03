@@ -60,14 +60,14 @@ const RegisterForm = () => {
 									<div className="col-lg-12 col-md-6 col-sm-12 col-12">
 										<div className="pasword-remamber">
 											<input type="checkbox" id="chb1" />
-											<label for="chb1">I agree with Haipe's <a href="#!">Privacy Policy</a>
+											<label for="chb1">I agree with Haipe's <Link to="/#">Privacy Policy</Link>
 											</label>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-6 col-sm-12 col-12">
 										<div className="pasword-remamber">
 											<input type="checkbox" id="chb2" />
-											<label for="chb2">I agree with Haipe's <a href="#!">Terms of Services</a>
+											<label for="chb2">I agree with Haipe's <Link to="/#">Terms of Services</Link>
 											</label>
 										</div>
 									</div>

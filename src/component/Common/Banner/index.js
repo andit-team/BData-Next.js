@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const index=(props)=> {
  return (
   <>
@@ -10,7 +10,7 @@ const index=(props)=> {
                     <div className="banner-details text-center">
                         <h2>{props.heading}</h2>
                         <ul>
-                        <li><a href="#!">{props.menu1}</a></li>
+                        <li><Link to="/">{props.menu1}</Link></li>
                         <li><span>/</span>{props.menu2}</li>
                         </ul>
                     </div>

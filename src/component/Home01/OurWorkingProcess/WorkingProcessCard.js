@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const WorkingProcessCard=(props)=> {
  return (
@@ -9,11 +10,11 @@ const WorkingProcessCard=(props)=> {
                             <img src={props.img} alt="image" />
                         </div>
                         <div className="work-process-details ">
-                               <h3><a href="#!">{props.heading}</a></h3>
+                               <h3><Link to="/#">{props.heading}</Link></h3>
                             <p className="pt10">
                             {props.para}
                             </p>
-                            <a href="#!">{props.button}</a>
+                            <Link to="/#">{props.button}</Link>
                         </div>
                     </div>
                 </div>

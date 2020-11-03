@@ -1,16 +1,15 @@
 import React from 'react'
 import { AiFillDelete } from 'react-icons/ai';
+import { Link } from 'react-router-dom'
 
 const CartItems = (props) => {
  return (
   <>
          <tr>
-         <td className="product-remove"><a href="#"><i><AiFillDelete/></i></a>
+         <td className="product-remove"><Link to="/#"><i><AiFillDelete/></i></Link>
          </td>
          <td className="product-thumb">
-      
          <img src={props.img} alt="img" />
-         
          </td>
          <td className="product-name">{props.name}
          </td>

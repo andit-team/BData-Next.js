@@ -29,7 +29,7 @@ const Header=()=> {
                 <nav className="navbar navbar-expand-md navbar-light">
                     <Link className="navbar-brand" to="/">
                         <img src={logos} className="white-logo" alt="logo" />
-                        <img src={{logos}} className="black-logo" alt="logo" />
+                        <img src={logos} className="black-logo" alt="logo" />
                     </Link>
                     <div className=" mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
@@ -101,7 +101,7 @@ const Header=()=> {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/projectDetails" className="nav-link">
+                                        <Link to="/projectdetails" className="nav-link">
                                             Project Details
                                         </Link>
                                     </li>
@@ -162,13 +162,13 @@ const Header=()=> {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
-                                            404 Error
+                                        <Link to="/faqs" className="nav-link">
+                                            FAQ
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="#!" className="nav-link">
-                                            FAQ
+                                        <Link to="/error" className="nav-link">
+                                            404 Error
                                         </Link>
                                     </li>
                                 </ul>

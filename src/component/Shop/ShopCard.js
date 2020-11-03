@@ -10,7 +10,7 @@ const ShopCard = (props) => {
 							<img src={props.img} alt="img" />
 						</div>
 						<div className="shop-info box-shadow">
-							<h3><a href="shop-details.html">{props.name}</a></h3>
+							<h3><Link to="/shopdetails">{props.name}</Link></h3>
 							<p><span>${props.price}</span>
 							</p> <Link to="/shopdetails" className="btn btn-theme btn-shop">{props.button}</Link>
 						</div>

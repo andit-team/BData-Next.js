@@ -3,6 +3,7 @@ import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 import { BsCheckBox } from "react-icons/bs";
 import SectionHeading from '../SectionHeading/SectionHeading'
+import { Link } from 'react-router-dom';
 
 
 const Pricing=()=> {
@@ -66,7 +67,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +106,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +145,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -189,7 +190,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -228,7 +229,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -267,7 +268,7 @@ const Pricing=()=> {
                                                 </li>
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <a className="btn btn-pricing" href="#!">BUY NOW</a>
+                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
                                             </div>
                                         </div>
                                     </div>

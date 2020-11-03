@@ -16,6 +16,9 @@ import Login from '../src/page/Login'
 import Register from '../src/page/Register'
 import ResetPassword from '../src/page/ResetPassword'
 import Contact from '../src/page/Contact'
+import Faqs from '../src/page/Faqs'
+import Error from '../src/page/Error'
+import ScrollToTop from "./helpers/ScrollToTop";
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -27,6 +30,7 @@ const App=()=> {
     <>
      <BrowserRouter>
      <Router>
+    <ScrollToTop>
      <Header/>
      <Switch>
         <Route path='/' exact component={Home} />
@@ -34,7 +38,7 @@ const App=()=> {
         <Route path='/servicedetails' exact component={ServiceDetails} />
         <Route path='/about' exact component={About} />
         <Route path='/project' exact component={Project} />
-        <Route path='/projectDetails' exact component={ProjectDetails} />
+        <Route path='/projectdetails' exact component={ProjectDetails} />
         <Route path='/blog' exact component={Blog} />
         <Route path='/blogdetails' exact component={BlogDetails} />
         <Route path='/shop' exact component={Shop} />
@@ -45,10 +49,13 @@ const App=()=> {
         <Route path='/register' exact component={Register} />
         <Route path='/resetpassword' exact component={ResetPassword} />
         <Route path='/contact' exact component={Contact} />
+        <Route path='/faqs' exact component={Faqs} />
+        <Route exact component={Error} />
       </Switch>
       <Cta/>
       <Footer/>
       <CopyRight/>
+      </ScrollToTop>
       </Router>
      </BrowserRouter>
     </>

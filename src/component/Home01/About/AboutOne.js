@@ -1,6 +1,7 @@
  import React from 'react'
  import check from '../../../assets/img/about/tick.png'
  import AboutImg from '../../../assets/img/about/1.png'
+ import { Link } from 'react-router-dom';
  
  const AboutOne=()=> {
   return (
@@ -34,7 +35,7 @@
                                 <img src={check} alt="img" />24/7 Support Centers
                             </li>
                         </ul>
-                        <a href="#!" className="btn btn-theme mt30">How It Work</a>
+                        <Link to="/#" className="btn btn-theme mt30">How It Work</Link>
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
