@@ -34,37 +34,7 @@ const Header=()=> {
                     <div className=" mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link active">
-                                    Home
-                                    <i><AiOutlineDown/></i>
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link active" onClick={handleClose}>
-                                            Home One
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link" onClick={handleClose}>
-                                            Home Two
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link" onClick={handleClose}>
-                                            Home Three
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link" onClick={handleClose}>
-                                            Home Four
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link" onClick={handleClose}>
-                                            Home Five
-                                        </Link>
-                                    </li>
-                                </ul>
+                                <Link to="/" className="nav-link active">Home </Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="#!" className="nav-link">

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const ProductReview = (props) => {
  return (
   <>
+		{/* Start Media Area */}
    	<li className="media">
 												<div className="media-img">
 													<img src={props.img} alt="img" />
@@ -23,6 +24,7 @@ const ProductReview = (props) => {
 													</div>
 												</div>
 											</li>
+													{/* End Media Area */}
   </>
  )
 }

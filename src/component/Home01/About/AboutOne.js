@@ -1,11 +1,15 @@
  import React from 'react'
+
+//  Import Img
  import check from '../../../assets/img/about/tick.png'
  import AboutImg from '../../../assets/img/about/1.png'
+
  import { Link } from 'react-router-dom';
  
  const AboutOne=()=> {
   return (
    <>
+   {/* About One Area Start */}
      <section id="about" className="py100">
         <div className="container">
             <div className="row">
@@ -46,7 +50,9 @@
             </div>
         </div>
     </section>
+       {/* About One Area End */}
    </>
+
   )
  }
  

@@ -1,13 +1,15 @@
 import React from 'react'
+// Import Components
 import ProductReview from '../ShopDetails/ProductReview'
 import ProductReviewData from '../ShopDetails/ProductReviewData'
 
 const ProductTabs = () => {
- const ProductDatas=(val)=>{
-  return <ProductReview img={val.img} name={val.name} time={val.time} replay={val.replay} report={val.report} comment={val.comment} />
+ const ProductDatas=(val, index)=>{
+  return <ProductReview img={val.img} key={index} name={val.name} time={val.time} replay={val.replay} report={val.report} comment={val.comment} />
  }
  return (
   <>
+		{/* Shop Items Area Start */}
    <section id="shop-items-details" className="pb100">
 		<div className="container">
 			<div className="row">
@@ -45,6 +47,7 @@ const ProductTabs = () => {
 			</div>
 		</div>
 	</section>
+			{/* Shop Items Area End */}
   </>
  )
 }

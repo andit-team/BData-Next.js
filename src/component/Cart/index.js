@@ -1,14 +1,16 @@
 import React from 'react'
+// Import Components
 import CartItem from '../Cart/CartItems'
 import CartData from '../Cart/CartData'
 import { Link } from 'react-router-dom';
 
 const index = () => {
- const CarDatas=(val)=>{
-  return <CartItem img={val.img} name={val.name} price={val.price}total={val.total} quantity={val.quantity} />
+ const CarDatas=(val, index)=>{
+  return <CartItem img={val.img} key={index} name={val.name} price={val.price}total={val.total} quantity={val.quantity} />
  }
  return (
   <>
+  {/* Start Cart Area */}
        <section id="cart-area" className="py100">
         <div className="container">
             <div className="row">
@@ -80,6 +82,7 @@ const index = () => {
             </div>
         </div>
     </section>
+      {/* Start Cart End */}
   </>
  )
 }

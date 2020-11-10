@@ -40,7 +40,7 @@ const LoginForm = () => {
 									<div className="col-lg-6 col-md-6 col-sm-12 col-12">
 										<div className="agree-label">
 											<input type="checkbox" id="chb1" />
-											<label for="chb1">Remember Me</label>
+											<label htmlFor="chb1">Remember Me</label>
 										</div>
 									</div>
 									<div className="col-lg-6 col-md-6 col-sm-12 col-12">

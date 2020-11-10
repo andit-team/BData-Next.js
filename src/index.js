@@ -10,9 +10,9 @@ import "./assets/css/color.css"
 import "./assets/css/responsive.css"
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <App />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

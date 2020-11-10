@@ -1,4 +1,5 @@
 import React from 'react'
+// Import Img
 import small1 from '../../../assets/img/small-icon/1.png'
 import small2 from '../../../assets/img/small-icon/2.png'
 import small3 from '../../../assets/img/small-icon/3.png'
@@ -7,6 +8,7 @@ import AboutImg from '../../../assets/img/about/2.png'
 const AboutTwo=()=> {
  return (
   <>
+  {/* About Two Area Start */}
      <section id="about-area-two" className="bg-color">
         <div className="container">
             <div className="row">
@@ -55,6 +57,7 @@ const AboutTwo=()=> {
             </div>
         </div>
     </section>
+      {/* About Two Area End */}
   </>
  )
 }

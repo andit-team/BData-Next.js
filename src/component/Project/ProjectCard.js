@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const ProjectCard=(props)=> {
  return (
   <>
+		{/* Project Area Start */}
    <div className="col-lg-4 col-md-6 col-ms-12 col-12">
 					<div className="project-grid-item">
 						<div className="project-grid-img">
@@ -14,6 +15,7 @@ const ProjectCard=(props)=> {
 						</div>
 					</div>
 				</div>
+						{/* Project Area End */}
   </>
  )
 }

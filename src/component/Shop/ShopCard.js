@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const ShopCard = (props) => {
  return (
   <>
+		{/* Shop Area Start */}
    		<div className="col-lg-3 col-md-6 col-sm-6 col-12">
 					<div className="shop-item responsive-mt text-center">
 						<div className="shop-img">
@@ -16,6 +17,7 @@ const ShopCard = (props) => {
 						</div>
 					</div>
 				</div>
+						{/* Shop Area End */}
   </>
  )
 }

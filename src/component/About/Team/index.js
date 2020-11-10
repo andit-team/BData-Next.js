@@ -10,16 +10,16 @@ import TeamCard from '../Team/TeamCard'
 
 const index=()=> {
   //  Team Data Map
- const TeamDatas=(val)=>{
-  return <TeamCard img={val.img} name={val.name} des={val.destnation} />
+ const TeamDatas=(val, index)=>{
+  return <TeamCard img={val.img} name={val.name} des={val.destnation} key={index} />
  }
  return (
   <>
   {/* Team Area Start */}
-    <section id="team-area" class="py100">
-    <div class="container">
+    <section id="team-area" className="py100">
+    <div className="container">
       <SectionHeading title="Our Team" heading="Meet Our Expert Team"/>
-      <div class="row">
+      <div className="row">
         {TeamData.map(TeamDatas)}
       </div>
     </div>

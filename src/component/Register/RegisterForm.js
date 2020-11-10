@@ -1,4 +1,5 @@
 import React from 'react'
+// Import Icons
 import { AiOutlineGooglePlus } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -7,6 +8,7 @@ import { Link } from 'react-router-dom';
 const RegisterForm = () => {
  return (
   <>
+		{/* Register Area Start */}
    	<section id="login-area" className="py100">
 		<div className="container">
 			<div className="row">
@@ -60,14 +62,14 @@ const RegisterForm = () => {
 									<div className="col-lg-12 col-md-6 col-sm-12 col-12">
 										<div className="pasword-remamber">
 											<input type="checkbox" id="chb1" />
-											<label for="chb1">I agree with Haipe's <Link to="/#">Privacy Policy</Link>
+											<label htmlFor="chb1">I agree with Haipe's <Link to="/#">Privacy Policy</Link>
 											</label>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-6 col-sm-12 col-12">
 										<div className="pasword-remamber">
 											<input type="checkbox" id="chb2" />
-											<label for="chb2">I agree with Haipe's <Link to="/#">Terms of Services</Link>
+											<label htmlFor="chb2">I agree with Haipe's <Link to="/#">Terms of Services</Link>
 											</label>
 										</div>
 									</div>
@@ -90,6 +92,7 @@ const RegisterForm = () => {
 			</div>
 		</div>
 	</section>
+			{/* Register Area End */}
   </>
  )
 }

@@ -4,8 +4,8 @@ import BlogData from '../Blog/BlogData'
 import SectionHeading from '../SectionHeading/SectionHeading' 
 
 const Blog=()=> {
- const BlogDatas= (val)=>{
-      return   <BlogCard img={val.img} heading={val.heading} date={val.date} month={val.month} para={val.para} authorimg={val.authorimg} authorName={val.authorName} catatory={val.catatory} />
+ const BlogDatas= (val, index)=>{
+      return   <BlogCard img={val.img} key={index} heading={val.heading} date={val.date} month={val.month} para={val.para} authorimg={val.authorimg} authorName={val.authorName} catatory={val.catatory} />
  }
  return (
   <div>

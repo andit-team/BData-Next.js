@@ -1,10 +1,13 @@
 import React from 'react'
+// Import Components
 import ProductSlider from '../ShopDetails/ProductSlider'
+// Import Icons
 import { AiFillStar } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 const ProductDetails = () => {
  return (
   <>
+		{/* Shop Details Start */}
      <section id="shop-details" className="py100">
 		<div className="container">
 			<div className="row">
@@ -53,6 +56,7 @@ const ProductDetails = () => {
 			</div>
 		</div>
 	</section>
+			{/* Shop Details End */}
   </>
  )
 }

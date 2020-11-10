@@ -10,28 +10,28 @@ const TeamCard=(props)=> {
  return (
   <>
   {/* Team Card Start */}
-    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-          <div class="titem text-center responsive-mt-30">
-            <div class="team-img">
+    <div className="col-lg-3 col-md-6 col-sm-12 col-12">
+          <div className="titem text-center responsive-mt-30">
+            <div className="team-img">
               <img src={props.img} alt="imf" />
-              <div class="social valign">
-              <div class="full-width">
-                  <a href="#!" class="icon">
+              <div className="social valign">
+              <div className="full-width">
+                  <a href="#!" className="icon">
                     <i><FaFacebookF/></i>
                   </a>
-                  <a href="#!" class="icon">
+                  <a href="#!" className="icon">
                     <i><AiOutlineTwitter/></i>
                     </a>
-                  <a  href="#!" class="icon">
+                  <a  href="#!" className="icon">
                     <i><FaPinterestP/></i>
                     </a>
-                  <a  href="#!" class="icon">
+                  <a  href="#!" className="icon">
                     <i><AiOutlineBehance/></i>
                     </a>
                 </div>
               </div>
             </div>
-            <div class="team-text">
+            <div className="team-text">
                  <h3>{props.name}</h3>
                  <p>{props.des}</p>
             </div>
