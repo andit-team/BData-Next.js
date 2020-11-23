@@ -11,7 +11,7 @@ import img10 from '../../assets/img/shop/10.png'
 import img11 from '../../assets/img/shop/11.png'
 import img12 from '../../assets/img/shop/d-1.png'
 
-const ShopData = [
+export const ShopData = [
  {
   img:img1,
   name:"Travel Bag",
@@ -85,5 +85,3 @@ const ShopData = [
   button:"Add TO CART"
  }
 ]
-
-export default ShopData

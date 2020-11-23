@@ -1,6 +1,6 @@
 import React from 'react'
 // Import Components
-import ShopData from '../Shop/ShopData'
+import {ShopData} from '../Shop/ShopData'
 import ShopCard from '../Shop/ShopCard'
 
 const RelatedProduct = () => {

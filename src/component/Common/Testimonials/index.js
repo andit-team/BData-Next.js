@@ -1,5 +1,5 @@
 import React from 'react'
-import TestimonialsData from '../Testimonials/TestimonialsData'
+import {TestData} from './TestimonialsData'
 import TestimonialsItems from '../Testimonials/TestimonialsItems'
 import SectionHeading from '../../Home01/SectionHeading/SectionHeading' 
 
@@ -23,9 +23,6 @@ const index=()=> {
           items: 2,
         },
       }
-const mapsData =(val, index)=>{
- return <TestimonialsItems para={val.para} img={val.img} name={val.name} des={val.des} key={index}/>
-}
  return (
   <>
     <section id="one-testimonial" className="py100 bg-color">
@@ -35,7 +32,7 @@ const mapsData =(val, index)=>{
                 <div className="col-lg-12">
                     <div className="testimonials-slider-area">
                     <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} loop={true} margin={10} nav={true} dots={false}>
-                    {TestimonialsData.map(mapsData)}
+                    {TestData.map((data, index)=>(<TestimonialsItems data={data} key={index}/>))}
                         </OwlCarousel>
                       
                     </div>

@@ -3,7 +3,7 @@ import img2 from '../../../assets/img/blog/2.png'
 import img3 from '../../../assets/img/blog/3.png'
 import author1 from '../../../assets/img/blog/author.png'
  
-const BlogData = [
+export const BlogData = [
  {
   img:img1,
   heading:"Content strategy can help engage your customers",
@@ -15,7 +15,7 @@ const BlogData = [
   catatory:"Business"
  },
  {
-  img:img2,
+  img:img2, 
   heading:"Content strategy can help engage your customers",
   date:"13",
   month:"Jun",
@@ -36,5 +36,3 @@ const BlogData = [
  }
 
 ];
-
-export default BlogData;

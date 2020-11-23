@@ -1,6 +1,6 @@
 import React from 'react'
 // Import Component
-import ShopData from '../Shop/ShopData'
+import {ShopData} from './ShopData'
 import ShopCard from '../Shop/ShopCard'
 // Import Icon
 import { MdKeyboardArrowLeft } from "react-icons/md";

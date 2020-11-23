@@ -7,15 +7,15 @@ const TestimonialsItems=(props)=> {
     <div className="testimonial-box box-shadow border-radius">
                             <div className="testimonial-comment ">
                                 <i><FaQuoteLeft/></i>
-                                <p>{props.para}</p>
+                                <p>{props.data.para}</p>
                             </div>
                             <div className="testimonial-author">
                                 <div className="testimonial-author-img">
-                                    <img src={props.img} alt="img" />
+                                    <img src={props.data.img} alt="img" />
                                 </div>
                                 <div className="testimonial-name">
-                                    <h3>{props.name}</h3>
-                                     <p>{props.des}</p>
+                                    <h3>{props.data.name}</h3>
+                                     <p>{props.data.des}</p>
                                 </div>
                             </div>
                         </div>

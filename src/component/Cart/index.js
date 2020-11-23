@@ -1,13 +1,11 @@
 import React from 'react'
 // Import Components
 import CartItem from '../Cart/CartItems'
-import CartData from '../Cart/CartData'
+import {CartData} from '../Cart/CartData'
 import { Link } from 'react-router-dom';
 
 const index = () => {
- const CarDatas=(val, index)=>{
-  return <CartItem img={val.img} key={index} name={val.name} price={val.price}total={val.total} quantity={val.quantity} />
- }
+
  return (
   <>
   {/* Start Cart Area */}
@@ -29,7 +27,7 @@ const index = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {CartData.map(CarDatas)}
+                                {CartData.map((data, index)=>(<CartItem data={data} key={index} />))}
                                 </tbody>
                             </table>
                         </div>

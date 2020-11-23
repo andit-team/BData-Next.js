@@ -1,6 +1,6 @@
 import React from 'react'
 // Import Component
-import ProductSliderData from '../ShopDetails/ProductSliderData'
+import {ProductSliderData} from './ProductSliderData'
 // Import Slider
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -10,11 +10,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const ProductSlider = () => {
  
-const ProductDatasSlider=(val, index)=>{
-  return <div className="shop-details-img"  key={index}>
-           <img src={val.img} alt="img" />
-           </div>
-}
 
  let resposive = {
   0: {
@@ -34,7 +29,9 @@ const ProductDatasSlider=(val, index)=>{
   <>
 {/* Slider Area Start */}
 <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} items={5}  loop={true} margin={10} nav={false} dots={true}>
-            {ProductSliderData.map(ProductDatasSlider)}		
+            {ProductSliderData.map((data, index)=>(<div className="shop-details-img"  key={index}>
+           <img src={data.img} alt="img" />
+           </div>))}		
 </OwlCarousel>
   {/* Slider Area End */}		
   </>

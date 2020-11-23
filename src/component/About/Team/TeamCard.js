@@ -13,7 +13,7 @@ const TeamCard=(props)=> {
     <div className="col-lg-3 col-md-6 col-sm-12 col-12">
           <div className="titem text-center responsive-mt-30">
             <div className="team-img">
-              <img src={props.img} alt="imf" />
+              <img src={props.data.img} alt="imf" />
               <div className="social valign">
               <div className="full-width">
                   <a href="#!" className="icon">
@@ -32,8 +32,8 @@ const TeamCard=(props)=> {
               </div>
             </div>
             <div className="team-text">
-                 <h3>{props.name}</h3>
-                 <p>{props.des}</p>
+                 <h3>{props.data.name}</h3>
+                 <p>{props.data.title}</p>
             </div>
           </div>
         </div>

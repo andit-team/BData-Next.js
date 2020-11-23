@@ -1,4 +1,35 @@
 import React from 'react'
+import FormInput from "../From/index";
+
+let options1 = [
+    {
+        text: "Select an option...",
+        value: ""
+    },
+    {
+        text: "USA",
+        value: ""
+    },
+    {
+        text: "Afghanistan",
+        value: ""
+    }
+]
+let options2 = [
+    {
+        text: "Select an option...",
+        value: ""
+    },
+    {
+        text: "Dhaka",
+        value: ""
+    },
+    {
+        text: "Khulna",
+        value: ""
+    }
+]
+
 
 const BillingsInformation = () => {
  return (
@@ -12,73 +43,95 @@ const BillingsInformation = () => {
                             <form method="post">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="fname">First name</label>
-                                            <input type="text" required="" className="form-control" id="fname"
-                                                placeholder="First name *" />
-                                        </div>
+                                           <FormInput
+											tag='input'
+											type='text'
+											name='User_name'
+											classes='form-control'
+                                            placeholder='First name *'
+                                            label="First name"
+											/>
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
                                         <div className="form-group">
-                                            <label htmlFor="lname">Last name</label>
-                                            <input type="text" required="" className="form-control" id="lname"
-                                                placeholder="Last name *" />
+                                        <FormInput
+											tag='input'
+											type='text'
+											name='User_name'
+											classes='form-control'
+                                            placeholder='Last name *'
+                                            label="Last name"
+											/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
                                         <div className="form-group">
-                                            <label htmlFor="cname">Company Name</label>
-                                            <input className="form-control" required="" type="text" id="cname"
-                                                placeholder="Company Name" />
-                                        </div>
+                                             <FormInput
+											tag='input'
+											type='text'
+											name='User_name'
+											classes='form-control'
+                                            placeholder='Company Name *'
+                                            label="Company Name"
+											/>    
+                                        </div> 
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
                                         <div className="form-group">
-                                            <label htmlFor="email">Email Addresse</label>
-                                            <input className="form-control" required="" type="text" id="email"
-                                                placeholder="info@gmail.com" />
+                                            <FormInput
+											tag='input'
+											type='text'
+											name='User_name'
+											classes='form-control'
+                                            placeholder='Email Addresse'
+                                            label="Email Addresse"
+											/>    
                                         </div>
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="country">Country</label>
-                                            <select className="form-control first_null" id="country">
-                                                <option value="">Select an option...</option>
-                                                <option value="AX">usa</option>
-                                                <option value="AF">Afghanistan</option>
-                                            </select>
-                                        </div>
+                                         <FormInput
+											tag='select'
+											classes='form-control'
+                                            label="Country"
+                                            options={options1}
+											/>
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="city">State/City</label>
-                                            <select className="form-control first_null" id="city">
-                                                <option value="">Select an option...</option>
-                                                <option value="AX">Aland Islands</option>
-                                                <option value="AF">Afghanistan</option>
-                                            </select>
-                                        </div>
+                                          <FormInput
+											tag='select'
+											classes='form-control'
+                                            label="State/City"
+                                            options={options2}
+											/>
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="zip">State/City</label>
-                                            <input type="text" className="form-control" id="zip" required=""
-                                                placeholder="Enter Your zipcode" />
-                                        </div>
+                                           <FormInput
+											tag='input'
+											type='text'
+											name='zip_code'
+											classes='form-control'
+                                            placeholder='Zip Code'
+                                            label="Zipe Code"
+											/> 
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="faddress">Full Address</label>
-                                            <input type="text" className="form-control" id="faddress" required=""
-                                                placeholder="Enter your address here.." />
-                                        </div>
+                                          <FormInput
+											tag='input'
+											type='text'
+											name='full_address'
+											classes='form-control'
+                                            placeholder='Enter your address here..'
+                                            label="Full Address"
+											/> 
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
-                                        <div className="form-group">
-                                            <label htmlFor="messages">Additional Notes</label>
-                                            <textarea rows="5" className="form-control" id="messages"
-                                                placeholder="Order notes"></textarea>
-                                        </div>
+                                    <FormInput
+                                        tag={'textarea'}
+                                        type='text'
+                                        name='additional_notes'
+                                        classes='form-control'
+                                        placeholder='Order Notes'
+                                        label="Additional Notes"/>
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
                                         <div className="form-check">

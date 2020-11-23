@@ -1,12 +1,10 @@
 import React from 'react'
 // Import Components
 import SectionHeading from '../SectionHeading/SectionHeading' 
-import OurServiceData from '../OurService/OurServicesData'
+import {OurServiceData} from './OurServicesData'
 import OurServiceCard from '../OurService/OurServiceCard'
 
 const OurServices=()=> {
- const ServiceDataMap = (val,index)=>{
-return <OurServiceCard icon={val.img} key={index} heading={val.heading} para={val.paragraph} button={val.button}/>}
 return (
   <>
   {/* Service Area Start */}
@@ -14,12 +12,12 @@ return (
         <div className="container">
             <SectionHeading title="Our Services" heading={"We Offer A Wide Range Of Data Services And Data Analytics Solutions"}/>
             <div className="row">
-                {OurServiceData.map(ServiceDataMap)}
+                {OurServiceData.map( (data, index)=>( <OurServiceCard data={data} key={index}/> ))}
             </div>
         </div>
     </section>
       {/* Service Area End */}
-  </>
+  </> 
  )
 }
 

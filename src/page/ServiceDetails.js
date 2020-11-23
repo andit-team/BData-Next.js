@@ -10,7 +10,7 @@ const ServiceDetails=()=> {
   <Banner heading="Service Details" menu1="Home" menu2="Service Details"/>
   <DetailsArea/>
   <DetailsCard/>
-  <DetailsBottom/>
+  <DetailsBottom/> 
   </>
  )
 }

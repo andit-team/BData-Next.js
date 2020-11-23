@@ -2,7 +2,7 @@ import React from 'react'
 
 import Banner from '../component/Home01/Banner/Banner'
 import Partner from '../component/Home01/Partner/Partner'
-import AboutOne from '../component/Home01/About/AboutOne'
+import AboutOne from '../component/Home01/About/AboutOne' 
 import AboutTwo from '../component/Home01/About/AboutTwo'
 import OurServices from '../component/Home01/OurService/OurServices'
 import Project from '../component/Home01/Project/Project'

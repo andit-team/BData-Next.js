@@ -1,8 +1,8 @@
 import React from 'react'
 // Import BlogData
-import BlogData from '../Blog/BlogData'
+import {BlogData} from './BlogData'
 // Import BlogCard
-import BlogCard from '../Blog/BlogCard'
+import BlogCard from '../Blog/BlogCard' 
 // Import Blog Sidebar
 import Sidebar from '../Blog/Sidebar'
 // Import Icon
@@ -10,10 +10,6 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const index=()=> {
-  // BlogDatas Map
- const BlogDatas=(val, index)=>{
-  return <BlogCard  img={val.img} heading={val.heading} key={index} comment={val.comment} view={val.view}  category={val.category} date={val.data} para={val.para} button={val.button}/>
- }
  return (
   <>
   {/* Blog Area Start */}
@@ -22,7 +18,7 @@ const index=()=> {
             <div className="row">
                 <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                     <div className="blog-wrapper-blog-item">
-                      {BlogData.map(BlogDatas)}
+                      {BlogData.map((data, index)=>(<BlogCard data={data}  key={index} />))}
                       <div className="pagantion-area">
                         <ul>
                           <li><i><MdKeyboardArrowLeft/></i></li>

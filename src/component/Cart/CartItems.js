@@ -9,16 +9,16 @@ const CartItems = (props) => {
          <td className="product-remove"><Link to="/#"><i><AiFillDelete/></i></Link>
          </td>
          <td className="product-thumb">
-         <img src={props.img} alt="img" />
+         <img src={props.data.img} alt="img" />
+         </td> 
+         <td className="product-name">{props.data.name}
          </td>
-         <td className="product-name">{props.name}
-         </td>
-         <td className="product-price">£{props.price}</td>
+         <td className="product-price">£{props.data.price}</td>
          <td className="product-quantity">
-         <label>{props.quantity}</label>
+         <label>{props.data.quantity}</label>
          <input min="1" max="100" type="number" />
          </td>
-         <td className="product-total">£{props.total}</td>
+         <td className="product-total">£{props.data.total}</td>
          </tr>
   </>
  )

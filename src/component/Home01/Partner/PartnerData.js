@@ -4,7 +4,7 @@ import logo3 from '../../../assets/img/logo/3.png'
 import logo4 from '../../../assets/img/logo/4.png'
 import logo5 from '../../../assets/img/logo/5.png'
 
-const ParthnerData =[
+export const ParthnerData =[
  {
   img:logo1
  },
@@ -23,4 +23,3 @@ const ParthnerData =[
 
  ];
 
- export default ParthnerData

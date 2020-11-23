@@ -1,6 +1,6 @@
 import img1 from '../../assets/img/comment/1.png'
 
-const CommentData=[
+export const CommentData=[
  {
   img:img1,
   name:"Aysha Rane",
@@ -8,7 +8,7 @@ const CommentData=[
   para:"Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at. turpis.",
   replay:"Replay",
   report:"Report"
-  },
+  }, 
   {
    img:img1,
    name:"Aysha Rane",
@@ -26,5 +26,3 @@ const CommentData=[
     report:"Report"
     }
 ]
-
-export default CommentData

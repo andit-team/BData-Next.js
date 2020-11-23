@@ -2,7 +2,7 @@ import img1 from '../../../assets/img/work-process/1.png'
 import img2 from '../../../assets/img/work-process/2.png'
 import img3 from '../../../assets/img/work-process/3.png'
 
-const WorkProcessData =[
+export const WorkProcessData =[
 {
  img:img1,
  heading:"Collect Business Data",
@@ -22,4 +22,3 @@ const WorkProcessData =[
  button:"Read More..."
 }
 ]
-export default WorkProcessData

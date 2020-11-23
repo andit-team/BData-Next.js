@@ -5,7 +5,7 @@ import Icon4 from '../../../assets/img/service/4.png'
 import Icon5 from '../../../assets/img/service/5.png'
 import Icon6 from '../../../assets/img/service/6.png'
 
-const OurServiceData = [
+export const OurServiceData = [
 {
  img:Icon1,
  heading:"Data Science",
@@ -43,5 +43,3 @@ const OurServiceData = [
  button:"Read More ..."
 }
 ]
-
-export default OurServiceData

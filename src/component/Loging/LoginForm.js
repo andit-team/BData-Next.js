@@ -1,4 +1,7 @@
 import React from 'react'
+// Import Input
+import FormInput from "../From/index";
+// Import Icons
 import { AiOutlineGooglePlus } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -12,7 +15,7 @@ const LoginForm = () => {
 			<div className="row">
 				<div className="col-lg-12">
 					<div className="login-area">
-						<div className="login-form-arae">
+						<div className="login-form-arae"> 
 							<div className="form-area-heading text-center">
 								<h3>Login To Your Account!</h3>
 								<p>With your social network.</p>
@@ -28,14 +31,22 @@ const LoginForm = () => {
 							<form action="#">
 								<div className="row">
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
-										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Username or email" />
-										</div>
+										<FormInput
+											tag={'input'}
+											type={'text'}
+											name={'User_name'}
+											classes={'form-control'}
+											placeholder={'Username or email'}
+											/>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
-										<div className="form-group">
-											<input type="password" className="form-control" placeholder="Password" />
-										</div>
+										<FormInput
+											tag={'input'}
+											type={'password'}
+											name={'User_name'}
+											classes={'form-control'}
+											placeholder={'Password'}
+											/>
 									</div>
 									<div className="col-lg-6 col-md-6 col-sm-12 col-12">
 										<div className="agree-label">
@@ -50,7 +61,10 @@ const LoginForm = () => {
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="login-button">
-											<button type="submit" className="btn btn-theme">Log In Now</button>
+											<FormInput
+															tag={'button'}
+															val={'Log In Now'}
+													/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">

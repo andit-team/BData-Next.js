@@ -1,5 +1,5 @@
 import React from 'react'
-import PartnerData from '../Partner/PartnerData'
+import {ParthnerData} from './PartnerData'
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -22,10 +22,6 @@ const Partner=()=> {
         },
       }
 
- const DatasMap=(val, index)=>{
-  return  <Link to="/#" key={index}><img src={val.img} alt="img" /></Link>
- }
- 
  return (
   <>
      <section id="partner">
@@ -38,7 +34,7 @@ const Partner=()=> {
                     <div className="logo-area">
                         <div className="slider-logo">
                         <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} items={5}  loop={true} margin={10} nav={false} dots={false}>
-                        {PartnerData.map(DatasMap)}
+                        {ParthnerData.map((data, index)=>(<Link to="/#" key={index}><img src={data.img} alt="img" /></Link>))}
                         </OwlCarousel>                
                         </div>
                     </div>

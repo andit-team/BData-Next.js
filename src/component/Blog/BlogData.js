@@ -1,9 +1,7 @@
 import img1 from '../../assets/img/blog/post1.jpg'
 
-import side1 from '../../assets/img/blog/recent-post/1.png'
 
-
-const BlogData =[
+export const BlogData =[
 {
  img:img1,
  heading:"Check out the best themes of the last year",
@@ -50,4 +48,4 @@ const BlogData =[
  button:"Read More.."
 }
 ]
-export default BlogData
+

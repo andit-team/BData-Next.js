@@ -10,14 +10,12 @@ import { MdRssFeed } from "react-icons/md";
 import { AiOutlineGooglePlus } from "react-icons/ai";
 // import Component
 import ReplayForm from '../BlogDetails/ReplayForm'
-import CommentData from '../BlogDetails/CommentData'
+import {CommentData} from '../BlogDetails/CommentData'
 import Comments from '../BlogDetails/Comments'
 import AuthorPost from '../BlogDetails/AuthorPost'
 
 const DetailsContent = () => {
-    const CommentsDatas=(val, index)=>{
-      return <Comments key={index} img={val.img} name={val.name} time={val.time} para={val.para} replay={val.replay} report={val.report} />
-    }
+ 
  return (
   <>
   {/* Blog Details Area Start */}
@@ -92,7 +90,7 @@ const DetailsContent = () => {
             </div>
             <div className="media-public ">
             <ul>
-            {CommentData.map(CommentsDatas)}
+            {CommentData.map((data, index)=>(<Comments data={data} key={index} />))}
             </ul>
             </div>
             </div>

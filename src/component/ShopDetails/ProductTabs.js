@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react' 
 // Import Components
 import ProductReview from '../ShopDetails/ProductReview'
-import ProductReviewData from '../ShopDetails/ProductReviewData'
+import {ProductReviewData} from '../ShopDetails/ProductReviewData'
 
 const ProductTabs = () => {
  const ProductDatas=(val, index)=>{

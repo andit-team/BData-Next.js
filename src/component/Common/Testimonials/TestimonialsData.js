@@ -1,7 +1,7 @@
 import img1 from '../../../assets/img/testimonial/1.png'
 import img2 from '../../../assets/img/testimonial/2.png'
 
-const TestData = [
+export const TestData = [
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img1,
@@ -23,7 +23,7 @@ const TestData = [
  {
   para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Lorem Ipsum is simply dummy text.",
   img:img2,
-  name:"Hero Alome",
+  name:"Hero Alome", 
  des:"CEO, OPL Company"
  },
  {
@@ -39,4 +39,3 @@ const TestData = [
   des:"CEO, MAL Company"
  },
 ]
-export default TestData;

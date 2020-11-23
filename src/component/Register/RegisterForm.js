@@ -1,4 +1,6 @@
 import React from 'react'
+// Import Input
+import FormInput from "../From/index";
 // Import Icons
 import { AiOutlineGooglePlus } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
@@ -31,32 +33,57 @@ const RegisterForm = () => {
 								<div className="row">
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="form-group">
-											<input type="text" className="form-control" placeholder="First Name" />
+										<FormInput
+											tag={'input'}
+											type={'text'}
+											name={'first_name'}
+											classes={'form-control'}
+											placeholder={'First Name'}
+											/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Last Name" />
+											<FormInput
+											tag={'input'}
+											type={'text'}
+											name={'last_name'}
+											classes={'form-control'}
+											placeholder={'Last Name'}
+											/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Enter Your Username" />
+											<FormInput
+											tag={'input'}
+											type={'text'}
+											name={'email'}
+											classes={'form-control'}
+											placeholder={'Email Address'}
+											/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Email Address" />
+										<FormInput
+											tag={'input'}
+											type={'password'}
+											name={'password'}
+											classes={'form-control'}
+											placeholder={'Password'}
+											/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="form-group">
-											<input type="password" className="form-control" placeholder="Password" />
-										</div>
-									</div>
-									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
-										<div className="form-group">
-											<input type="password" className="form-control" placeholder="confrim Password" />
+										<FormInput
+											tag={'input'}
+											type={'password'}
+											name={'confrim_password'}
+											classes={'form-control'}
+											placeholder={'Confrim Password'}
+											/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-6 col-sm-12 col-12">
@@ -75,7 +102,10 @@ const RegisterForm = () => {
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
 										<div className="login-button">
-											<button type="submit" className="btn btn-theme">Register Account</button>
+											<FormInput
+															tag={'button'}
+															val={'Register Account'}
+													/>
 										</div>
 									</div>
 									<div className="col-lg-12 col-md-12 col-sm-12 col-12">
