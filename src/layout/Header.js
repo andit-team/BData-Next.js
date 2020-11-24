@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import logos from '../assets/img/logo.png'
-import { AiOutlineDown } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import {MenuData} from './MenuData'
+import NavItem from './NavItems'
 
 
 
@@ -32,9 +33,16 @@ const Header=()=> {
                         <img src={logos} className="black-logo" alt="logo" />
                     </Link>
                     <div className=" mean-menu" id="navbarSupportedContent">
-                        <ul className="navbar-nav">
+                    <ul className="navbar-nav">
+                        {
+                            MenuData.map((item, index)=>(
+                                <NavItem item={item} key={index}/>
+                            ))
+                        }
+                        </ul>
+                        {/* <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link active">Home </Link>
+                                <Link to="/" className="nav-link active">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="#!" className="nav-link">
@@ -143,7 +151,8 @@ const Header=()=> {
                                     </li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> */}
+
                         <div className="other-option">
                             <Link className="btn btn-theme" to="/contact">
                                 Contact Us
