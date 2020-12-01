@@ -21,7 +21,7 @@ const Header=()=> {
         }
         setClick(!click);        
     } 
-
+    
  return (
   <>
     <div className="navbar-area">
@@ -40,118 +40,6 @@ const Header=()=> {
                             ))
                         }
                         </ul>
-                        {/* <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="#!" className="nav-link">
-                                    Services
-                                    <i><AiOutlineDown/></i>
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li className="nav-item">
-                                        <Link to="/service" className="nav-link">
-                                            Servive
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/servicedetails" className="nav-link">
-                                            Service-Details
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/about" className="nav-link">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="#!" className="nav-link">
-                                    Project
-                                    <i><AiOutlineDown/></i>
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li className="nav-item">
-                                        <Link to="/project" className="nav-link">
-                                            Project
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/projectdetails" className="nav-link">
-                                            Project Details
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="#!" className="nav-link">
-                                    Blog
-                                    <i><AiOutlineDown/></i>
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li className="nav-item">
-                                        <Link to="/blog" className="nav-link">
-                                            Blog Grid
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/blogdetails" className="nav-link">
-                                            Blog Details
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="#!" className="nav-link">
-                                    Pages
-                                    <i><AiOutlineDown/></i>
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li className="nav-item">
-                                        <Link to="/shop" className="nav-link">
-                                            Shop
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/shopdetails" className="nav-link">
-                                        Single Products
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/cart" className="nav-link">
-                                        Cart
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/checkout" className="nav-link">
-                                        Checkout
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/login" className="nav-link">
-                                            Login
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/contact" className="nav-link">
-                                            Contact Us
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/faqs" className="nav-link">
-                                            FAQ
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/error" className="nav-link">
-                                            404 Error
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul> */}
 
                         <div className="other-option">
                             <Link className="btn btn-theme" to="/contact">

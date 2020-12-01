@@ -5,7 +5,27 @@ import logo from '../assets/img/logo.png'
 import { ImLocation } from 'react-icons/im';
 import { FiPhoneOutgoing } from 'react-icons/fi';
 import { SiMinutemailer } from 'react-icons/si';
-
+ 
+const FooterItems=[
+    {
+        title:"Usefull Links",
+        links: [
+          { linkTitle: "Home", link: "/" },
+          { linkTitle: "Faqs", link: "/faqs" },
+          { linkTitle: "Shop", link: "/shop" },
+          { linkTitle: "News", link: "/blog" },
+        ],
+    },
+    {
+        title:"Services",
+        links: [
+          { linkTitle: "About", link: "/about" },
+          { linkTitle: "Service", link: "/service" },
+          { linkTitle: "Contact Us", link: "/contact" },
+          { linkTitle: "News", link: "/blog" },
+        ],
+    }
+]
 
 const Footer=()=> {
  return (
@@ -22,37 +42,22 @@ const Footer=()=> {
                         </p>
                     </div>
                 </div>
-                <div className="col-lg-2 col-md-6 col-sm-6 col-6">
-                   <div className="footer-list-wedget pl20 single-item-mt-3 responsive-mt-60">
-                       <div className="fooote-heading">
-                           <h5>Usefull Links</h5>
-                       </div>
-                       <div className="footer-list pt40">
-                           <ul>
-                               <li><Link to="/">Home </Link></li>
-                               <li><Link to="/faqs"> Faqs</Link></li>
-                               <li><Link to="/shop"> Shop</Link></li>
-                               <li><Link to="/blog"> News</Link></li>
-                           </ul>
-                          
-                       </div>
-                   </div>
-                </div>
-                <div className="col-lg-2 col-md-6 col-sm-6 col-6">
-                    <div className="footer-list-wedget pl20 single-item-mt-3 responsive-mt-60">
-                        <div className="fooote-heading">
-                            <h5>Services</h5>
+                {FooterItems.map((item, key)=>(
+                           <div className="col-lg-2 col-md-6 col-sm-6 col-6" key={key}>
+                           <div className="footer-list-wedget pl20 single-item-mt-3 responsive-mt-60">
+                               <div className="fooote-heading">
+                                   <h5>{item.title}</h5>
+                            </div>
+                               <div className="footer-list pt40">
+                                   <ul>
+                                       {item.links.map((flinks, key)=>(
+                                           <li key={key}><Link to={flinks.link}>{flinks.linkTitle}</Link></li>
+                                       ))}
+                                   </ul>
+                               </div>
+                           </div>
                         </div>
-                        <div className="footer-list pt40">
-                           <ul>
-                               <li><Link to="/about">About</Link></li>
-                               <li><Link to="/service">Service</Link></li>
-                               <li><Link to="/contact"> Contact Us</Link></li>
-                               <li><Link to="/blog"> News</Link></li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
+                ))}
                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="footer-list-wedget pl20 responsive-mt-60">
                         <div className="fooote-heading">
@@ -76,7 +81,7 @@ const Footer=()=> {
             </div>
         </div>
         <div className="footer-bottom-img">
-               <img src={shap} alt="img" />
+            <img src={shap} alt="img" />
         </div>
     </footer>
   </>

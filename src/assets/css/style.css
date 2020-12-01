@@ -3862,12 +3862,12 @@ color: #fff
     color: var(--main-theme-color);
 }
 
-#accordion .card-header,
-#accordion-5 .card-header,
-#accordion-1 .card-header,
-#accordion-2 .card-header,
-#accordion-3 .card-header,
-#accordion-4 .card-header {
+#accordion0 .card-header,
+#accordion1 .card-header,
+#accordion2 .card-header,
+#accordion3 .card-header,
+#accordion4 .card-header,
+#accordion5.card-header {
     padding: 25px 20px;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, .03);
@@ -3875,12 +3875,12 @@ color: #fff
     border: none;
 }
 
-#accordion .card,
-#accordion-5 .card,
-#accordion-1 .card,
-#accordion-2 .card,
-#accordion-3 .card,
-#accordion-4 .card {
+#accordion0 .card,
+#accordion1 .card,
+#accordion2 .card,
+#accordion3 .card,
+#accordion4 .card,
+#accordion5 .card {
     border: 0;
     border-radius: 0;
     padding-bottom: 30px;
