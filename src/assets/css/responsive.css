@@ -267,6 +267,9 @@
     .who-we-contant, .how-it-works-imgs,.core-area-wrapper{
         padding-top: 50px;
     }
+    .checkout-area-bg{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 768px) {

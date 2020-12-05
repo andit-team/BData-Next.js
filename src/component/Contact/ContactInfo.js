@@ -16,8 +16,8 @@ const ContactInfo = () => {
                                 <div className="media">
                                     <div className="icon-area"><i><MdPermPhoneMsg/></i></div>
                                     <div className="media-body contact-info-here">
-                                        <h5><Link to="/#">+0-123-456-789</Link></h5>
-                                        <h5><Link to="/#">+0-123-456-789</Link></h5>
+                                        <h5><a href="tel:+0-123-456-789">+0-123-456-789</a></h5>
+                                        <h5><a href="tel:+0-123-097-250">+0-123-456-789</a></h5>
                                     </div>
                                 </div>
                             </li>
@@ -33,8 +33,8 @@ const ContactInfo = () => {
                                 <div className="media">
                                     <div className="icon-area"> <i><BiMailSend/></i></div>
                                     <div className="media-body contact-info-here">
-                                        <h5><Link to="/#">info@mail.com</Link></h5>
-                                        <h5><Link to="/#">info@mail.com</Link></h5>
+                                        <h5><a href="mailto:info@mail.com">info@mail.com</a></h5>
+                                        <h5><a href="mailto:demo@mail.com">demo@mail.com</a></h5>
                                     </div>
                                 </div>
                             </li>

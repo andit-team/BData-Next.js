@@ -1,7 +1,7 @@
 
 /*
 /*
-@File: B-data Template Styles
+@File: B-data React Template Styles
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
@@ -798,7 +798,7 @@ section {
 
 .plamb-nav {
     background-color: transparent;
-    padding-top: 30px;
+    padding-top:15px;
     padding-bottom: 15px;
     padding-right: 0;
     padding-left: 0;
@@ -4567,7 +4567,7 @@ Blog Page
 
 .blog-search-option input {
     padding: 5px 15px;
-    width: 100%;
+    width: 87%;
     border: none;
     height: 56px;
     background: transparent;

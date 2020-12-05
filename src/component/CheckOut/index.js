@@ -15,7 +15,7 @@ const index = () => {
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                   <BillingInfo/>
                 </div>
-                <div className="col-md-6 col-sm-12 col-12">
+                <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                    <OrderInfo/>
                    <PaymentInfo/>
                 </div>

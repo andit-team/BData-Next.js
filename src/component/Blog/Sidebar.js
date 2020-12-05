@@ -121,7 +121,7 @@ const Sidebar = () => {
         <div className="left-blog-page box-shadow">
         <form action="#">
         <div className="blog-search-option">
-        <input type="text" className="form-control" placeholder="Search..." />
+        <input type="text" placeholder="Search..." />
         <button className="button" type="submit"> <i><BsSearch/></i>
         </button>
         </div>
@@ -131,10 +131,9 @@ const Sidebar = () => {
         <div className="left-blog">
         <h4>categories</h4>
         <ul>
-              {Category.map((data, index)=>(
-                  <li><Link to="/#">{data.list}</Link><span>{data.count}</span></li>
-              ))}
-        
+            {Category.map((data, index)=>(
+            <li key={index}><Link to="/#">{data.list}</Link><span>{data.count}</span></li>
+            ))}
         </ul>
         </div>
         </div>
@@ -143,20 +142,20 @@ const Sidebar = () => {
         <h4>recent post</h4>
         <div className="recent-post">
             {RecentPost.map((data, index)=>(
-                    <div className="recent-single-post" key={index}>
-                    <div className="post-img">
-                    <Link to="/#">
-                    <img src={data.img} alt="img" />
-                    </Link>
-                    </div>
-                    <div className="pst-content">
-                    <p><Link to="/#">{data.title}</Link>
-                    </p> 
-                    <span className="date-type">
-                      {data.date}
-                    </span>
-                    </div>
-                    </div>
+                <div className="recent-single-post" key={index}>
+                <div className="post-img">
+                <Link to="/#">
+                <img src={data.img} alt="img" />
+                </Link>
+                </div>
+                <div className="pst-content">
+                <p><Link to="/#">{data.title}</Link>
+                </p> 
+                <span className="date-type">
+                    {data.date}
+                </span>
+                </div>
+                </div>
             ))}
         </div>
         </div>
@@ -167,8 +166,7 @@ const Sidebar = () => {
         <h4>popular tags</h4>
         <ul>
             {PopularTags.map((data, index)=>(
-                  <li key={index}> <Link to={data.link}> {data.list}</Link>
-                  </li>
+                <li key={index}><Link to={data.link}>{data.list}</Link></li>
             ))}
         </ul>
         </div>

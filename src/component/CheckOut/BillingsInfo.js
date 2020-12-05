@@ -52,7 +52,7 @@ const BillingsInformation = () => {
                                             label="First name"
 											/>
                                     </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
+                                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div className="form-group">
                                         <FormInput
 											tag='input'
