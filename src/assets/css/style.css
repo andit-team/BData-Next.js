@@ -4554,7 +4554,7 @@ Blog Page
 }
 
 .right-side {
-    padding-left: 40px;
+    padding-left: 0px;
 }
 
 .blog-search-option {
@@ -4562,11 +4562,12 @@ Blog Page
     background: #fff;
     border: 1px solid var(--main-theme-color);
     border-radius: 3px;
+    position: relative;
 }
 
 .blog-search-option input {
     padding: 5px 15px;
-    width: 80%;
+    width: 100%;
     border: none;
     height: 56px;
     background: transparent;
@@ -4580,6 +4581,9 @@ Blog Page
 .blog-search-option button i {
     line-height: 16px;
     font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 22px;
 }
 
 .left-blog {

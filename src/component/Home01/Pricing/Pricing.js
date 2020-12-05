@@ -1,11 +1,11 @@
 import React from 'react'
-import Tab from "react-bootstrap/Tab";
-import Nav from "react-bootstrap/Nav";
-import { BsCheckBox } from "react-icons/bs";
+import Tab from "react-bootstrap/Tab"
+import Nav from "react-bootstrap/Nav"
 import SectionHeading from '../SectionHeading/SectionHeading'
-import { Link } from 'react-router-dom';
-
-
+import { Link } from 'react-router-dom'
+import {PricingData} from './PricingData'
+import { BsCheckBox } from "react-icons/bs" 
+ 
 const Pricing=()=> {
  return (
   <>
@@ -33,247 +33,60 @@ const Pricing=()=> {
                     <Tab.Pane eventKey="monthly">
                     <div>
                             <div className="row clearfix praent">
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block">
+                                {PricingData.map((data, index)=>(
+                                    <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block single-item-mt-2" key={index}>
                                     <div className="pricing-table box-shadow border-radius">
                                         <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$70</h2>
+                                           <h3>{data.title}</h3>
+                                            <h2>${data.price}</h2>
                                         </div>
                                         <div className="pricing-table-content">
                                             <ul>
-                                                <li>
-                                                 <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Business Prediction
-                                                </li>
+                                                {data.data.map((datas, index)=>(
+                                                    <li key={index}>
+                                                    <i><BsCheckBox/></i> {datas.list}
+                                                    </li>
+                                                ))}
+                                                
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
+                                                <Link className="btn btn-pricing" to="/#">{data.btn}</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block single-item-mt-2">
-                                    <div className="pricing-table box-shadow border-radius">
-                                        <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$60</h2>
-                                        </div>
-                                        <div className="pricing-table-content">
-                                            <ul>
-                                                <li>
-                                                <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Business Prediction
-                                                </li>
-                                            </ul>
-                                            <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block">
-                                    <div className="pricing-table box-shadow border-radius responsive-mt-30">
-                                        <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$80</h2>
-                                        </div>
-                                        <div className="pricing-table-content">
-                                            <ul>
-                                                <li>
-                                                <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li>
-                                                    <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                    <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                    <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li className="disabled">
-                                                    <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li className="disabled">
-                                                    <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li className="disabled">
-                                                    <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li className="disabled">
-                                                    <i><BsCheckBox/></i> Business Prediction
-                                                </li>
-                                            </ul>
-                                            <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="yearly">
                       <div>
-                            <div className="row  clearfix praent"> 
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block ">
+                      <div className="row clearfix praent"> 
+                                {PricingData.map((data, index)=>(
+                                    <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block single-item-mt-2" key={index}>
                                     <div className="pricing-table box-shadow border-radius">
                                         <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$10</h2>
+                                           <h3>{data.title}</h3>
+                                            <h2>${data.price}</h2>
                                         </div>
                                         <div className="pricing-table-content">
                                             <ul>
-                                                <li>
-                                                    <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li className="disabled">
-                                                   <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li className="disabled">
-                                                   <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li>
-                                                    <i className="icofont-tick-boxed "></i> Business Prediction
-                                                </li>
+                                                {data.data.map((datas, index)=>(
+                                                    <li key={index}>
+                                                    <i><BsCheckBox/></i> {datas.list}
+                                                    </li>
+                                                ))}
+                                                
                                             </ul>
                                             <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
+                                                <Link className="btn btn-pricing" to="/#">{data.btn}</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block single-item-mt-2">
-                                    <div className="pricing-table box-shadow border-radius">
-                                        <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$20</h2>
-                                        </div>
-                                        <div className="pricing-table-content">
-                                            <ul>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li>
-                                                <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li className="disabled">
-                                                   <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li className="disabled">
-                                                <i><BsCheckBox/></i> Business Prediction
-                                                </li>
-                                            </ul>
-                                            <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 pricing-block responsive-mt-30">
-                                    <div className="pricing-table box-shadow border-radius">
-                                        <div className="pricing-table-header">
-                                            <h3>Standard Package</h3>
-                                            <h2>$40</h2>
-                                        </div>
-                                        <div className="pricing-table-content">
-                                            <ul>
-                                                <li className="disabled">
-                                                  <i><BsCheckBox/></i> Unlimited Campaigns
-                                                </li>
-                                                <li >
-                                                  <i><BsCheckBox/></i> Basic Donor Data
-                                                </li>
-                                                <li>
-                                                  <i><BsCheckBox/></i> Team Fundraising
-                                                </li>
-                                                <li>
-                                                  <i><BsCheckBox/></i> Weekly Campaigns
-                                                </li>
-                                                <li className="disabled">
-                                                   <i><BsCheckBox/></i> Data Analysis
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Data Analytics
-                                                </li>
-                                                <li>
-                                                   <i><BsCheckBox/></i> Daily Report Delivery
-                                                </li>
-                                                <li className="disabled">
-                                                   <i><BsCheckBox/></i> Business Prediction
-                                                </li>
-                                            </ul>
-                                            <div className="pricing-table-btn text-center">
-                                                <Link className="btn btn-pricing" to="/#">BUY NOW</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
+                       
                         </div>
                       </Tab.Pane>
                     </Tab.Content>

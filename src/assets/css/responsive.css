@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 992px) {
+    .single-item-mt-2 {
+        margin-top: 30px;
+    }
     #about-us-area-home4 .row:nth-child(2){
         flex-direction: column-reverse;
     }
@@ -170,6 +173,7 @@
     }
     .right-side {
         padding-left: 0px;
+        margin-top: 30px;
     }
     .ps-informations {
         margin-top: 30px;
@@ -266,7 +270,10 @@
 }
 
 @media (max-width: 768px) {
-
+ 
+    .single-item-mt-2 {
+        margin-top: 30px;
+    }
     #banner-four {
         display: inherit;
         align-items: center;
@@ -406,9 +413,7 @@
     .single-item-mt-3 {
         margin-top: 60px;
     }
-    .single-item-mt-2 {
-        margin-top: 30px;
-    }
+  
     .blog-img a img {
         width: 100%;
     }

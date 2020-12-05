@@ -1,9 +1,117 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import { BsSearch } from "react-icons/bs"
 // Import Sidebar Img
 import side1 from '../../assets/img/blog/recent-post/1.png'
 import side2 from '../../assets/img/blog/recent-post/2.png'
 import side3 from '../../assets/img/blog/recent-post/3.png'
+
+
+const RecentPost=[
+     {
+      img:(side1),
+      title:"We offer professional Consultant services.",
+      date:" 26 Jan / 2018"
+      },
+      {
+      img:(side2),
+      title:"Montril is an firm and general group.",
+      date:" 26 Jan / 2018"
+      },
+      {
+      img:(side1),
+      title:"Business man always think positive.",
+      date:" 26 Jan / 2018"
+      },
+      {
+      img:(side3),
+      title:"Man can change business policy all time.",
+      date:" 26 Jan / 2018"
+      }
+]
+
+const Category=[
+  {
+      list:"Business",
+      link:"/#",
+      count:"23" 
+  },
+  {
+      list:"Agency",
+      link:"/#" ,
+      count:"25" 
+  },
+  {
+      list:"Media",
+      link:"/#" ,
+      count:"28" 
+  },
+  {
+      list:"Social",
+      link:"/#",
+      count:"45" 
+  },
+  {
+      list:"Photoshop",
+      link:"/#",
+      count:"53"  
+  },
+  {
+      list:"Seo",
+      link:"/#",
+      count:"82"  
+  },
+  {
+      list:"Development",
+      link:"/#",
+      count:"53"  
+  },
+  {
+      list:"Design",
+      link:"/#",
+      count:"45"  
+  }
+]
+
+const PopularTags=[
+    {
+      list:"Business",
+      link:"/#" 
+  },
+  {
+      list:"Agency",
+      link:"/#" 
+  },
+  {
+      list:"Media",
+      link:"/#"
+  },
+  {
+      list:"Social",
+      link:"/#" 
+  },
+  {
+      list:"Photoshop",
+      link:"/#"  
+  },
+  {
+      list:"Seo",
+      link:"/#"  
+  },
+  {
+      list:"Development",
+      link:"/#"  
+  },
+  {
+      list:"Design",
+      link:"/#"  
+  },
+  {
+      list:"Search",
+      link:"/#"  
+  }
+]
+
 
 const Sidebar = () => {
  return (
@@ -13,8 +121,8 @@ const Sidebar = () => {
         <div className="left-blog-page box-shadow">
         <form action="#">
         <div className="blog-search-option">
-        <input type="text" placeholder="Search..." />
-        <button className="button" type="submit"> <i className="fa fa-search"></i>
+        <input type="text" className="form-control" placeholder="Search..." />
+        <button className="button" type="submit"> <i><BsSearch/></i>
         </button>
         </div>
         </form>
@@ -23,20 +131,10 @@ const Sidebar = () => {
         <div className="left-blog">
         <h4>categories</h4>
         <ul>
-        <li><Link to="/#">Business</Link><span>12</span>
-        </li>
-        <li><Link to="/#">Agency </Link><span>17</span>
-        </li>
-        <li><Link to="/#">Media</Link><span>07</span>
-        </li>
-        <li><Link to="/#">Social</Link><span>21</span>
-        </li>
-        <li><Link to="/#">Photoshop</Link><span>14</span>
-        </li>
-        <li><Link to="/#">development</Link><span>10</span>
-        </li>
-        <li><Link to="/#">Design</Link><span>15</span>
-        </li>
+              {Category.map((data, index)=>(
+                  <li><Link to="/#">{data.list}</Link><span>{data.count}</span></li>
+              ))}
+        
         </ul>
         </div>
         </div>
@@ -44,60 +142,22 @@ const Sidebar = () => {
         <div className="left-blog">
         <h4>recent post</h4>
         <div className="recent-post">
-        <div className="recent-single-post">
-        <div className="post-img">
-        <Link to="/#">
-        <img src={side1} alt="img" />
-        </Link>
-        </div>
-        <div className="pst-content">
-        <p><Link to="/#">We offer professional Consultant services.</Link>
-        </p> <span className="date-type">
-        26 Jan / 2018
-        </span>
-        </div>
-        </div>
-        <div className="recent-single-post">
-        <div className="post-img">
-        <Link to="/#">
-        <img src={side2} alt="img" />
-        </Link>
-        </div>
-        <div className="pst-content">
-        <p><Link to="/#">Montril is an firm and general group.</Link>
-        </p> <span className="date-type">
-        20 June / 2018
-        </span>
-        </div>
-        </div>
-        <div className="recent-single-post">
-        <div className="post-img">
-        <Link to="/#">
-        <img src={side3} alt="img" />
-        </Link>
-        </div>
-        <div className="pst-content">
-        <p><Link to="/#">Business man always think positive.</Link>
-        </p> <span className="date-type">
-        26 Feb / 2018
-        </span>
-        </div>
-        </div>
-
-        <div className="recent-single-post">
-        <div className="post-img">
-        <Link to="/#">
-        <img src={side1} alt="img" />
-        </Link>
-        </div>
-        <div className="pst-content">
-        <p>
-        <Link to="/#">Man can change business policy all time.</Link>
-        </p> <span className="date-type">
-        13 Nov / 2018
-        </span>
-        </div>
-        </div>
+            {RecentPost.map((data, index)=>(
+                    <div className="recent-single-post" key={index}>
+                    <div className="post-img">
+                    <Link to="/#">
+                    <img src={data.img} alt="img" />
+                    </Link>
+                    </div>
+                    <div className="pst-content">
+                    <p><Link to="/#">{data.title}</Link>
+                    </p> 
+                    <span className="date-type">
+                      {data.date}
+                    </span>
+                    </div>
+                    </div>
+            ))}
         </div>
         </div>
         </div>
@@ -106,24 +166,10 @@ const Sidebar = () => {
         <div className="popular-tag left-side-tags left-blog">
         <h4>popular tags</h4>
         <ul>
-        <li> <Link to="/#"> Business </Link>
-        </li>
-        <li><Link to="/#">Agency </Link>
-        </li>
-        <li><Link to="/#">Media</Link>
-        </li>
-        <li><Link to="/#">Social</Link>
-        </li>
-        <li><Link to="/#">Photoshop</Link>
-        </li>
-        <li><Link to="/#">Seo</Link>
-        </li>
-        <li><Link to="/#">development</Link>
-        </li>
-        <li><Link to="/#">Search</Link>
-        </li>
-        <li><Link to="/#">Design</Link>
-        </li>
+            {PopularTags.map((data, index)=>(
+                  <li key={index}> <Link to={data.link}> {data.list}</Link>
+                  </li>
+            ))}
         </ul>
         </div>
         </div>

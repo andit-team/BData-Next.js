@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const BlogCard=(props)=> {
  return ( 
   <>
-   <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+   <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="blog-item single-item-mt-2">
                         <div className="blog-img">
                             <Link to="/blogdetails"><img src={props.data.img} alt="img" /></Link>

@@ -14,10 +14,10 @@ const index=()=> {
           items: 1,
         },
         600: {
-          items: 2,
+          items: 1,
         },
         960: {
-          items: 3,
+          items: 2,
         },
         1200: {
           items: 2,

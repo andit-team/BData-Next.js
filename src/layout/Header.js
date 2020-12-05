@@ -11,8 +11,6 @@ import NavItem from './NavItems'
 const Header=()=> {
     const [click, setClick] = useState(false);
 
-    const handleClose = () => document.querySelector("#navbarSupportedContent").classList.remove("d-block")
-
     const handleClick = () => {
         if(click) {
             document.querySelector("#navbarSupportedContent").classList.remove("d-block")
@@ -36,11 +34,10 @@ const Header=()=> {
                     <ul className="navbar-nav">
                         {
                             MenuData.map((item, index)=>(
-                                <NavItem item={item} key={index}/>
+                                <NavItem item={item} key={index} />
                             ))
                         }
                         </ul>
-
                         <div className="other-option">
                             <Link className="btn btn-theme" to="/contact">
                                 Contact Us
