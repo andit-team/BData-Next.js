@@ -2,11 +2,11 @@ import React from 'react'
 import Index from '../component/Loging/index'
 
 const Login = () => {
- return (
-  <>
-   <Index/>
-  </>
- )
+    return (
+        <>
+            <Index/>
+        </>
+    )
 }
 
 export default Login

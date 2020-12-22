@@ -1,97 +1,97 @@
-export const PricingData=[
-{
- title:"Standard Package",
- price:"70",
- data:[
-  {
-   list:"Unlimited Campaigns"
-  },
-  {
-   list:"Basic Donor Data"
-  },
-  {
+export const PricingData = [
+    {
+        title: "Standard Package",
+        price: "70",
+        data: [
+            {
+                list: "Unlimited Campaigns"
+            },
+            {
+                list: "Basic Donor Data"
+            },
+            {
 
-   list:"Team Fundraising"
-  },
-  {
-   list:"Weekly Campaigns"
-  },
-  {
-   list:"Data Analysis"
-  },
-  {
-   list:"Data Analytics"
-  },
-  {
-   list:"Daily Report Delivery"
-  },
-  {
-   list:"Business Prediction"
-  },
- ],
-btn:"BUY NOW"
-},
-{
- title:"Standard Package",
- price:"70",
- data:[
-  {
-   list:"Unlimited Campaigns"
-  },
-  {
-   list:"Basic Donor Data"
-  },
-  {
-   list:"Team Fundraising"
-  },
-  {
-   list:"Weekly Campaigns"
-  },
-  {
-   list:"Data Analysis"
-  },
-  {
-   list:"Data Analytics"
-  },
-  {
-   list:"Daily Report Delivery"
-  },
-  {
-   list:"Business Prediction"
-  },
- ],
-btn:"BUY NOW"
-},
-{
- title:"Standard Package",
- price:"70",
- data:[
-  {
-   list:"Unlimited Campaigns"
-  },
-  {
+                list: "Team Fundraising"
+            },
+            {
+                list: "Weekly Campaigns"
+            },
+            {
+                list: "Data Analysis"
+            },
+            {
+                list: "Data Analytics"
+            },
+            {
+                list: "Daily Report Delivery"
+            },
+            {
+                list: "Business Prediction"
+            },
+        ],
+        btn: "BUY NOW"
+    },
+    {
+        title: "Standard Package",
+        price: "70",
+        data: [
+            {
+                list: "Unlimited Campaigns"
+            },
+            {
+                list: "Basic Donor Data"
+            },
+            {
+                list: "Team Fundraising"
+            },
+            {
+                list: "Weekly Campaigns"
+            },
+            {
+                list: "Data Analysis"
+            },
+            {
+                list: "Data Analytics"
+            },
+            {
+                list: "Daily Report Delivery"
+            },
+            {
+                list: "Business Prediction"
+            },
+        ],
+        btn: "BUY NOW"
+    },
+    {
+        title: "Standard Package",
+        price: "70",
+        data: [
+            {
+                list: "Unlimited Campaigns"
+            },
+            {
 
-   list:"Basic Donor Data"
-  },
-  {
-   list:"Team Fundraising"
-  },
-  {
-   list:"Weekly Campaigns"
-  },
-  {
-   list:"Data Analysis"
-  },
-  {
-   list:"Data Analytics"
-  },
-  {
-   list:"Daily Report Delivery"
-  },
-  {
-   list:"Business Prediction"
-  },
- ],
-btn:"BUY NOW"
-}
+                list: "Basic Donor Data"
+            },
+            {
+                list: "Team Fundraising"
+            },
+            {
+                list: "Weekly Campaigns"
+            },
+            {
+                list: "Data Analysis"
+            },
+            {
+                list: "Data Analytics"
+            },
+            {
+                list: "Daily Report Delivery"
+            },
+            {
+                list: "Business Prediction"
+            },
+        ],
+        btn: "BUY NOW"
+    }
 ]

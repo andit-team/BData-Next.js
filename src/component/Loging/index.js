@@ -3,13 +3,13 @@ import React from 'react'
 import LoginForm from '../Loging/LoginForm'
 
 const index = () => {
- return (
-  <>
-  {/* Login Area Start */}
-  <LoginForm/>
-    {/* Login Area End */}
-  </>
- )
+    return (
+        <>
+            {/* Login Area Start */}
+            <LoginForm/>
+            {/* Login Area End */}
+        </>
+    )
 }
 
 export default index
