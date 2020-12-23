@@ -115,7 +115,7 @@ const PopularTags = [
 
 const Sidebar = () => {
     return (
-        <>
+        <div className="col-lg-4 col-md-12 col-sm-12 col-12">
             {/* Sidebar Area Start */}
             <div className="left-head-blog right-side">
                 <div className="left-blog-page box-shadow">
@@ -172,7 +172,7 @@ const Sidebar = () => {
                 </div>
             </div>
             {/* Sidebar Area Start */}
-        </>
+        </div>
     )
 }
 

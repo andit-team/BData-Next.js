@@ -11,7 +11,7 @@ const ProjectCard = (props) => {
                         <img src={props.data.img} alt="img"/>
                     </div>
                     <div className="project-grid-content">
-                        <h5><Link to="/projectdetails">{props.data.title}</Link></h5>
+                        <h5><Link to="/project_details">{props.data.title}</Link></h5>
                     </div>
                 </div>
             </div>

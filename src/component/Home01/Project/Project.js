@@ -36,37 +36,37 @@ const Project = (props) => {
                                 <div className="work-item">
                                     <img src={img1} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
                                 <div className="work-item">
                                     <img src={img2} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
                                 <div className="work-item">
                                     <img src={img4} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
                                 <div className="work-item">
                                     <img src={img2} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
                                 <div className="work-item">
                                     <img src={img1} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
                                 <div className="work-item">
                                     <img src={img5} alt="img"/>
                                     <div className="overlay-arae">
-                                        <Link to="/projectdetails"> <i><BsArrowRight/></i></Link>
+                                        <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                                     </div>
                                 </div>
 

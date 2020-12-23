@@ -24,7 +24,7 @@ import Error from '../src/page/Error'
 // Scroll Top 
 import ScrollToTop from "./helpers/ScrollToTop";
 
-// LayOut Component
+// Layout Component
 import Header from '../src/layout/Header'
 import Footer from '../src/layout/Footer'
 import Cta from '../src/layout/Cta'
@@ -41,19 +41,19 @@ const App = () => {
                         <Switch>
                             <Route path='/' exact component={Home}/>
                             <Route path='/service' exact component={Service}/>
-                            <Route path='/servicedetails' exact component={ServiceDetails}/>
+                            <Route path='/service_details' exact component={ServiceDetails}/>
                             <Route path='/about' exact component={About}/>
                             <Route path='/project' exact component={Project}/>
-                            <Route path='/projectdetails' exact component={ProjectDetails}/>
+                            <Route path='/project_details' exact component={ProjectDetails}/>
                             <Route path='/blog' exact component={Blog}/>
-                            <Route path='/blogdetails' exact component={BlogDetails}/>
+                            <Route path='/blog_details' exact component={BlogDetails}/>
                             <Route path='/shop' exact component={Shop}/>
-                            <Route path='/shopdetails' exact component={ShopDetails}/>
+                            <Route path='/shop_details' exact component={ShopDetails}/>
                             <Route path='/cart' exact component={Cart}/>
                             <Route path='/checkout' exact component={CheckOut}/>
                             <Route path='/login' exact component={Login}/>
                             <Route path='/register' exact component={Register}/>
-                            <Route path='/resetpassword' exact component={ResetPassword}/>
+                            <Route path='/reset_password' exact component={ResetPassword}/>
                             <Route path='/contact' exact component={Contact}/>
                             <Route path='/faqs' exact component={Faqs}/>
                             <Route exact component={Error}/>

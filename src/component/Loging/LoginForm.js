@@ -59,7 +59,7 @@ const LoginForm = () => {
                                             </div>
                                             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                                                 <div className="pasword-remamber text-right">
-                                                    <Link className="forget" to="/resetpassword">Forgot my
+                                                    <Link className="forget" to="/reset_password">Forgot my
                                                         password?</Link>
                                                 </div>
                                             </div>

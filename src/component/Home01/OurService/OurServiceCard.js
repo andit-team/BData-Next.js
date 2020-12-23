@@ -9,9 +9,9 @@ function OurServiceCard(props) {
                 <div className="service-box animation-trnslate box-shadow border-radius">
                     <div className="service-box-inner text-center">
                         <img src={props.data.img} alt="img"/>
-                        <h3><Link to="/servicedetails">{props.data.heading}</Link></h3>
+                        <h3><Link to="/service_details">{props.data.heading}</Link></h3>
                         <p>{props.data.paragraph}</p>
-                        <Link to="/servicedetails">{props.data.button}</Link>
+                        <Link to="/service_details">{props.data.button}</Link>
                     </div>
                 </div>
             </div>

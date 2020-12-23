@@ -9,7 +9,7 @@ import Sidebar from '../Blog/Sidebar'
 import {MdKeyboardArrowLeft} from "react-icons/md";
 import {MdKeyboardArrowRight} from "react-icons/md";
 
-const index = () => {
+const Blogs = () => {
     return (
         <>
             {/* Blog Area Start */}
@@ -43,4 +43,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Blogs

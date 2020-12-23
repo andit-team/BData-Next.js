@@ -16,7 +16,7 @@ export const MenuData = [
             },
             {
                 name: "Service-Details",
-                href: "/servicedetails",
+                href: "/service_details",
                 has_children: false,
             }
         ]
@@ -38,7 +38,7 @@ export const MenuData = [
             },
             {
                 name: "Project Details",
-                href: "/projectdetails",
+                href: "/project_details",
                 has_children: false,
             }
         ]
@@ -55,7 +55,7 @@ export const MenuData = [
             },
             {
                 name: "Blog Details",
-                href: "/blogdetails",
+                href: "/blog_details",
                 has_children: false,
             }
         ]
@@ -72,7 +72,7 @@ export const MenuData = [
             },
             {
                 name: "Single Products",
-                href: "/shopdetails",
+                href: "/shop_details",
                 has_children: false,
             },
             {

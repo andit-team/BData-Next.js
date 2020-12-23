@@ -28,7 +28,7 @@ const Index = () => {
                                         suscipit
                                         cumque, aperiam necessitatibus, aliquid qui nisi voluptatem
                                         est.
-                                    </p> <Link to="/servicedetails" className="btn btn-theme">Get Started Project</Link>
+                                    </p> <Link to="/service_details" className="btn btn-theme">Get Started Project</Link>
                                     <Link to="/contact" className="btn btn-theme">Contact With Us</Link>
                                 </div>
                             </div>

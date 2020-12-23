@@ -14,10 +14,10 @@ const DetailsCard = () => {
                             <div className="service-box box-shadow border-radius">
                                 <div className="service-box-inner text-center">
                                     <img src={Icon1} alt="img"/>
-                                    <h3><Link to="/servicedetails">Data Science</Link></h3>
+                                    <h3><Link to="/service_details">Data Science</Link></h3>
                                     <p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod
                                         tempor
-                                        incididunt.</p> <Link to="/servicedetails">Read More ...</Link>
+                                        incididunt.</p> <Link to="/service_details">Read More ...</Link>
                                 </div>
                             </div>
                         </div>
@@ -25,10 +25,10 @@ const DetailsCard = () => {
                             <div className="service-box box-shadow border-radius">
                                 <div className="service-box-inner text-center">
                                     <img src={Icon2} alt="img"/>
-                                    <h3><Link to="/servicedetails">Machine Learning</Link></h3>
+                                    <h3><Link to="/service_details">Machine Learning</Link></h3>
                                     <p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod
                                         tempor
-                                        incididunt.</p> <Link to="/servicedetails">Read More ...</Link>
+                                        incididunt.</p> <Link to="/service_details">Read More ...</Link>
                                 </div>
                             </div>
                         </div>
@@ -36,10 +36,10 @@ const DetailsCard = () => {
                             <div className="service-box box-shadow border-radius">
                                 <div className="service-box-inner text-center">
                                     <img src={Icon3} alt="img"/>
-                                    <h3><Link to="/servicedetails">Artificial Intelligence</Link></h3>
+                                    <h3><Link to="/service_details">Artificial Intelligence</Link></h3>
                                     <p>Lorem ipsum dolor sit amet, sed nom consectetur adipiscing elit, sed do eiusmod
                                         tempor
-                                        incididunt.</p><Link to="/servicedetails">Read More ...</Link>
+                                        incididunt.</p><Link to="/service_details">Read More ...</Link>
                                 </div>
                             </div>
                         </div>
