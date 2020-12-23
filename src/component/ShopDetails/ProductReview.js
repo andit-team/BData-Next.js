@@ -19,7 +19,7 @@ const ProductReview = (props) => {
                             <Link to="/#">{props.report}</Link>
                         </div>
                     </div>
-                    <div className="media-pragraph">
+                    <div className="media-paragraph">
                         <p>{props.comment}</p>
                     </div>
                 </div>

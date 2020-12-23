@@ -1210,7 +1210,7 @@ section {
 @media only screen and (max-width: 991px){
     .plamb-responsive-nav {
         display: block;
-    }  
+    }
     .navbar-nav{
         display: block;
     }
@@ -1244,7 +1244,7 @@ section {
     .responsive-button{
         font-size: 36px;
     }
-    
+
 }
 /* Responsive Menu */
 .my-masonry-grid {
@@ -1258,7 +1258,7 @@ section {
     padding-left: 30px; /* gutter size */
     background-clip: padding-box;
   }
-  
+
   /* Style your items */
   .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
     margin-bottom: 30px;
@@ -1426,14 +1426,14 @@ section {
     position: relative;
     z-index: 9999;
 }
-.animation-trnslate{
+.animation-translate{
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
     -moz-transition: .4s all ease-in-out;
     -ms-transition: .4s all ease-in-out;
     -o-transition: .4s all ease-in-out;
 }
-.animation-trnslate:hover{
+.animation-translate:hover{
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -1472,15 +1472,15 @@ section {
 
 /* --About  Area Start-- */
 
-.about-detauls ul li {
+.about-details ul li {
     padding-bottom: 20px;
 }
 
-.about-detauls ul li:last-child {
+.about-details ul li:last-child {
     padding: 0;
 }
 
-.about-detauls ul li img {
+.about-details ul li img {
     padding-right: 10px;
 }
 
@@ -1878,37 +1878,37 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
-.row.clearfix.praent .pricing-block:nth-child(1) .pricing-table .pricing-table-header {
+.row.clearfix.parent  .pricing-block:nth-child(1) .pricing-table .pricing-table-header {
     background-image: -webkit-gradient(linear, left top, right top, from(#7667f8), to(#9185fb));
     background-image: -o-linear-gradient(left, #7667f8, #9185fb);
     background-image: linear-gradient(to right, #7667f8, #9185fb);
 }
 
-.praent .pricing-block:nth-child(1) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
+.parent  .pricing-block:nth-child(1) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
     background-image: -webkit-gradient(linear, left top, right top, from(#7667f8), color-stop(51%, #5fc3e4), to(#9185fb));
     background-image: -o-linear-gradient(left, #7667f8 0%, #5fc3e4 51%, #9185fb 100%);
     background-image: linear-gradient(to right, #7667f8 0%, #5fc3e4 51%, #9185fb 100%);
 }
 
-.row.clearfix.praent .pricing-block:nth-child(2) .pricing-table .pricing-table-header {
+.row.clearfix.parent  .pricing-block:nth-child(2) .pricing-table .pricing-table-header {
     background-image: -webkit-gradient(linear, left top, right top, from(#fe545f), to(#ff717a));
     background-image: -o-linear-gradient(left, #fe545f, #ff717a);
     background-image: linear-gradient(to right, #fe545f, #ff717a);
 }
 
-.praent .pricing-block:nth-child(2) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
+.parent  .pricing-block:nth-child(2) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
     background-image: -webkit-gradient(linear, left top, right top, from(#fe545f), color-stop(51%, #ff707959), to(#ff717a));
     background-image: -o-linear-gradient(left, #fe545f 0%, #ff707959 51%, #ff717a 100%);
     background-image: linear-gradient(to right, #fe545f 0%, #ff707959 51%, #ff717a 100%);
 }
 
-.row.clearfix.praent .pricing-block:nth-child(3) .pricing-table .pricing-table-header {
+.row.clearfix.parent  .pricing-block:nth-child(3) .pricing-table .pricing-table-header {
     background-image: -webkit-gradient(linear, left top, right top, from(#d260f6), to(#e38aff));
     background-image: -o-linear-gradient(left, #d260f6, #e38aff);
     background-image: linear-gradient(to right, #d260f6, #e38aff);
 }
 
-.praent .pricing-block:nth-child(3) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
+.parent  .pricing-block:nth-child(3) .pricing-table .pricing-table-content .pricing-table-btn .btn-pricing {
     background-image: -webkit-gradient(linear, left top, right top, from(#d260f6), color-stop(51%, #e389ffbf), to(#e38aff));
     background-image: -o-linear-gradient(left, #d260f6 0%, #e389ffbf 51%, #e38aff 100%);
     background-image: linear-gradient(to right, #d260f6 0%, #e389ffbf 51%, #e38aff 100%);
@@ -2168,14 +2168,14 @@ button:focus {
     box-shadow: 0px 0px 26px -20px #000;
 }
 
-.copy-icon ul li{ 
+.copy-icon ul li{
     display: inline-flex;
 }
 .copy-icon ul li a:hover{
     border: 2px solid transparent;
 }
 .copy-icon ul li a {
-   
+
     height: 40px;
     width: 40px;
     text-align: center;
@@ -2222,19 +2222,19 @@ button:focus {
   .copy-icon ul li a:hover:before {
     top: 0;
   }
-  
+
   .copy-icon ul li:nth-child(1) a:before{
     background: #3b5999;
   }
-  
+
   .copy-icon ul li:nth-child(2) a:before{
     background: #55acee;
   }
-  
+
   .copy-icon ul li:nth-child(3) a:before {
     background: #0077b5;
   }
-  
+
 /* .copy-icon a i:hover {
     background-color: var(--main-theme-color);
     color: #fff;
@@ -3443,11 +3443,11 @@ font-size: 20px;
         -ms-transform: translateX(10px);
         -o-transform: translateX(10px);
 }
-  
+
 }
 .work-process-divider::after{
     content: "\f061";
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     font-weight: 900; ;
     position: absolute;
     right: -30px;
@@ -4389,31 +4389,31 @@ Checkout Page
     width: 100%;
 }
 
-.payment_option .custome-radio {
+.payment_option .custom-radio {
     margin-bottom: 10px;
 }
 
-.custome-radio .form-check-input,
+.custom-radio .form-check-input,
 .custome-checkbox .form-check-input {
     display: none;
 }
 
-.payment_option .custome-radio .form-check-label {
+.payment_option .custom-radio .form-check-label {
     color: #292b2c;
     font-weight: 600;
 }
 
-.custome-radio .form-check-label,
-.custome-checkbox .form-check-label {
+.custom-radio .form-check-label,
+.custom-checkbox .form-check-label {
     position: relative;
     cursor: pointer;
 }
 
-.custome-radio input[type="radio"]:checked+.form-check-label::before {
+.custom-radio input[type="radio"]:checked+.form-check-label::before {
     border-color: var(--main-theme-color);
 }
 
-.custome-radio .form-check-label::before {
+.custom-radio .form-check-label::before {
     content: "";
     border: 1px solid #908f8f;
     height: 16px;
@@ -4424,11 +4424,11 @@ Checkout Page
     margin-right: 8px;
 }
 
-.custome-radio input[type="radio"]:checked+.form-check-label::after {
+.custom-radio input[type="radio"]:checked+.form-check-label::after {
     opacity: 1;
 }
 
-.custome-radio input[type="radio"]+.form-check-label::after {
+.custom-radio input[type="radio"]+.form-check-label::after {
     content: "";
     background-color: var(--main-theme-color);
     height: 10px;
@@ -4446,11 +4446,11 @@ Checkout Page
     margin-bottom: 0;
 }
 
-.payment_option .custome-radio:first-child .payment-text {
+.payment_option .custom-radio:first-child .payment-text {
     display: block;
 }
 
-.payment_option .custome-radio .form-check-label {
+.payment_option .custom-radio .form-check-label {
     color: #292b2c;
     font-weight: 600;
 }
@@ -4472,7 +4472,7 @@ Checkout Page
 Blog Page
 -----------------------------*/
 
-.blog-wedget {
+.blog-widget {
     padding: 20px 20px;
     margin-top: 50px;
 }
@@ -4486,11 +4486,14 @@ Blog Page
     margin-bottom: 30px;
 }
 
-.blog-wedget-img {
+.blog-widget-img {
     overflow: hidden;
 }
+.blog-widget-paragraph{
+    padding: 20px 0;
+}
 
-.blog-wedget-img img {
+.blog-widget-img img {
     width: 100%;
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
@@ -4499,7 +4502,7 @@ Blog Page
     -o-transition: .4s all ease-in-out;
 }
 
-.blog-wedget-img img:hover {
+.blog-widget-img img:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -4507,11 +4510,11 @@ Blog Page
     -o-transform: scale(1.2);
 }
 
-.blog-wedget-text {
+.blog-widget-text {
     padding-top: 20px;
 }
 
-.blog-wedget-author {
+.blog-widget-author {
     border-top: 1px solid #777c8742;
     border-bottom: 1px solid #777c8742;
     padding: 5px 0;
@@ -4714,13 +4717,13 @@ Blog Page
     color: #fff;
     background: var(--main-theme-color);
 }
-.pagantion-area ul{
+.pagination-area ul{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
-.pagantion-area ul li{
+.pagination-area ul li{
     background: #242f51;
     margin-right: 10px;
     width: 35px;
@@ -4736,11 +4739,11 @@ Blog Page
     -ms-transition: .4s all ease-in-out;
     -o-transition: .4s all ease-in-out;
 }
-.pagantion-area ul li:hover{
+.pagination-area ul li:hover{
     background-color: var(--main-theme-color);
     color: #fff;
 }
-.pagantion-area ul li.active{
+.pagination-area ul li.active{
     background-color: var(--main-theme-color) ;
     color: #fff;
 }
@@ -4750,7 +4753,7 @@ Blog Page
 Blog-Details Page
 -----------------------------*/
 
-.blog-wedget-paragraph h3 {
+.blog-widget-paragraph h3 {
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -4837,7 +4840,7 @@ Blog-Details Page
     margin-right: 10px;
 }
 
-.media-pragraph {
+.media-paragraph {
     padding-top: 10px;
 }
 
@@ -4859,12 +4862,10 @@ Blog-Details Page
 .media-public .post-share .replay {
     color: var(--main-theme-color);
 }
-
-.comment-arae-post {
+.comment-area-post{
     margin-top: 30px;
     padding: 20px;
 }
-
 .comment-area-heading h3 {
     font-weight: 700;
     padding: 20px;
@@ -4931,11 +4932,11 @@ Contact Page
     font-size: 16px;
 }
 
-.contact-form-arae {
+.contact-form-area {
     padding: 35px;
 }
 
-.contact-form-arae .form-control {
+.contact-form-area .form-control {
     border-radius: 0;
     border: 1px solid var(--main-theme-color);
     font-size: 14px;
@@ -5030,6 +5031,7 @@ Privacy-policy Page
     -moz-transition: .4s all ease;
     -ms-transition: .4s all ease;
     -o-transition: .4s all ease;
+    cursor: pointer;
 }
 
 .social-login-area button i {
@@ -5317,7 +5319,7 @@ Service Page
     margin-right: 20px;
 }
 
-.counter-arae {
+.counter-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

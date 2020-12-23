@@ -18,7 +18,7 @@ const index = () => {
                     <div className="row">
                         {ShopData.map(ShopDatas)}
                         <div className="col-lg-12 colmd-12">
-                            <div className="pagantion-area">
+                            <div className="pagination-area">
                                 <ul>
                                     <li><i><MdKeyboardArrowLeft/></i></li>
                                     <li className="active">1</li>

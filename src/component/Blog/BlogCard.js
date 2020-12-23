@@ -8,17 +8,17 @@ const BlogCard = (props) => {
     return (
         <>
             {/* Blog Card Area Strat */}
-            <div className="blog-wedget box-shadow">
-                <div className="blog-wedget-img">
+            <div className="blog-widget box-shadow">
+                <div className="blog-widget-img">
                     <Link to="/blog_details">
                         <img src={props.data.img} alt="img"/>
                     </Link>
                 </div>
-                <div className="blog-wedget-text">
-                    <div className="blog-wedget-heading">
+                <div className="blog-widget-text">
+                    <div className="blog-widget-heading">
                         <h2><Link to="/blog_details">{props.data.heading}</Link></h2>
                     </div>
-                    <div className="blog-wedget-author">
+                    <div className="blog-widget-author">
                         <div className="blog-author-view">
                             <ul>
                                 <li><Link to="/blog_details">{props.data.category}</Link>
@@ -35,10 +35,10 @@ const BlogCard = (props) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="blog-wedget-paragraph">
+                    <div className="blog-widget-paragraph">
                         <p>{props.data.para}</p>
                     </div>
-                    <div className="blog-wedget-button"><Link to="/blog_details"
+                    <div className="blog-widget-button"><Link to="/blog_details"
                                                               className="btn btn-theme">{props.data.button}</Link>
                     </div>
                 </div>

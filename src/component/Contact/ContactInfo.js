@@ -2,7 +2,6 @@ import React from 'react'
 import {MdPermPhoneMsg} from "react-icons/md";
 import {ImLocation2} from "react-icons/im";
 import {BiMailSend} from "react-icons/bi";
-import {Link} from 'react-router-dom';
 
 const ContactInfo = () => {
     return (

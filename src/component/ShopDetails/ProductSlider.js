@@ -10,7 +10,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const ProductSlider = () => {
 
 
-    let resposive = {
+    let responsive = {
         0: {
             items: 1,
         },
@@ -27,7 +27,7 @@ const ProductSlider = () => {
     return (
         <>
             {/* Slider Area Start */}
-            <OwlCarousel className="owl-theme" responsive={resposive} autoplay={true} autoplayHoverPause={true}
+            <OwlCarousel className="owl-theme" responsive={responsive} autoplay={true} autoplayHoverPause={true}
                          autoplayTimeout={2500} items={5} loop={true} margin={10} nav={false} dots={true}>
                 {ProductSliderData.map((data, index) => (<div className="shop-details-img" key={index}>
                     <img src={data.img} alt="img"/>

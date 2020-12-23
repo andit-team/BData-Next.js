@@ -1,6 +1,6 @@
 import React from 'react'
 // Import Section Heading
-import SectionHeading from '../../Home01/SectionHeading/SectionHeading'
+import SectionHeading from '../../Home/SectionHeading/SectionHeading'
 
 // Import TeamData
 import {TeamData} from '../Team/TeamData'

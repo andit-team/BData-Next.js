@@ -3,7 +3,7 @@ import React from 'react'
 const ReplayForm = () => {
  return (
   <>
-                           <div className="comment-arae-post box-shadow">
+                           <div className="comment-area-post box-shadow">
                             <div className="comment-area-heading">
                                 <h3>Leave a Reply</h3>
                             </div>

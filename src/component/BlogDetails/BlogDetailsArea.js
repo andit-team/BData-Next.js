@@ -1,10 +1,5 @@
 import React from 'react'
 
-// Import Sidebar
-import Sidebar from '../Blog/Sidebar'
-
-// Import Blog Details Content
-import DetailsContent from '../BlogDetails/DetailsContent'
 
 const BlogDetailsArea = props => {
     return (

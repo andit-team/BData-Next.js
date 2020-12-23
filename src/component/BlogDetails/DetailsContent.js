@@ -24,11 +24,11 @@ const DetailsContent = () => {
                     <div className="blog-details-img">
                         <img src={img1} alt="img"/>
                     </div>
-                    <div className="blog-wedget-text">
-                        <div className="blog-wedget-heading">
+                    <div className="blog-widget-text">
+                        <div className="blog-widget-heading">
                             <h2><a href="#!">Check out the best themes of the last year</a></h2>
                         </div>
-                        <div className="blog-wedget-author">
+                        <div className="blog-widget-author">
                             <div className="blog-author-view">
                                 <ul>
                                     <li><a href="#!">Software</a>
@@ -45,7 +45,7 @@ const DetailsContent = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="blog-wedget-paragraph">
+                        <div className="blog-widget-paragraph">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia eos a.
                                 Laborum reprehenderit animi magnam ipsam tenetur natus, similique earum cum, ut
                                 fugit distinctio dolores ad corporis doloribus consectetur.
@@ -84,7 +84,7 @@ const DetailsContent = () => {
                         <AuthorPost/>
                     </ul>
                 </div>
-                <div className="comment-arae-post box-shadow">
+                <div className="comment-area-post box-shadow">
                     <div className="comment-area-heading">
                         <h3>Comments (3)</h3>
                     </div>

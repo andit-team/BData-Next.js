@@ -4,7 +4,7 @@ import ProjectCard from '../Project/ProjectCard'
 // Import ProjectData
 import {ProjectData} from './ProjectData'
 
-const index = () => {
+const Projects = () => {
     return (
         <>
             {/* Project-Grid Start */}
@@ -20,4 +20,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Projects

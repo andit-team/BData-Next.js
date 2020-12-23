@@ -7,11 +7,11 @@ import CountUp from 'react-countup';
 const Index = () => {
     return (
         <>
-            <section id="counter-arae" className="py100 bg-color">
+            <section id="counter-area" className="py100 bg-color">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="counter-arae">
+                            <div className="counter-area">
                                 <div className="counter-icon">
                                     <i><AiOutlineUsergroupAdd/></i>
                                 </div>
@@ -23,7 +23,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="counter-arae responsive-md">
+                            <div className="counter-area responsive-md">
                                 <div className="counter-icon">
                                     <i><BiCodeAlt/></i>
                                 </div>
@@ -35,7 +35,7 @@ const Index = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="counter-arae responsive-sm">
+                            <div className="counter-area responsive-sm">
                                 <div className="counter-icon">
                                     <i><FaAward/></i>
                                 </div>

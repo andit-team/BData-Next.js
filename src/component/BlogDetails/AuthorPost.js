@@ -23,7 +23,7 @@ const AuthorPost = () => {
         <a href="#!" className="social-icon"><i><AiOutlineTwitter/></i></a>
         </div>
         </div>
-        <div className="media-pragraph">
+        <div className="media-paragraph">
         <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
         ante sollicitudin. Cras purus odio, vestibulum in vulputate at. turpis.
         </p>

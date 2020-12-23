@@ -19,7 +19,7 @@ const Comments = (props) => {
                             <Link to="/#" className="">{props.data.report}</Link>
                         </div>
                     </div>
-                    <div className="media-pragraph">
+                    <div className="media-paragraph">
                         <p>{props.data.para}</p>
                     </div>
                 </div>

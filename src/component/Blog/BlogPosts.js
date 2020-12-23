@@ -8,7 +8,7 @@ const BlogPosts = props => {
         <div className="col-lg-8 col-md-12 col-sm-12 col-12">
             <div className="blog-wrapper-blog-item">
                 {BlogData.map((data, index) => (<BlogCard data={data} key={index}/>))}
-                <div className="pagantion-area">
+                <div className="pagination-area">
                     <ul>
                         <li><i><MdKeyboardArrowLeft/></i></li>
                         <li className="active">1</li>

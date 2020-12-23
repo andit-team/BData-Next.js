@@ -12,8 +12,8 @@ const RelatedProduct = () => {
     }
     return (
         <>
-            {/* Related Area Strat */}
-            <section id="related-arae" className="pb100">
+            {/* Related Area Start */}
+            <section id="related-area" className="pb100">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">

@@ -1,16 +1,17 @@
 import React from 'react'
 import FormInput from "../From/index";
 
-const Contactform = () => {
+const ContactForm = () => {
     return (
         <>
-            <div className="contact-form-arae box-shadow">
+            <div className="contact-form-area box-shadow">
                 <form action="#">
                     <div className="row">
                         <div className="col-lg-6  col-md-12 col-sm-12 col-12">
                             <FormInput
                                 tag={'input'}
                                 type={'text'}
+                                name={'first_name'}
                                 name={'first_name'}
                                 classes={'form-control'}
                                 placeholder={'First Name *'}
@@ -61,4 +62,4 @@ const Contactform = () => {
     )
 }
 
-export default Contactform
+export default ContactForm

@@ -31,7 +31,7 @@ const ProductDetails = () => {
                                         <li><i><AiFillStar/></i>
                                         </li>
                                     </ul>
-                                    <h6>(2 Customar Review)</h6>
+                                    <h6>(2 Customer Review)</h6>
                                 </div>
                                 <h5>$25.00</h5>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore incidunt possimus
@@ -51,7 +51,7 @@ const ProductDetails = () => {
                                 </div>
                                 <div className="shop-catogory">
                                     <ul>
-                                        <li>Catagory:</li>
+                                        <li>Category:</li>
                                         <li className="items-product">Wallet</li>
                                     </ul>
                                 </div>
