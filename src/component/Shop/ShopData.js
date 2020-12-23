@@ -12,76 +12,76 @@ import img11 from '../../assets/img/shop/11.png'
 import img12 from '../../assets/img/shop/d-1.png'
 
 export const ShopData = [
- {
-  img:img1,
-  name:"Travel Bag",
-  price:200.00,
-  button:"Add TO CART"
- },
- {
-  img:img2,
-  name:"Mens T-Shirt",
-  price:150.00,
-  button:"Add TO CART"
- },
- {
-  img:img3,
-  name:"Polo T-Shirt",
-  price:120.00,
-  button:"Add TO CART"
- },
- {
-  img:img4,
-  name:"Mens T-Shirt",
-  price:60.00,
-  button:"Add TO CART"
- },
- {
-  img:img5,
-  name:"Women,s T-Shirt",
-  price:70.00,
-  button:"Add TO CART"
- },
- {
-  img:img6,
-  name:"Girls T-Shirt",
-  price:45.00,
-  button:"Add TO CART"
- },
- {
-  img:img7,
-  name:"Hand Bag",
-  price:35.00,
-  button:"Add TO CART"
- },
- {
-  img:img8,
-  name:"Shoes",
-  price:150.00,
-  button:"Add TO CART"
- },
- {
-  img:img9,
-  name:"Smart Watc",
-  price:300.00,
-  button:"Add TO CART"
- },
- {
-  img:img10,
-  name:"Smart Watc",
-  price:450.00,
-  button:"Add TO CART"
- },
- {
-  img:img11,
-  name:"Travel Bag",
-  price:130.00,
-  button:"Smart Watch"
- },
- {
-  img:img12,
-  name:"School Bag",
-  price:110.00,
-  button:"Add TO CART"
- }
+    {
+        img: img1,
+        name: "Travel Bag",
+        price: 200.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img2,
+        name: "Mens T-Shirt",
+        price: 150.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img3,
+        name: "Polo T-Shirt",
+        price: 120.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img4,
+        name: "Mens T-Shirt",
+        price: 60.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img5,
+        name: "Women,s T-Shirt",
+        price: 70.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img6,
+        name: "Girls T-Shirt",
+        price: 45.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img7,
+        name: "Hand Bag",
+        price: 35.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img8,
+        name: "Shoes",
+        price: 150.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img9,
+        name: "Smart Watc",
+        price: 300.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img10,
+        name: "Smart Watc",
+        price: 450.00,
+        button: "Add TO CART"
+    },
+    {
+        img: img11,
+        name: "Travel Bag",
+        price: 130.00,
+        button: "Smart Watch"
+    },
+    {
+        img: img12,
+        name: "School Bag",
+        price: 110.00,
+        button: "Add TO CART"
+    }
 ]

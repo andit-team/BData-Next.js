@@ -1,12 +1,12 @@
 import React from 'react'
-import BlogDetailsAera from '../BlogDetails/BlogDetailsAera'
+import BlogDetailsArea from './BlogDetailsArea'
 
-const index=()=> {
- return (
-  <>
-   <BlogDetailsAera/>
-  </>
- )
+const index = () => {
+    return (
+        <>
+            <BlogDetailsArea/>
+        </>
+    )
 }
 
 export default index
