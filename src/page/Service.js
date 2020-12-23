@@ -13,7 +13,6 @@ const Service = () => {
             <GetStarted/>
             <Counter/>
             <Blog/>
-
         </>
     )
 }
