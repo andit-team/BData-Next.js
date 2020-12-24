@@ -20,7 +20,7 @@ const FooterItems=[
         title:"Services",
         links: [
           { linkTitle: "About", link: "/about" },
-          { linkTitle: "Service", link: "/service" },
+          { linkTitle: "Service", link: "/services" },
           { linkTitle: "Contact Us", link: "/contact" },
           { linkTitle: "News", link: "/blog" },
         ],

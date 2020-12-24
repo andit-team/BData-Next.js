@@ -4,7 +4,7 @@ import CartItem from '../Cart/CartItems'
 import {CartData} from '../Cart/CartData'
 import {Link} from 'react-router-dom';
 
-const CartWrapper = () => {
+const CartDetails = () => {
 
     return (
         <>
@@ -85,4 +85,4 @@ const CartWrapper = () => {
     )
 }
 
-export default CartWrapper
+export default CartDetails

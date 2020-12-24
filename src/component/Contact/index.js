@@ -3,7 +3,7 @@ import ContactMap from '../Contact/ContactMap'
 import ContactInfo from '../Contact/ContactInfo'
 import ContactForm from '../Contact/Contactform'
 
-const ContactWrapper = () => {
+const ContactDetails = () => {
     return (
         <>
             <section id="contact">
@@ -25,4 +25,4 @@ const ContactWrapper = () => {
     )
 }
 
-export default ContactWrapper
+export default ContactDetails

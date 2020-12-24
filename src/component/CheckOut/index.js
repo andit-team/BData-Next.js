@@ -5,7 +5,7 @@ import OrderInfo from '../CheckOut/OrderInfo'
 import PaymentInfo from '../CheckOut/PaymentInfo'
 
 
-const CheckOutWrapper = () => {
+const CheckOutDetails = () => {
     return (
         <>
             {/* CheckOut Area Start */}
@@ -27,4 +27,4 @@ const CheckOutWrapper = () => {
     )
 }
 
-export default CheckOutWrapper
+export default CheckOutDetails

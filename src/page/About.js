@@ -3,7 +3,7 @@ import CommonBanner from '../component/Common/Banner'
 import History from '../component/About/History'
 import GetStarted from '../component/Common/GetStarted/index'
 import Counter from '../component/Common/Counter/index'
-import Testimonials from '../component/Common/Testimonials/index'
+import Testimonials from '../component/Common/Testimonials'
 import TeamMembers from '../component/About/Team'
 
 const About = () => {

@@ -1,10 +1,10 @@
 import React from 'react'
 // Import ProjectCard
-import ProjectCard from '../Project/ProjectCard'
+import ProjectCard from './/ProjectCard'
 // Import ProjectData
 import {ProjectData} from './ProjectData'
 
-const Projects = () => {
+const OurProjects = () => {
     return (
         <>
             {/* Project-Grid Start */}
@@ -20,4 +20,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default OurProjects

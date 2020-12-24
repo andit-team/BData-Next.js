@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import {OurServiceData} from "../Home/OurService/OurServicesData";
 import OurServiceCard from "../Home/OurService/OurServiceCard";
 
-const DetailsCard = () => {
+const RelatedServices = () => {
     return (
         <>
             <section id="service-slider" className="py100 bg-color">
@@ -20,4 +20,4 @@ const DetailsCard = () => {
     )
 }
 
-export default DetailsCard
+export default RelatedServices

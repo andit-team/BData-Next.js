@@ -1,7 +1,7 @@
 import React from 'react'
 import img from '../../assets/img/project-details/2.png'
 
-const DetailsArea = () => {
+const SingleServiceDeatils = () => {
     return (
         <>
             <section id="service-details" className="py100">
@@ -34,4 +34,4 @@ const DetailsArea = () => {
     )
 }
 
-export default DetailsArea
+export default SingleServiceDeatils

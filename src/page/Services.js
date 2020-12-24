@@ -5,10 +5,10 @@ import GetStarted from '../component/Common/GetStarted/index'
 import Counter from '../component/Common/Counter/index'
 import Blog from '../component/Home/Blog/Blog'
 
-const Service = () => {
+const Services = () => {
     return (
         <>
-            <CommonBanner heading="Service" menu1="Home" menu2="Service"/>
+            <CommonBanner heading="Services" menu1="Home" menu2="Services"/>
             <OurServices/>
             <GetStarted/>
             <Counter/>
@@ -17,4 +17,4 @@ const Service = () => {
     )
 }
 
-export default Service
+export default Services

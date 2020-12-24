@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-const ResetPasswordWrapper = () => {
+const ResetPasswordForm = () => {
     return (
         <>
             <section id="login-area" className="py100">
@@ -50,4 +50,5 @@ const ResetPasswordWrapper = () => {
     )
 }
 
-export default ResetPasswordWrapper
+export default ResetPasswordForm
+

@@ -1,13 +1,9 @@
 import React from 'react'
 // Import Components
-import ProductReview from '../ShopDetails/ProductReview'
-import {ProductReviewData} from '../ShopDetails/ProductReviewData'
+import ProductReview from './/ProductReview'
+import {ProductReviewData} from './/ProductReviewData'
 
 const ProductTabs = () => {
-    const ProductDatas = (val, index) => {
-        return <ProductReview img={val.img} key={index} name={val.name} time={val.time} replay={val.replay}
-                              report={val.report} comment={val.comment}/>
-    }
     return (
         <>
             {/* Shop Items Area Start */}
@@ -20,7 +16,7 @@ const ProductTabs = () => {
                                     <ul className="nav nav-tabs">
                                         <li><a className="active" data-toggle="tab" href="#description">Description</a>
                                         </li>
-                                        <li><a data-toggle="tab" href="#review">Review (2)</a>
+                                        <li><a data-toggle="tab" href="#review">Review ({ProductReviewData.length})</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -40,7 +36,9 @@ const ProductTabs = () => {
                                         <div id="review" className="tab-pane fade">
                                             <div className="media-public ">
                                                 <ul>
-                                                    {ProductReviewData.map(ProductDatas)}
+                                                    {ProductReviewData.map((review, index) => (
+                                                        <ProductReview review={review} key={index}/>
+                                                    ))}
                                                 </ul>
                                             </div>
                                         </div>

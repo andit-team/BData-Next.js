@@ -4,12 +4,6 @@ import {ShopData} from '../Shop/ShopData'
 import ShopCard from '../Shop/ShopCard'
 
 const RelatedProduct = () => {
-    const ShopDatas = (val, index) => {
-        if (index < 4) {
-            return <ShopCard img={val.img} name={val.name} price={val.price} key={index} button={val.button}/>
-        }
-
-    }
     return (
         <>
             {/* Related Area Start */}
@@ -18,12 +12,14 @@ const RelatedProduct = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title-center text-center pb30">
-                                <h2>Related Product</h2>
+                                <h2>Related Products</h2>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        {ShopData.map(ShopDatas)}
+                        {ShopData.slice(0,4).map((product, index) => (
+                            <ShopCard product={product} key={index}/>
+                        ))}
                     </div>
                 </div>
             </section>

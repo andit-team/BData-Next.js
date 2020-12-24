@@ -1,6 +1,6 @@
 import React from 'react'
 // Import Components
-import ProductSlider from '../ShopDetails/ProductSlider'
+import ProductSlider from './/ProductSlider'
 // Import Icons
 import {AiFillStar} from "react-icons/ai";
 import {Link} from 'react-router-dom';

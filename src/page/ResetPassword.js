@@ -1,10 +1,10 @@
 import React from 'react'
-import ResetPasswordWrapper from '../component/ResetPassword'
+import ResetPasswordForm from '../component/ResetPassword'
 
 const ResetPassword = () => {
     return (
         <>
-            <ResetPasswordWrapper/>
+            <ResetPasswordForm/>
         </>
     )
 }

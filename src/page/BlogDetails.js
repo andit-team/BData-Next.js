@@ -7,7 +7,7 @@ import Sidebar from "../component/Blog/Sidebar";
 const BlogDetails = () => {
     return (
         <>
-            <CommonBanner heading="Blog-Details" menu1="Home" menu2="Blog-Details"/>
+            <CommonBanner heading="Blog Details" menu1="Home" menu2="Blog Details"/>
             <BlogDetailsArea>
                 <DetailsContent/>
                 <Sidebar/>

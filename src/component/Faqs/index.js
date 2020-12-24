@@ -1,7 +1,7 @@
 import React from 'react'
 import FaqsArea from '../Faqs/FaqsArea'
 
-const AllFacts = () => {
+const AllFaqs = () => {
     return (
         <>
             <FaqsArea/>
@@ -9,4 +9,4 @@ const AllFacts = () => {
     )
 }
 
-export default AllFacts
+export default AllFaqs

@@ -10,10 +10,10 @@ import "./assets/css/color.css"
 import "./assets/css/responsive.css"
 
 ReactDOM.render(
-  <React.Fragment>
-    <App />
-  </React.Fragment>,
-  document.getElementById('root')
+    <React.Fragment>
+        <App/>
+    </React.Fragment>,
+    document.getElementById('root')
 );
 
 

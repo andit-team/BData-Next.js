@@ -8,12 +8,12 @@ const ShopCard = (props) => {
             <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="shop-item responsive-mt text-center">
                     <div className="shop-img">
-                        <img src={props.img} alt="img"/>
+                        <img src={props.product.img} alt="img"/>
                     </div>
                     <div className="shop-info box-shadow">
-                        <h3><Link to="/shop_details">{props.name}</Link></h3>
-                        <p><span>${props.price}</span>
-                        </p> <Link to="/shop_details" className="btn btn-theme btn-shop">{props.button}</Link>
+                        <h3><Link to="/product_details">{props.product.name}</Link></h3>
+                        <p><span>${props.product.price}</span>
+                        </p> <Link to="/product_details" className="btn btn-theme btn-shop">{props.product.button}</Link>
                     </div>
                 </div>
             </div>

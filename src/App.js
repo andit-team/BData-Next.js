@@ -3,15 +3,15 @@ import {BrowserRouter as Router, Switch, Route, BrowserRouter} from 'react-route
 
 // All Page Component
 import Home from '../src/page/Home'
-import Service from '../src/page/Service'
+import Services from '../src/page/Services'
 import About from '../src/page/About'
 import ServiceDetails from '../src/page/ServiceDetails'
-import Project from '../src/page/Project'
+import Projects from '../src/page/Projects'
 import ProjectDetails from '../src/page/ProjectDetails'
 import Blog from '../src/page/Blog'
 import BlogDetails from '../src/page/BlogDetails'
 import Shop from '../src/page/Shop'
-import ShopDetails from '../src/page/ShopDetails'
+import ProductDetails from '../src/page/ProductDetails'
 import Cart from '../src/page/Cart'
 import CheckOut from '../src/page/CheckOut'
 import Login from '../src/page/Login'
@@ -40,15 +40,15 @@ const App = () => {
                         <Header/>
                         <Switch>
                             <Route path='/' exact component={Home}/>
-                            <Route path='/service' exact component={Service}/>
+                            <Route path='/services' exact component={Services}/>
                             <Route path='/service_details' exact component={ServiceDetails}/>
                             <Route path='/about' exact component={About}/>
-                            <Route path='/project' exact component={Project}/>
+                            <Route path='/projects' exact component={Projects}/>
                             <Route path='/project_details' exact component={ProjectDetails}/>
                             <Route path='/blog' exact component={Blog}/>
                             <Route path='/blog_details' exact component={BlogDetails}/>
                             <Route path='/shop' exact component={Shop}/>
-                            <Route path='/shop_details' exact component={ShopDetails}/>
+                            <Route path='/product_details' exact component={ProductDetails}/>
                             <Route path='/cart' exact component={Cart}/>
                             <Route path='/checkout' exact component={CheckOut}/>
                             <Route path='/login' exact component={Login}/>

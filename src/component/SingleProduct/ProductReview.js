@@ -7,20 +7,20 @@ const ProductReview = (props) => {
             {/* Start Media Area */}
             <li className="media">
                 <div className="media-img">
-                    <img src={props.img} alt="img"/>
+                    <img src={props.review.img} alt="img"/>
                 </div>
                 <div className="media-body">
                     <div className="media-header">
                         <div className="media-name">
-                            <h4>{props.name}</h4>
-                            <p>{props.time}</p>
+                            <h4>{props.review.name}</h4>
+                            <p>{props.review.time}</p>
                         </div>
-                        <div className="post-share"><Link to="/#" className="replay">{props.replay}</Link>
-                            <Link to="/#">{props.report}</Link>
+                        <div className="post-share"><Link to="/#" className="replay">{props.review.replay}</Link>
+                            <Link to="/#">{props.review.report}</Link>
                         </div>
                     </div>
                     <div className="media-paragraph">
-                        <p>{props.comment}</p>
+                        <p>{props.review.comment}</p>
                     </div>
                 </div>
             </li>

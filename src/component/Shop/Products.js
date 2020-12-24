@@ -1,23 +1,19 @@
-import React from 'react'
-// Import Component
-import {ShopData} from './ShopData'
-import ShopCard from '../Shop/ShopCard'
-// Import Icon
-import {MdKeyboardArrowLeft} from "react-icons/md";
-import {MdKeyboardArrowRight} from "react-icons/md";
+import {ShopData} from "./ShopData";
+import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from "react-icons/md";
+import React from "react";
+import ShopCard from "./ShopCard";
 
-const AllShop = () => {
-    const ShopDatas = (val, index) => {
-        return <ShopCard img={val.img} name={val.name} price={val.price} button={val.button} key={index}/>
-    }
+const Products = props => {
     return (
         <>
             {/* Shop Area Start */}
             <section id="shop-area" className="py100">
                 <div className="container">
                     <div className="row">
-                        {ShopData.map(ShopDatas)}
-                        <div className="col-lg-12 colmd-12">
+                        {ShopData.map((product, index) => (
+                            <ShopCard product={product} key={index}/>
+                        ))}
+                        <div className="col-lg-12 col-md-12">
                             <div className="pagination-area">
                                 <ul>
                                     <li><i><MdKeyboardArrowLeft/></i></li>
@@ -38,4 +34,4 @@ const AllShop = () => {
     )
 }
 
-export default AllShop
+export default Products

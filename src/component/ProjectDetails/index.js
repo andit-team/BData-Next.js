@@ -4,7 +4,7 @@ import SideBar from '../ProjectDetails/Sidebar'
 import img1 from "../../assets/img/project-details/1.jpg"
 import img2 from "../../assets/img/project-details/2.png"
 
-const ProjectDetailsWrapper = () => {
+const SingleProject = () => {
     return (
         <>
             <section id="project-details-area" className="py100">
@@ -85,4 +85,4 @@ const ProjectDetailsWrapper = () => {
     )
 }
 
-export default ProjectDetailsWrapper
+export default SingleProject

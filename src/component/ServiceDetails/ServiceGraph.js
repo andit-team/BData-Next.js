@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from '../../assets/img/service-details/1.jpg'
 import {BsCheckCircle} from "react-icons/bs";
 
-function DetailsBottom() {
+function ServiceGraph() {
     return (
         <>
             <section id="service-img-details" className="py100">
@@ -35,4 +35,4 @@ function DetailsBottom() {
     )
 }
 
-export default DetailsBottom
+export default ServiceGraph

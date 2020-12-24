@@ -10,12 +10,12 @@ export const MenuData = [
         has_children: true,
         children: [
             {
-                name: "Servive",
-                href: "/service",
+                name: "Services",
+                href: "/services",
                 has_children: false,
             },
             {
-                name: "Service-Details",
+                name: "Service Details",
                 href: "/service_details",
                 has_children: false,
             }
@@ -27,13 +27,13 @@ export const MenuData = [
         has_children: false,
     },
     {
-        name: "Project",
+        name: "Projects",
         href: "#!",
         has_children: true,
         children: [
             {
-                name: "Project",
-                href: "/project",
+                name: "Projects",
+                href: "/projects",
                 has_children: false,
             },
             {
@@ -71,8 +71,8 @@ export const MenuData = [
                 has_children: false,
             },
             {
-                name: "Single Products",
-                href: "/shop_details",
+                name: "Single Product",
+                href: "/product_details",
                 has_children: false,
             },
             {
