@@ -22,7 +22,7 @@ const FooterItems=[
           { linkTitle: "About", link: "/about" },
           { linkTitle: "Service", link: "/services" },
           { linkTitle: "Contact Us", link: "/contact" },
-          { linkTitle: "News", link: "/blog" },
+          { linkTitle: "Projects", link: "/projects" },
         ],
     }
 ]
@@ -39,6 +39,9 @@ const Footer=()=> {
                         <p className="pt30">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut.
+                        </p>
+                        <p >
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         </p>
                     </div>
                 </div>

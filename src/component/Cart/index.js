@@ -67,7 +67,7 @@ const CartDetails = () => {
                                     </p>
                                     <div className="cart-subtotal">
                                         <p>Total</p>
-                                        <p className="cart-amount">£215.00</p>
+                                        <p className="cart-amount main-amount">£215.00</p>
                                     </div>
                                     <div className="checkout-btn">
                                         <Link to="checkout" className="btn btn-theme btn-shop">

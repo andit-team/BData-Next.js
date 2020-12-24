@@ -1,5 +1,6 @@
 import React from 'react'
-import {AiOutlineDown} from "react-icons/ai";
+import {FiChevronDown} from "react-icons/fi";
+
 import {Link} from 'react-router-dom';
 
 const NavItem = props => {
@@ -9,7 +10,7 @@ const NavItem = props => {
                 <Link to={props.item.href} className="nav-link">
                     {props.item.name}
                     {props.item.has_children && (
-                        <i><AiOutlineDown/></i>
+                        <i><FiChevronDown/></i>
                     )}
                 </Link>
                 {props.item.has_children && (

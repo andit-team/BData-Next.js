@@ -9,35 +9,35 @@ export const ProjectData = [
     },
     {
         img: img2,
-        title: "Artificial Intelligence"
+        title: "Web Design"
     },
     {
         img: img3,
-        title: "Artificial Intelligence"
+        title: "App Design"
     },
     {
         img: img2,
-        title: "Artificial Intelligence"
+        title: "Web Application"
     },
     {
         img: img3,
-        title: "Artificial Intelligence"
+        title: "App Development"
     },
     {
         img: img1,
-        title: "Artificial Intelligence"
+        title: " SEO "
     },
     {
         img: img1,
-        title: "Artificial Intelligence"
+        title: "App Design"
     },
     {
         img: img2,
-        title: "Artificial Intelligence"
+        title: "Web Design"
     },
 
     {
         img: img3,
-        title: "Artificial Intelligence"
+        title: "Web Application"
     }
 ]

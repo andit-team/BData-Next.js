@@ -36,8 +36,8 @@ const ProductDetails = () => {
                                 <div className="quenty-btn-area">
                                     <div className="number-input">
                                         <form action="#" id="number-box">
-                                            <input type="number" className="form-control " min="1" max="10"
-                                                   placeholder="Number"/>
+                                            <input type="number" className="form-control"  min="1" max="10"
+                                                   placeholder="1"/>
                                         </form>
                                     </div>
                                     <div className="add-btn"><Link to="/cart" className="btn btn-theme btn-shop">Add TO

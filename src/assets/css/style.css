@@ -220,8 +220,8 @@ ul li {
 /* --Common Class Area start-- */
 
 .box-shadow {
-    -webkit-box-shadow:3px 0px 12px 0px #5b6fe633;
-    box-shadow:3px 0px 12px 0px #5b6fe633;
+    -webkit-box-shadow:3px 0px 12px 0px #9aa8ff30;
+    box-shadow:3px 0px 12px 0px #9aa8ff30;
 }
 
 .border-radius {
@@ -273,6 +273,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 select:focus {
     background-color: #fff;
+    outline: none;
 }
 
 .img-zoom-hover img {
@@ -844,10 +845,10 @@ section {
 }
 
 .plamb-nav .navbar .navbar-nav .nav-item a i {
-    font-size: 10px;
+    font-size: 15px;
     position: relative;
-    top: -1px;
-    margin-left: 1px;
+    top: 1px;
+    margin-left: 5px;
 }
 
 .plamb-nav .navbar .navbar-nav .nav-item:last-child a {
@@ -1248,6 +1249,7 @@ section {
     display: flex;
     margin-left: -30px; /* gutter size offset */
     width: auto;
+    margin-top: 30px;
   }
   .my-masonry-grid_column {
     padding-left: 30px; /* gutter size */
@@ -2927,6 +2929,7 @@ button:focus {
 .social .icon {
     margin: 0 5px;
     color: #fff;
+    font-size: 22px;
 }
 
 .team-img:hover .social {
@@ -3878,7 +3881,6 @@ color: #fff
 #accordion5 .card {
     border: 0;
     border-radius: 0;
-    padding-bottom: 30px;
 }
 /* --------------------------
   Shop Page
@@ -3950,7 +3952,10 @@ color: #fff
     -o-transform: translateY(-10px);
 }
 .left-side-title{
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+}
+#about .left-side-title{
+    padding-bottom: 0;
 }
 /*--pagination--*/
 
@@ -4510,8 +4515,8 @@ Blog Page
 }
 
 .blog-widget-author {
-    border-top: 1px solid #777c8742;
-    border-bottom: 1px solid #777c8742;
+    border-top: 1px solid #cccccc42;
+    border-bottom: 1px solid #cccccc42;
     padding: 5px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4627,12 +4632,12 @@ Blog Page
 .left-blog ul li span {
     float: right;
     border: 1px solid var(--main-theme-color);
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     border-radius: 50px;
     color: var(--main-theme-color);
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .recent-single-post {
@@ -4721,9 +4726,9 @@ Blog Page
 .pagination-area ul li{
     background: #242f51;
     margin-right: 10px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 31px;
+    height: 31px;
+    line-height: 34px;
     text-align: center;
     border-radius: 50%;
     color: #fff;
@@ -4733,6 +4738,7 @@ Blog Page
     -moz-transition: .4s all ease-in-out;
     -ms-transition: .4s all ease-in-out;
     -o-transition: .4s all ease-in-out;
+    font-size: 15px;
 }
 .pagination-area ul li:hover{
     background-color: var(--main-theme-color);
@@ -4742,7 +4748,9 @@ Blog Page
     background-color: var(--main-theme-color) ;
     color: #fff;
 }
-
+.main-amount{
+    font-weight: 700 !important;
+}
 
 /* --------------------------
 Blog-Details Page
@@ -4778,10 +4786,10 @@ Blog-Details Page
     height: 30px;
     width: 30px;
     display: inline-block;
-    line-height: 30px;
+    line-height: 36px;
     text-align: center;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 16px;
     transition: .4s all ease;
     -webkit-transition: .4s all ease;
     -moz-transition: .4s all ease;
@@ -4863,7 +4871,7 @@ Blog-Details Page
 }
 .comment-area-heading h3 {
     font-weight: 700;
-    padding: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 30px;
 }
@@ -5121,6 +5129,7 @@ Product-Details Page
     -moz-transition: .4s all ease;
     -ms-transition: .4s all ease;
     -o-transition: .4s all ease;
+    display: flex;
 }
 
 .pro-deta-list ul li:hover {
@@ -5134,6 +5143,7 @@ Product-Details Page
 .pro-deta-list ul li i {
     color: var(--main-theme-color);
     font-size: 18px;
+    padding-right: 5px;
 }
 
 .ps-informations h3 {
@@ -5174,7 +5184,7 @@ Product-Details Page
     color: #f26723;
     transition: all .5s ease;
     opacity: .5;
-    font-size: 26px;
+    font-size: 20px;
     padding-right: 10px;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -5222,6 +5232,7 @@ Product-Details Page
 
 .contact-wedget ul li {
     margin-bottom: 15px;
+    display: flex;
 }
 
 .contact-wedget ul li:last-child {
@@ -5350,10 +5361,11 @@ Service-Details Page
 .service-img-text ul li {
     padding-top: 10px;
     font-size: 16px;
+    display: flex;
 }
 
 .service-img-text ul li i {
-    font-size: 20px;
+    font-size: 15px;
     padding-right: 10px;
     color: var(--main-theme-color);
 }
