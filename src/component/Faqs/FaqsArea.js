@@ -16,7 +16,7 @@ const FaqsArea = () => {
                                 <div className="list-group" id="list-tab" role="tablist">
                                     {FaqsData.map((data, index) => (
                                         <a
-                                            className={index == 0 ? "list-group-item list-group-item-action active" : "list-group-item list-group-item-action"}
+                                            className={index === 0 ? "list-group-item list-group-item-action active" : "list-group-item list-group-item-action"}
                                             id="list-home-list1"
                                             data-toggle="list" key={index} href={"#list" + index} role="tab"
                                             aria-controls="list-home-list">{data.tab_name}</a>
@@ -27,7 +27,7 @@ const FaqsArea = () => {
                         <div className="col-md-8 col-sm-12 col-12">
                             <div className="tab-content" id="nav-tabContent">
                                 {FaqsData.map((data, index) => (
-                                    <div className={index == 0 ? "tab-pane fade show active" : "tab-pane fade"}
+                                    <div className={index === 0 ? "tab-pane fade show active" : "tab-pane fade"}
                                          id={"list" + index} key={index} role="tabpanel"
                                          aria-labelledby="list-home-list">
                                         <div className="faqs-items">
