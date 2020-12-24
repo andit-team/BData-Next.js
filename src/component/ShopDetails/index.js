@@ -3,7 +3,7 @@ import ProductDetails from '../ShopDetails/ProductDetails'
 import ProductTabs from '../ShopDetails/ProductTabs'
 import RelatedProduct from '../ShopDetails/RelatedProduct'
 
-const index = () => {
+const ShopDetailsWrapper = () => {
     return (
         <>
             <ProductDetails/>
@@ -13,4 +13,4 @@ const index = () => {
     )
 }
 
-export default index
+export default ShopDetailsWrapper

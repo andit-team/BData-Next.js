@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../component/Common/Banner'
-import Index from '../component/ProjectDetails/index'
+import CommonBanner from '../component/Common/Banner'
+import ProjectDetailsWrapper from '../component/ProjectDetails'
 
 const ProjectDetails = () => {
     return (
         <>
-            <Banner heading="Project-Details" menu1="Home" menu2="Project-Details"/>
-            <Index/>
+            <CommonBanner heading="Project-Details" menu1="Home" menu2="Project-Details"/>
+            <ProjectDetailsWrapper/>
         </>
     )
 }

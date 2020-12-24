@@ -3,7 +3,7 @@ import ContactMap from '../Contact/ContactMap'
 import ContactInfo from '../Contact/ContactInfo'
 import ContactForm from '../Contact/Contactform'
 
-const index = () => {
+const ContactWrapper = () => {
     return (
         <>
             <section id="contact">
@@ -25,4 +25,4 @@ const index = () => {
     )
 }
 
-export default index
+export default ContactWrapper

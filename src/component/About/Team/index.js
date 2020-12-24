@@ -8,7 +8,7 @@ import {TeamData} from '../Team/TeamData'
 // Import TeamCard
 import TeamCard from '../Team/TeamCard'
 
-const index = () => {
+const TeamMembers = () => {
 
     return (
         <>
@@ -26,4 +26,4 @@ const index = () => {
     )
 }
 
-export default index
+export default TeamMembers

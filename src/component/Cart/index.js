@@ -4,7 +4,7 @@ import CartItem from '../Cart/CartItems'
 import {CartData} from '../Cart/CartData'
 import {Link} from 'react-router-dom';
 
-const index = () => {
+const CartWrapper = () => {
 
     return (
         <>
@@ -85,4 +85,4 @@ const index = () => {
     )
 }
 
-export default index
+export default CartWrapper

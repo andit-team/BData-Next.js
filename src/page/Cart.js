@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../component/Common/Banner/index'
-import Index from '../component/Cart/index'
+import CommonBanner from '../component/Common/Banner'
+import CartWrapper from '../component/Cart'
 
 const Cart = () => {
     return (
         <>
-            <Banner heading="Cart" menu1="Home" menu2="Cart"/>
-            <Index/>
+            <CommonBanner heading="Cart" menu1="Home" menu2="Cart"/>
+            <CartWrapper/>
         </>
     )
 }

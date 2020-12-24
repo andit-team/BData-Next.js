@@ -4,7 +4,7 @@ import SideBar from '../ProjectDetails/Sidebar'
 import img1 from "../../assets/img/project-details/1.jpg"
 import img2 from "../../assets/img/project-details/2.png"
 
-const index = () => {
+const ProjectDetailsWrapper = () => {
     return (
         <>
             <section id="project-details-area" className="py100">
@@ -85,4 +85,4 @@ const index = () => {
     )
 }
 
-export default index
+export default ProjectDetailsWrapper

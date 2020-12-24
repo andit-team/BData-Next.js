@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../component/Common/Banner'
-import Index from '../component/ShopDetails/index'
+import CommonBanner from '../component/Common/Banner'
+import ShopDetailsWrapper from '../component/ShopDetails'
 
 const ShopDetails = () => {
     return (
         <>
-            <Banner heading="Shop-Details" menu1="Home" menu2="Shop-Details"/>
-            <Index/>
+            <CommonBanner heading="Shop-Details" menu1="Home" menu2="Shop-Details"/>
+            <ShopDetailsWrapper/>
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import FaqsArea from '../Faqs/FaqsArea'
 
-const index = () => {
+const AllFacts = () => {
     return (
         <>
             <FaqsArea/>
@@ -9,4 +9,4 @@ const index = () => {
     )
 }
 
-export default index
+export default AllFacts

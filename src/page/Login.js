@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from '../component/Loging/index'
+import LoginForm from '../component/Loging'
 
 const Login = () => {
     return (
         <>
-            <Index/>
+            <LoginForm/>
         </>
     )
 }

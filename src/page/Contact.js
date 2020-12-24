@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../component/Common/Banner/index'
-import Index from '../component/Contact/index'
+import CommonBanner from '../component/Common/Banner'
+import ContactWrapper from '../component/Contact'
 
 const Contact = () => {
     return (
         <>
-            <Banner heading="Contact" menu1="Home" menu2="Contact"/>
-            <Index/>
+            <CommonBanner heading="Contact" menu1="Home" menu2="Contact"/>
+            <ContactWrapper/>
         </>
     )
 }

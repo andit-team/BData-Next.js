@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from '../component/ResetPassword/index'
+import ResetPasswordWrapper from '../component/ResetPassword'
 
 const ResetPassword = () => {
     return (
         <>
-            <Index/>
+            <ResetPasswordWrapper/>
         </>
     )
 }

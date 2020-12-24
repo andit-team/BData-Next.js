@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-const index = (props) => {
+const CommonBanner = (props) => {
     return (
         <>
             <section id="banner-inner-area">
@@ -23,4 +23,4 @@ const index = (props) => {
     )
 }
 
-export default index
+export default CommonBanner

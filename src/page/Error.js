@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../component/Common/Banner/index'
-import Index from '../component/Error/index'
+import CommonBanner from '../component/Common/Banner'
+import ErrorMessage from '../component/Error'
 
 const Error = () => {
     return (
         <>
-            <Banner heading="Error" menu1="Home" menu2="Error"/>
-            <Index/>
+            <CommonBanner heading="Error" menu1="Home" menu2="Error"/>
+            <ErrorMessage/>
         </>
     )
 }

@@ -6,7 +6,7 @@ import ShopCard from '../Shop/ShopCard'
 import {MdKeyboardArrowLeft} from "react-icons/md";
 import {MdKeyboardArrowRight} from "react-icons/md";
 
-const index = () => {
+const AllShop = () => {
     const ShopDatas = (val, index) => {
         return <ShopCard img={val.img} name={val.name} price={val.price} button={val.button} key={index}/>
     }
@@ -38,4 +38,4 @@ const index = () => {
     )
 }
 
-export default index
+export default AllShop
