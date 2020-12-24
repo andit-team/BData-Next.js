@@ -6,7 +6,7 @@ const BlogCard=(props)=> {
    <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="blog-item single-item-mt-2">
                         <div className="blog-img">
-                            <Link to="/blog_details"><img src={props.data.img}  /></Link>
+                            <Link to="/blog_details"><img alt="" src={props.data.img}  /></Link>
                         </div>
                         <div className="blog-details">
                             <div className="date-time">
@@ -21,7 +21,7 @@ const BlogCard=(props)=> {
                             </p>
                             <div className="blog-author-details">
                                 <div className="author-img pt10">
-                                    <Link to="/blog_details"><img src={props.data.author_img}  /> {props.authorName}
+                                    <Link to="/blog_details"><img alt="" src={props.data.author_img}  /> {props.authorName}
                                     </Link>
                                     <Link to="/blog_details">{props.data.category}</Link>
                                 </div>

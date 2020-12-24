@@ -30,7 +30,7 @@ const ProductSlider = () => {
             <OwlCarousel className="owl-theme" responsive={responsive} autoplay={true} autoplayHoverPause={true}
                          autoplayTimeout={2500} items={5} loop={true} margin={10} nav={false} dots={true}>
                 {ProductSliderData.map((data, index) => (<div className="shop-details-img" key={index}>
-                    <img src={data.img} />
+                    <img alt="" src={data.img} />
                 </div>))}
             </OwlCarousel>
             {/* Slider Area End */}

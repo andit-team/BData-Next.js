@@ -13,7 +13,7 @@ const SingleProject = () => {
                         <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                             <div className="project-desc">
                                 <div className="project-details-text">
-                                    <img src={img1} />
+                                    <img alt="" src={img1} />
                                     <h3>Project Description</h3>
                                     <p>Bring to the table win-win survival strategies to ensure proactive domination. At
                                         the end
@@ -47,7 +47,7 @@ const SingleProject = () => {
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                                             <div className="pro-des-img">
-                                                <img src={img2} />
+                                                <img alt="" src={img2} />
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-12">

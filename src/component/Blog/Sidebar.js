@@ -145,7 +145,7 @@ const Sidebar = () => {
                                 <div className="recent-single-post" key={index}>
                                     <div className="post-img">
                                         <Link to="/#">
-                                            <img src={data.img} />
+                                            <img alt="" src={data.img} />
                                         </Link>
                                     </div>
                                     <div className="pst-content">

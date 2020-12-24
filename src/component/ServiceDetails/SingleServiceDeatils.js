@@ -9,7 +9,7 @@ const SingleServiceDeatils = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="service-details-img">
-                                <img src={img} />
+                                <img alt="" src={img} />
                             </div>
                         </div>
                         <div className="col-lg-6">

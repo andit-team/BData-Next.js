@@ -41,7 +41,7 @@ const History = () => {
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div className="about-top-img animation-img-two">
-                                <img src={img1} />
+                                <img alt="" src={img1} />
                             </div>
                         </div>
                     </div>

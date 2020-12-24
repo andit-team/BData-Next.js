@@ -7,7 +7,7 @@ const ProductReview = (props) => {
             {/* Start Media Area */}
             <li className="media">
                 <div className="media-img">
-                    <img src={props.review.img} />
+                    <img alt="" src={props.review.img} />
                 </div>
                 <div className="media-body">
                     <div className="media-header">

@@ -42,7 +42,7 @@ const Banner = () => {
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div className="banner-img">
-                                <img src={img_banner} className="wow zoomIn" data-wow-duration="2.0s"
+                                <img alt="" src={img_banner} className="wow zoomIn" data-wow-duration="2.0s"
                                      data-wow-delay=".6s"
                                 />
                             </div>

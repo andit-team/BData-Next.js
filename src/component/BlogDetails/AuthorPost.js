@@ -11,7 +11,7 @@ const AuthorPost = () => {
             {/* Media Area Start */}
             <li className="media">
                 <div className="media-img">
-                    <img src={img1} />
+                    <img alt="" src={img1} />
                 </div>
                 <div className="media-body">
                     <div className="media-header">

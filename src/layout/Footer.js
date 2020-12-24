@@ -35,7 +35,7 @@ const Footer=()=> {
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="footer-about-area">
-                        <Link to="/"><img src={logo}  /></Link>
+                        <Link to="/"><img alt="" src={logo}  /></Link>
                         <p className="pt30">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut.
@@ -81,7 +81,7 @@ const Footer=()=> {
             </div>
         </div>
         <div className="footer-bottom-img">
-            <img src={shap}  />
+            <img alt="" src={shap}  />
         </div>
     </footer>
   </>
