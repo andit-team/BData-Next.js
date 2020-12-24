@@ -35,7 +35,7 @@ const Banner = () => {
                                             onClose={() => setOpen(false)}/>
                                 <div className="banner-one-btn pt30">
                                     <Link to="/#" className="btn btn-theme">Get Started</Link>
-                                    <a className="banner-video video-link"
+                                    <a href="#!" className="banner-video video-link"
                                        onClick={() => setOpen(true)}><AiOutlinePlayCircle/> Watch Video</a>
                                 </div>
                             </div>

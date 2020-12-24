@@ -38,7 +38,7 @@ const FaqsArea = () => {
                                                             <div className="card-header box-shadow"
                                                                  id={"heading" + index}>
                                                                 <h5 className="mb-0">
-                                                                    <a className="collapsed " role="button"
+                                                                    <a href="#!" className="collapsed " role="button"
                                                                        data-toggle="collapse"
                                                                        data-target={"#collapse" + index + index1}
                                                                        aria-expanded="false"
