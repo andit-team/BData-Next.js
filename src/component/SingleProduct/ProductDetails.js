@@ -20,16 +20,11 @@ const ProductDetails = () => {
                                 <h3>Caramel Wallet</h3>
                                 <div className="customer-star">
                                     <ul>
-                                        <li><i><AiFillStar/></i>
-                                        </li>
-                                        <li><i><AiFillStar/></i>
-                                        </li>
-                                        <li><i><AiFillStar/></i>
-                                        </li>
-                                        <li><i><AiFillStar/></i>
-                                        </li>
-                                        <li><i><AiFillStar/></i>
-                                        </li>
+                                        <li><i><AiFillStar/></i></li>
+                                        <li><i><AiFillStar/></i></li>
+                                        <li><i><AiFillStar/></i></li>
+                                        <li><i><AiFillStar/></i></li>
+                                        <li><i><AiFillStar/></i></li>
                                     </ul>
                                     <h6>(2 Customer Review)</h6>
                                 </div>
@@ -49,7 +44,7 @@ const ProductDetails = () => {
                                         CART</Link>
                                     </div>
                                 </div>
-                                <div className="shop-catogory">
+                                <div className="shop-category">
                                     <ul>
                                         <li>Category:</li>
                                         <li className="items-product">Wallet</li>

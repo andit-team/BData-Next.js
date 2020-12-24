@@ -688,7 +688,6 @@ section {
     position: relative;
 }
 
-
 /* --Button Area End-- */
 
 
@@ -734,8 +733,6 @@ section {
 .banner-details ul li span {
     padding-right: 5px;
 }
-
-
 /* --animation css area start-- */
 
 .animation-img-one {
@@ -781,14 +778,12 @@ section {
     }
 }
 
-
 /* --animation css area End-- */
 
 
 /* ----------------------
-      Home 01
+      Home
 ----------------------------- */
-
 
 /* --Navbar Area Start-- */
 #bg-white{
@@ -4100,11 +4095,11 @@ color: #fff
     font-weight: 600;
 }
 
-.shop-catogory {
+.shop-category {
     padding-top: 30px;
 }
 
-.shop-catogory ul li {
+.shop-category ul li {
     display: inline-block;
     color: var(--paragraph-color);
 }
