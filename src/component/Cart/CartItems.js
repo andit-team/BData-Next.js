@@ -9,7 +9,7 @@ const CartItems = (props) => {
                 <td className="product-remove"><Link to="/#"><i><AiFillDelete/></i></Link>
                 </td>
                 <td className="product-thumb">
-                    <img src={props.data.img} alt="img"/>
+                    <img src={props.data.img} />
                 </td>
                 <td className="product-name">{props.data.name}
                 </td>

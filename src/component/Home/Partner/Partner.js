@@ -34,7 +34,7 @@ const Partner=()=> {
                     <div className="logo-area">
                         <div className="slider-logo">
                         <OwlCarousel className="owl-theme" responsive={responsive} autoplay={true} autoplayHoverPause={true}autoplayTimeout={2500} items={5}  loop={true} margin={10} nav={false} dots={false}>
-                        {PartnerData.map((data, index)=>(<Link to="/#" key={index}><img src={data.img} alt="img" /></Link>))}
+                        {PartnerData.map((data, index)=>(<Link to="/#" key={index}><img src={data.img}  /></Link>))}
                         </OwlCarousel>                
                         </div>
                     </div>

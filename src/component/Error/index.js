@@ -19,7 +19,7 @@ const ErrorMessage = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12">
                             <div className="error-img animation-img-two">
-                                <img src={img1} alt="img"/>
+                                <img src={img1} />
                             </div>
                         </div>
                     </div>

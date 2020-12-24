@@ -27,16 +27,16 @@
                         </p>
                         <ul className="pt20">
                             <li className="wow zoomIn" data-wow-duration="2.0s">
-                                <img src={check} alt="img" />Various Analysis Options
+                                <img src={check}  />Various Analysis Options
                             </li>
                             <li className="wow zoomIn" data-wow-duration="2.0s">
-                                <img src={check} alt="img" />Professional Consultancy Service
+                                <img src={check}  />Professional Consultancy Service
                             </li>
                             <li className="wow zoomIn" data-wow-duration="2.0s">
-                                <img src={check} alt="img" />Advanced Advisory Team
+                                <img src={check}  />Advanced Advisory Team
                             </li>
                             <li className="wow zoomIn" data-wow-duration="2.0s">
-                                <img src={check} alt="img" />24/7 Support Centers
+                                <img src={check}  />24/7 Support Centers
                             </li>
                         </ul>
                         <Link to="/#" className="btn btn-theme mt30">How It Work</Link>
@@ -44,7 +44,7 @@
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div className="animation-img animation-img-one">
-                        <img src={AboutImg} alt="img" />
+                        <img src={AboutImg}  />
                     </div>
                 </div>
             </div>

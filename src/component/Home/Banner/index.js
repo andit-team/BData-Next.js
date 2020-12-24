@@ -35,7 +35,7 @@ const Banner = () => {
                                             onClose={() => setOpen(false)}/>
                                 <div className="banner-one-btn pt30">
                                     <Link to="/#" className="btn btn-theme">Get Started</Link>
-                                    <a href="#" className="banner-video video-link"
+                                    <a className="banner-video video-link"
                                        onClick={() => setOpen(true)}><AiOutlinePlayCircle/> Watch Video</a>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const Banner = () => {
                             <div className="banner-img">
                                 <img src={img_banner} className="wow zoomIn" data-wow-duration="2.0s"
                                      data-wow-delay=".6s"
-                                     alt="img"/>
+                                />
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ const ShopCard = (props) => {
             <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div className="shop-item responsive-mt text-center">
                     <div className="shop-img">
-                        <img src={props.product.img} alt="img"/>
+                        <img src={props.product.img} />
                     </div>
                     <div className="shop-info box-shadow">
                         <h3><Link to="/product_details">{props.product.name}</Link></h3>

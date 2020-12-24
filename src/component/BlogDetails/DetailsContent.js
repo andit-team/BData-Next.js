@@ -22,7 +22,7 @@ const DetailsContent = () => {
             <div className="blog-details-arae">
                 <div className="blog-main-details box-shadow ">
                     <div className="blog-details-img">
-                        <img src={img1} alt="img"/>
+                        <img src={img1} />
                     </div>
                     <div className="blog-widget-text">
                         <div className="blog-widget-heading">

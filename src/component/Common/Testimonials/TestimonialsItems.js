@@ -11,7 +11,7 @@ const TestimonialsItems = (props) => {
                 </div>
                 <div className="testimonial-author">
                     <div className="testimonial-author-img">
-                        <img src={props.data.img} alt="img"/>
+                        <img src={props.data.img} />
                     </div>
                     <div className="testimonial-name">
                         <h3>{props.data.name}</h3>

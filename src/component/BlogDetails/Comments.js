@@ -7,7 +7,7 @@ const Comments = (props) => {
         <>
             <li className="media">
                 <div className="media-img">
-                    <img src={props.data.img} alt="img"/>
+                    <img src={props.data.img} />
                 </div>
                 <div className="media-body">
                     <div className="media-header">

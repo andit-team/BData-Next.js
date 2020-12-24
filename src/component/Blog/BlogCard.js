@@ -11,7 +11,7 @@ const BlogCard = (props) => {
             <div className="blog-widget box-shadow">
                 <div className="blog-widget-img">
                     <Link to="/blog_details">
-                        <img src={props.data.img} alt="img"/>
+                        <img src={props.data.img} />
                     </Link>
                 </div>
                 <div className="blog-widget-text">

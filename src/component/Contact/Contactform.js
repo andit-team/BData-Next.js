@@ -12,7 +12,6 @@ const ContactForm = () => {
                                 tag={'input'}
                                 type={'text'}
                                 name={'first_name'}
-                                name={'first_name'}
                                 classes={'form-control'}
                                 placeholder={'First Name *'}
                             />

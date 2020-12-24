@@ -33,37 +33,37 @@ const Project=(props)=> {
                 <Masonry  breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
                         
                         <div className="work-item">
-                            <img src={img1} alt="img" />
+                            <img src={img1}  />
                             <div className="overlay-arae">
                                 <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
-                            <img src={img2} alt="img" />
+                            <img src={img2}  />
                             <div className="overlay-arae">
                             <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
-                            <img src={img4} alt="img" />
+                            <img src={img4}  />
                             <div className="overlay-arae">
                             <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
-                            <img src={img2} alt="img" />
+                            <img src={img2}  />
                             <div className="overlay-arae">
                             <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>   
                         <div className="work-item">
-                            <img src={img1} alt="img" />
+                            <img src={img1}  />
                             <div className="overlay-arae">
                             <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>
                         </div>
                         <div className="work-item">
-                            <img src={img5} alt="img" />
+                            <img src={img5}  />
                             <div className="overlay-arae">
                             <Link to="/project_details"> <i><BsArrowRight/></i></Link>
                             </div>

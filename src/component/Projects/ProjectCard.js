@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
             <div className="col-lg-4 col-md-6 col-ms-12 col-12">
                 <div className="project-grid-item">
                     <div className="project-grid-img">
-                        <img src={props.data.img} alt="img"/>
+                        <img src={props.data.img} />
                     </div>
                     <div className="project-grid-content">
                         <h5><Link to="/project_details">{props.data.title}</Link></h5>

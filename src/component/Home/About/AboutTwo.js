@@ -14,7 +14,7 @@ const AboutTwo=()=> {
             <div className="row">
                 <div className="col-lg-6">
                     <div className="animation-img animation-img-one">
-                        <img src={AboutImg} alt="img" />
+                        <img src={AboutImg} />
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -22,7 +22,7 @@ const AboutTwo=()=> {
                         <h2>Check Our Awesome Features Here</h2>
                         <div className="right-area-about-list">
                             <div className="media">
-                                <img className="mr-3" src={small1} alt="image" />
+                                <img className="mr-3" src={small1} />
                                 <div className="media-body">
                                     <h3 className="mt-0">Save Your Time</h3>
                                     <p>
@@ -32,7 +32,7 @@ const AboutTwo=()=> {
                                 </div>
                             </div>
                             <div className="media  media wow fadeInUp " data-wow-duration="2.0s " data-wow-delay=".2s ">
-                                <img className="mr-3 " src={small2} alt="image " />
+                                <img className="mr-3 " src={small2} />
                                 <div className="media-body ">
                                     <h3 className="mt-0 ">Manage Business Easily</h3>
                                     <p>
@@ -42,7 +42,7 @@ const AboutTwo=()=> {
                                 </div>
                             </div>
                             <div className="media  media wow fadeInUp" data-wow-duration="2.0s" data-wow-delay=".3s">
-                                <img className="mr-3" src={small3} alt="image" />
+                                <img className="mr-3" src={small3} />
                                 <div className="media-body">
                                     <h3 className="mt-0">Trusted Partner</h3>
                                     <p>
