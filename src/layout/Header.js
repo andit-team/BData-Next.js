@@ -38,7 +38,7 @@ const Header = () => {
                                     }
                                 </ul>
                                 <div className="other-option">
-                                    <Link className="btn btn-theme" to="/contact">
+                                    <Link className="btn btn-theme" to="/Contact">
                                         Contact Us
                                     </Link>
                                 </div>

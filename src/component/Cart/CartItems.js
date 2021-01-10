@@ -6,13 +6,9 @@ const CartItems = (props) => {
     return (
         <>
             <tr>
-                <td className="product-remove"><Link to="/#"><i><AiFillDelete/></i></Link>
-                </td>
-                <td className="product-thumb">
-                    <img alt="" src={props.data.img} />
-                </td>
-                <td className="product-name">{props.data.name}
-                </td>
+                <td className="product-remove"><Link to="/#"><i><AiFillDelete/></i></Link></td>
+                <td className="product-thumb"><img alt="" src={props.data.img} /></td>
+                <td className="product-name">{props.data.name}</td>
                 <td className="product-price">£{props.data.price}</td>
                 <td className="product-quantity">
                     <label>{props.data.quantity}</label>

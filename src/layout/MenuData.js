@@ -2,7 +2,7 @@ export const MenuData = [
     {
         name: "Home",
         href: "/",
-        has_children: false,
+        has_children: false, 
     },
     {
         name: "Services",
