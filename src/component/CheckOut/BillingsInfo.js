@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import FormInput from "../From/index";
 
 let options1 = [
@@ -42,7 +42,7 @@ const BillingsInformation = () => {
                 <div className="check-out-form">
                     <form method="post">
                         <div className="row">
-                            <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag='input'
                                     type='text'
@@ -64,7 +64,7 @@ const BillingsInformation = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="form-group">
                                     <FormInput
                                         tag='input'
@@ -76,19 +76,19 @@ const BillingsInformation = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="form-group">
                                     <FormInput
                                         tag='input'
                                         type='text'
                                         name='User_name'
                                         classes='form-control'
-                                        placeholder='Email Addresse'
-                                        label="Email Addresse"
+                                        placeholder='Email Address'
+                                       label="Email Address"
                                     />
                                 </div>
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag='select'
                                     classes='form-control'
@@ -96,7 +96,7 @@ const BillingsInformation = () => {
                                     options={options1}
                                 />
                             </div>
-                            <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag='select'
                                     classes='form-control'
@@ -104,7 +104,7 @@ const BillingsInformation = () => {
                                     options={options2}
                                 />
                             </div>
-                            <div className="col-lg-6 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag='input'
                                     type='text'
@@ -114,7 +114,7 @@ const BillingsInformation = () => {
                                     label="Zipe Code"
                                 />
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag='input'
                                     type='text'
@@ -124,7 +124,7 @@ const BillingsInformation = () => {
                                     label="Full Address"
                                 />
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <FormInput
                                     tag={'textarea'}
                                     type='text'
@@ -133,7 +133,7 @@ const BillingsInformation = () => {
                                     placeholder='Order Notes'
                                     label="Additional Notes"/>
                             </div>
-                            <div className="col-lg-12 col-md-12 col-sm-=12 col-12">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="form-check">
                                     <input type="checkbox" className="form-check-input" id="materialUnchecked"/>
                                     <label className="form-check-label" htmlFor="materialUnchecked">Material

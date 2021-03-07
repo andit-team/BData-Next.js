@@ -17,8 +17,7 @@ const OrderInfo = () => {
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Blue Dress For Woman <span className="product-qty">x 2</span>
-                            </td>
+                            <td>Blue Dress For Woman <span className="product-qty">x 2</span></td>
                             <td>$90.00</td>
                         </tr>
                         <tr>
@@ -27,8 +26,7 @@ const OrderInfo = () => {
                             <td>$55.00</td>
                         </tr>
                         <tr>
-                            <td>woman full sliv dress <span className="product-qty">x 3</span>
-                            </td>
+                            <td>woman full sliv dress <span className="product-qty">x 3</span></td>
                             <td>$204.00</td>
                         </tr>
                         </tbody>
